@@ -1,1 +1,64 @@
-let handler=_0xfd9af8=>_0xfd9af8;handler['before']=async function(_0x4e6b94,{conn:_0x51e09e,isAdmin:_0x2c60c6,isBotAdmin:_0x1b2c56}){if(!_0x4e6b94['isGroup'])return!0x1;let _0x58ce34=global['db']['data']['chats'][_0x4e6b94['chat']];_0x1b2c56&&_0x58ce34['antiArab']&&(_0x4e6b94['sender']['startsWith']('212'||'212')&&(global['db']['data']['users'][_0x4e6b94['sender']]['banned']=!![],_0x4e6b94['reply']('[❗]Virtual\x20numbers\x20are\x20prohibited\x20in\x20this\x20group\x20therefore\x20you\x20will\x20be\x20eliminated'),await _0x51e09e['groupParticipantsUpdate'](_0x4e6b94['chat'],[_0x4e6b94['sender']],'remove')),_0x4e6b94['sender']['startsWith']('265'||'265')&&(global['db']['data']['users'][_0x4e6b94['sender']]['banned']=!![],_0x4e6b94['reply']('[❗]Virtual\x20numbers\x20are\x20prohibited\x20in\x20this\x20group\x20therefore\x20you\x20will\x20be\x20eliminated'),await _0x51e09e['groupParticipantsUpdate'](_0x4e6b94['chat'],[_0x4e6b94['sender']],'remove')),_0x4e6b94['sender']['startsWith']('972'||'972')&&(global['db']['data']['users'][_0x4e6b94['sender']]['banned']=!![],_0x4e6b94['reply']('[❗]Virtual\x20numbers\x20are\x20prohibited\x20in\x20this\x20group\x20therefore\x20you\x20will\x20be\x20eliminated'),await _0x51e09e['groupParticipantsUpdate'](_0x4e6b94['chat'],[_0x4e6b94['sender']],'remove')),_0x4e6b94['sender']['startsWith']('994'||'994')&&(global['db']['data']['users'][_0x4e6b94['sender']]['banned']=!![],_0x4e6b94['reply']('[❗]Virtual\x20numbers\x20are\x20prohibited\x20in\x20this\x20group\x20therefore\x20you\x20will\x20be\x20eliminated'),await _0x51e09e['groupParticipantsUpdate'](_0x4e6b94['chat'],[_0x4e6b94['sender']],'remove')));},handler['register']=!![];export default handler;
+let handler = async (m, { conn, args, participants }) => { 
+     let users = Object.entries(global.db.data.users).map(([key, value]) => { 
+         return { ...value, jid: key } 
+     }) 
+     let sortedExp = users.map(toNumber('exp')).sort(sort('exp')) 
+     let sortedLim = users.map(toNumber('limit')).sort(sort('limit')) 
+     let sortedDola = users.map(toNumber('joincount')).sort(sort('joincount')) 
+     let sortedLevel = users.map(toNumber('level')).sort(sort('level')) 
+     let sortedRole = users.map(toNumber('role')).sort(sort('role')) 
+     let sortedRole2 = users.map(toNumber('role2')).sort(sort('role2')) 
+     let usersExp = sortedExp.map(enumGetKey) 
+     let usersDola = sortedDola.map(enumGetKey) 
+     let usersLim = sortedLim.map(enumGetKey) 
+     let usersLevel = sortedLevel.map(enumGetKey) 
+     let usersRole2 = sortedRole2.map(enumGetKey) 
+     let usersRole = sortedRole.map(enumGetKey) 
+     let len = args[0] && args[0].length > 0 ? Math.min(100, Math.max(parseInt(args[0]), 5)) : Math.min(5, sortedExp.length) 
+  
+     let text = `•••••••••••••••••• 
+ 🧑🏻‍💻 *TABLA DE CLASIFICACION* 
+ ╰───────────────╯ 
+ ╭「☆ *TOP ${len} DOLARES 💵* ☆」 
+ │➯Tú : *${usersDola.indexOf(m.sender) + 1}* de *${usersDola.length}* 
+ │➯${sortedDola.slice(0, len).map(({ jid, joincount, name }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : ''}*${name.toUpperCase()}* : ${joincount} dolares`).join`\n`} 
+ ─────────────────⋆ 
+ ╭「☆ *TOP ${len} XP* ☆」 
+ │➯Tú : *${usersExp.indexOf(m.sender) + 1}* de *${usersExp.length}* 
+ │➯${sortedExp.slice(0, len).map(({ jid, exp, name }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : ''}*${name.toUpperCase()}* : ${exp} Exp`).join`\n`} 
+ ─────────────────⋆ 
+ ╭「☆ *TOP ${len} DIAMANTES* 💎 ☆」 
+ │➯Tú : *${usersLim.indexOf(m.sender) + 1}* de *${usersLim.length}* 
+ │➯${sortedLim.slice(0, len).map(({ jid, limit, name }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : ''}*${name.toUpperCase()}* : ${limit} Diamantes`).join`\n`} 
+ ─────────────────⋆ 
+ ╭「☆ *TOP ${len} NIVEL* ☆」 
+ │➯Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length}* 
+ │➯${sortedLevel.slice(0, len).map(({ jid, level, name }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `(${conn.getName(jid)}) wa.me/` : ''}*${name.toUpperCase()}* : Nivel ${level}`).join`\n`} 
+ ─────────────────⋆`.trim() 
+  
+     m.reply(text, null, { mentions: conn.parseMention(text) }) 
+ } 
+ handler.help = ['top'] 
+ handler.tags = ['xp'] 
+ handler.command = ['top2', 'lb'] 
+  
+ handler.fail = null 
+ handler.exp = 0 
+ handler.register = true 
+ export default handler 
+  
+ function sort(property, ascending = true) { 
+     if (property) return (...args) => args[ascending & 1][property] - args[!ascending & 1][property] 
+     else return (...args) => args[ascending & 1] - args[!ascending & 1] 
+ } 
+  
+ function toNumber(property, _default = 0) { 
+     if (property) return (a, i, b) => { 
+         return { ...b[i], [property]: a[property] === undefined ? _default : a[property] } 
+     } 
+     else return a => a === undefined ? _default : a 
+ } 
+  
+ function enumGetKey(a) { 
+     return a.jid 
+ }

@@ -15,5 +15,5 @@ handler.help = ['slap']
 handler.tags = ['General']
 handler.command = /^slap/i
 handler.register = true
-handler.premium = true
+handler.register = true
 export default handler

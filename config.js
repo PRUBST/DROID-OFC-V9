@@ -38,7 +38,7 @@ global.paypal = 'https://pay'
 global.donar = paypal
 global.rg = '*🍀ʀᴇsᴜʟᴛᴀᴅᴏ ᴇɴᴄᴏɴᴛʀᴀᴅᴏ✨*';
 global.resultado = rg
-global.ag = '*⚠️ᴀᴅᴠᴇʀᴛᴇɴᴄɪᴀ⚠️*';
+global.ag = '*⚠️ᴀᴅᴠᴇʀᴛᴇɴᴄɪᴀ⚠️ ESTÁ PROHIBIDO ESO: 911 🗣*';
 global.advertencia = ag
 global.iig = '*📌ɪɴғᴏʀᴍᴀᴄɪᴏɴ*✨';
 global.informacion = iig
@@ -51,7 +51,7 @@ global.envio = eeg
 global.eg = '*🍀ʀᴇsᴜʟᴛᴀᴅᴏ ᴇɴᴄᴏɴᴛʀᴀᴅᴏ✨*';
 global.exito = eg
 
-global.wm = '©𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂\n乂DROID-𝑐.ᵇᵒᵗ乂';
+global.wm = '©𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂';
 global.igfg = 'DROID-8-MD-𝑐.ᵇᵒᵗ';
 global.wait = '⌛ _Cargando..._\n▰▰▰▱▱▱▱▱▱';
 

@@ -7,11 +7,11 @@ else who = m.chat
 if (!who) return conn.reply(m.chat, `[❗]ENTER THE @tag OF SOME USER`, fkontak, m)
 let users = global.db.data.users
 users[who].banned = false
-conn.reply(m.chat, `[❗𝐈𝐍𝐅𝐎❗]THE USER WAS SUCCESSFULLY FADED\n THE USER CAN NOW USE THE BOT`, fkontak, m)
+conn.reply(m.chat, `👨🏻‍💻 *USUARIO DESBANEADO,\n YA PUEDE USARME:*`, fkontak, m)
 }
 handler.help = ['unbanuser']
 handler.tags = ['owner']
-handler.command = /^unbanuser$/i
+handler.command = /^unban$/i
 handler.register = true
-handler.rowner = true
+handler.admin = true
 export default handler

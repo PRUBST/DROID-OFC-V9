@@ -6,8 +6,8 @@ if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted.sender
 else who = m.chat
 let users = global.db.data.users
 users[who].banned = true
-conn.reply(m.chat, `[❗]THE USER WAS SUCCESSFULLY BANNED*\n*THE USER WILL NOT BE ABLE TO USE THE BOT UNTIL IT IS UNBANED`, fkontak, m)
+conn.reply(m.chat, `👨🏻‍💻 *EL USUARIO FUE BANEADO POR PENDEJO, YA NO PODRA USARME HASTA QUE SEA DESBANEADO POR UN ADMIN*`, fkontak, m)
 }
-handler.command = /^banuser$/i
-handler.rowner = true
+handler.command = /^ban$/i
+handler.admin = true
 export default handler

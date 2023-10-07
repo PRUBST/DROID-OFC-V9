@@ -18,11 +18,11 @@ global.owner = [
 global.suittag = ['50240289706'];
 global.prems = ['50258487658'];
 
-global.packname = 'DROID-𝑐.ᵇᵒᵗ';
+global.packname = 'DROID-8-MD-𝑐.ᵇᵒᵗ';
 global.author = '𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂';
 global.vs = '1.10.90';
 global.version = vs
-global.gt = 'DROID-𝑐.ᵇᵒᵗ';
+global.gt = 'DROID-8-MD-𝑐.ᵇᵒᵗ';
 global.hadesbot = gt
 global.yt = 'https://youtu.be/aPu9wQi-z8U';
 global.youtube = yt
@@ -52,7 +52,7 @@ global.eg = '*🍀ʀᴇsᴜʟᴛᴀᴅᴏ ᴇɴᴄᴏɴᴛʀᴀᴅᴏ✨*';
 global.exito = eg
 
 global.wm = '©𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂\n乂DROID-𝑐.ᵇᵒᵗ乂';
-global.igfg = 'DROID-𝑐.ᵇᵒᵗ';
+global.igfg = 'DROID-8-MD-𝑐.ᵇᵒᵗ';
 global.wait = '⌛ _Cargando..._\n▰▰▰▱▱▱▱▱▱';
 
 global.imagen1 = fs.readFileSync('./views/Menu.jpg');

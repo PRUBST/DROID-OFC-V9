@@ -4,7 +4,7 @@ if (!text) return conn.reply(m.chat, `[❗]ENTER THE @tag OF SOME USER`, fkontak
 let who
 if (m.isGroup) who = m.mentionedJid[0]
 else who = m.chat
-if (!who) return conn.reply(m.chat, `[❗]ENTER THE @tag OF SOME USER`, fkontak, m)
+if (!who) return conn.reply(m.chat, `taguea al usuario que de sea desbanear: Ejemplo: /unban @tag`, fkontak, m)
 let users = global.db.data.users
 users[who].banned = false
 conn.reply(m.chat, `👨🏻‍💻 *USUARIO DESBANEADO,\n YA PUEDE USARME:*`, fkontak, m)

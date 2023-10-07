@@ -10,10 +10,10 @@ try {
 let q = m.quoted ? m.quoted : m
 let mime = (q.msg || q).mimetype || q.mediaType || ''
 if (/webp|image|video/g.test(mime)) {
-if (/video/g.test(mime)) if ((q.msg || q).seconds > 8) return conn.reply(m.chat, `[❗] To make a sticker with video, your maximum duration must be 7 seconds.`, fkontak, m)
+if (/video/g.test(mime)) if ((q.msg || q).seconds > 8) return conn.reply(m.chat, `[❗] el vídeo no puede durar más de 7 segundos. Intenta de nuevo`, fkontak, m)
 let img = await q.download?.()
 
-if (!img) return conn.reply(m.chat, `[❗] tag an image or video to convert your sticker or image link`, fkontak, m)
+if (!img) return conn.reply(m.chat, `[❗] Lo siento, se ha producido un error. No olvides responder a un video, imagen o GIF.`, fkontak, m)
 
 let out
 try {
@@ -39,7 +39,7 @@ console.error(e)
 if (!stiker) stiker = e
 } finally {
  if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: nn, thumbnail: imagen1}}}, { quoted: m })
-else return conn.reply(m.chat, `[❗] sorry an error occurred`, fkontak, m)
+else return conn.reply(m.chat, `[❗] Lo siento, se ha producido un error. No olvides responder a un video, imagen o GIF.`, fkontak, m)
 }}
 handler.help = ['stiker (caption|reply media)', 'stiker <url>', 'stikergif (caption|reply media)', 'stikergif <url>']
 handler.tags = ['sticker']

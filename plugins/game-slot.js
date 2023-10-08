@@ -9,12 +9,12 @@ if (isNaN(args[0])) throw fa
 let apuesta = parseInt(args[0])
 let users = global.db.data.users[m.sender]
 let time = users.lastslot + 10000
-if (new Date - users.lastslot < 10000) throw `*⏳ 𝙴𝚂𝙿𝙴𝚁𝙴 ${msToTime(time - new Date())} 𝙿𝙰𝚁𝙰 𝚅𝙾𝙻𝚅𝙴𝚁 𝙰 𝙰𝙿𝙾𝚂𝚃𝙰𝚁*`
-if (apuesta < 100) throw '*[❗] 𝙴𝙻 𝙼𝙸𝙽𝙸𝙼𝙾 𝙿𝙰𝚁𝙰 𝙰𝙿𝙾𝚂𝚃𝙰𝚁 𝙴𝚂 𝙳𝙴 𝟷00 𝚇𝙿*'
+if (new Date - users.lastslot < 10000) throw `*⏳ ESPERA ${msToTime(time - new Date())} PARA VOLVER A APOSTAR*`
+if (apuesta < 100) throw '*[❗] EL MÍNIMO PARA APOSTAR ES DE 100 XP*'
 if (users.exp < apuesta) {
-throw `*[❗] Tu ex no es suficiente para apostar esa cantidad, Interactua conmigo o juega otros juegos para ganar xp*`
+throw `*[❗] Tu xp no es suficiente para apostar esa cantidad, Interactua conmigo o juega otros juegos para ganar xp*`
 }
-let emojis = ["🐋", "🐉", "🕊️"];
+let emojis = ["🦋", "🦢", "🐉"];
 let a = Math.floor(Math.random() * emojis.length);
 let b = Math.floor(Math.random() * emojis.length);
 let c = Math.floor(Math.random() * emojis.length);
@@ -44,7 +44,7 @@ users.exp += apuesta
 end = `*🔮 𝙲𝙰𝚂𝙸 𝙻𝙾 𝙻𝙾𝙶𝚁𝙰𝚂!, 𝚂𝙸𝙶𝚄𝙴 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝙽𝙳𝙾*\n*𝚃𝙾𝙼𝙰 +10 XP*`
 users.exp += 10
 } else {
-end = `*❌ 𝙿𝙴𝚁𝙳𝙸𝚂𝚃𝙴 -${apuesta} 𝚇𝙿*`
+end = `*❌ PERDISTE -${apuesta} XP*`
 users.exp -= apuesta
 }
 users.lastslot = new Date * 1

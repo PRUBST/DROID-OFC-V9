@@ -7,14 +7,14 @@ import fetch from "node-fetch"
  let q, v, yt, dl_url, ttl, size, lolhuman, lolh, n, n2, n3, n4, cap, qu, currentQuality    
  if (!text) throw `🧑🏻‍💻INGRESE EL NOMBRE DE LA CANCIÓN JUNTO CON EL COMANDO:\n *EJEMPLO:* \n *${usedPrefix + command} Cancerbero` 
  try { 
- await m.reply(` *🧑🏻‍💻:ESPERA MIENTRAS LE MANDO SU PEDIDO*`) 
- await m.reply(`⌛ _Descargando..._\n▰▰▰▱▱▱▱▱▱`) 
+ await m.reply(` *🧑🏻‍💻:ESPERA MIENTRAS LE MANDO SU PEDIDO*\n\n\n_Descargando..._\n▰▰▰▱▱▱▱▱▱`) 
  const yt_play = await search(args.join(" ")) 
  let captionvid = `➤͜͡🎶📌*name:* *${yt_play[0].title}* 
  ➤͜͡📆 *Published:* *${yt_play[0].ago}* 
  ➤͜͡⌚ *Duration:* *${secondString(yt_play[0].duration.seconds)}* 
  ➤͜͡👀 *Views:* *${MilesNumber(yt_play[0].views)}* 
- ➤͜͡🧑🏻‍💻 *inf:* *Descargando....* 
+ ➤͜͡🧑🏻‍💻 *inf:* *Descargando....*
+▰▰▰▱▱▱▱▱▱ 
  ⫷᭄©𝐃𝐑𝐎𝐈𝐃-8-𝐌𝐃﹏✍`   
  await conn.sendMessage(m.chat, { 
  text: captionvid, 

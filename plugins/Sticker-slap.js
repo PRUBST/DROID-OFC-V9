@@ -9,16 +9,21 @@ let handler = async (m, { conn }) => {
     let res = await fetch('https://neko-love.xyz/api/v1/slap');
     let json = await res.json();
     let { url } = json;
-    let mentionedNames = m.mentionedJid.map((user) => {
-      if (user === m.sender) return 'alguien';
+    let mentionedNames = [];
+    
+    for (let user of m.mentionedJid) {
       let contact = conn.contacts[user];
-      return contact ? contact.notify : `+${user.split('@')[0]}`;
-    });
-    let stiker = await sticker(
-      null,
-      url,
-      `+${m.sender.split('@')[0]} le dio una bofetada a ${mentionedNames.join(', ')}`
-    );
+      if (contact) {
+        mentionedNames.push(contact.notify);
+      } else {
+        mentionedNames.push(`+${user.split('@')[0]}`);
+      }
+    }
+
+    let senderName = conn.contacts[m.sender] ? conn.contacts[m.sender].notify : `+${m.sender.split('@')[0]}`;
+    let message = `${senderName} le dio una bofetada a ${mentionedNames.join(', ')}`;
+    
+    let stiker = await sticker(null, url, message);
     conn.sendFile(m.chat, stiker, null, { asSticker: true });
   } catch (e) {}
 };

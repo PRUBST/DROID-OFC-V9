@@ -19,7 +19,7 @@ global.suittag = ['50240289706'];
 global.prems = ['50258487658'];
 
 global.packname = 'DROID-8-MD-𝑐.ᵇᵒᵗ';
-global.author = '𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂';
+global.author = '©𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂';
 global.vs = '1.10.90';
 global.version = vs
 global.gt = 'DROID-8-MD-𝑐.ᵇᵒᵗ';
@@ -38,7 +38,7 @@ global.paypal = 'https://pay'
 global.donar = paypal
 global.rg = '*🍀ʀᴇsᴜʟᴛᴀᴅᴏ ᴇɴᴄᴏɴᴛʀᴀᴅᴏ✨*';
 global.resultado = rg
-global.ag = '*⚠️ᴀᴅᴠᴇʀᴛᴇɴᴄɪᴀ⚠️ ESTÁ PROHIBIDO ESO:*';
+global.ag = '*⚠️ᴀᴅᴠᴇʀᴛᴇɴᴄɪᴀ⚠️*';
 global.advertencia = ag
 global.iig = '*📌ɪɴғᴏʀᴍᴀᴄɪᴏɴ*✨';
 global.informacion = iig

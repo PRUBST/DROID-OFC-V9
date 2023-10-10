@@ -1,1 +1,43 @@
-import _0x58c87c from'node-gtts';import{readFileSync,unlinkSync}from'fs';import{join}from'path';const defaultLang='es',handler=async(_0x377f16,{conn:_0x50ab34,args:_0x38628f,usedPrefix:_0x17aaec,command:_0x56d685})=>{let _0x5bbd60=_0x38628f[0x0],_0x4868aa=_0x38628f['slice'](0x1)['join']('\x20');(_0x38628f[0x0]||'')['length']!==0x2&&(_0x5bbd60=defaultLang,_0x4868aa=_0x38628f['join']('\x20'));if(!_0x4868aa&&_0x377f16['quoted']?.['text'])_0x4868aa=_0x377f16['quoted']['text'];let _0x17ee44;try{_0x17ee44=await tts(_0x4868aa,_0x5bbd60);}catch(_0x3b8dab){_0x377f16['reply'](_0x3b8dab+''),_0x4868aa=_0x38628f['join']('\x20');if(!_0x4868aa)throw'[❗]\x20Enter\x20the\x20text\x20you\x20want\x20to\x20convert\x20into\x20audio\x20example:\x20'+(_0x17aaec+_0x56d685)+'\x20Goku\x20is\x20the\x20best';_0x17ee44=await tts(_0x4868aa,defaultLang);}finally{if(_0x17ee44)_0x50ab34['sendFile'](_0x377f16['chat'],_0x17ee44,'tts.opus',null,_0x377f16,!![]);}};handler['help']=['tts\x20<lang>\x20<teks>'],handler['tags']=['tools'],handler['command']=/^g?tts$/i,handler['register']=!![],handler['register']=!![];export default handler;function tts(_0xf8fa07,_0x1e95fa='es'){return console['log'](_0x1e95fa,_0xf8fa07),new Promise((_0xe05317,_0x5d99b8)=>{try{const _0x1bd9f3=_0x58c87c(_0x1e95fa),_0x2df43a=join(global['__dirname'](import.meta['url']),'../tmp',0x1*new Date()+'.wav');_0x1bd9f3['save'](_0x2df43a,_0xf8fa07,()=>{_0xe05317(readFileSync(_0x2df43a)),unlinkSync(_0x2df43a);});}catch(_0xc5f00){_0x5d99b8(_0xc5f00);}});}
+import gtts from 'node-gtts' 
+ import { readFileSync, unlinkSync } from 'fs' 
+ import { join } from 'path' 
+  
+ const defaultLang = 'es' 
+ let handler = async (m, { conn, args, usedPrefix, command }) => { 
+  
+ let lang = args[0] 
+ let text = args.slice(1).join(' ') 
+ if ((args[0] || '').length !== 2) { 
+ lang = defaultLang 
+ text = args.join(' ') 
+ } 
+ if (!text && m.quoted?.text) text = m.quoted.text 
+  
+ let res 
+ try { res = await tts(text, lang) } 
+ catch (e) { 
+ m.reply(e + '') 
+ text = args.join(' ') 
+ if (!text) throw `🧑🏻‍💻: *INGRESE EL TEXTO QUE QUIERA CONVERTIR A NOTA DE VOZ,ejemplo: ${usedPrefix + command} Quemen Perú*` 
+ res = await tts(text, defaultLang) 
+ } finally { 
+ if (res) conn.sendFile(m.chat, res, 'tts.opus', null, m, true) 
+ }} 
+ handler.help = ['tts <lang> <teks>'] 
+ handler.tags = ['tools'] 
+ handler.command = /^g?tts$/i 
+ handler.register = true 
+ export default handler 
+  
+ function tts(text, lang = 'es') { 
+ console.log(lang, text) 
+ return new Promise((resolve, reject) => { 
+ try { 
+ let tts = gtts(lang) 
+ let filePath = join(global.__dirname(import.meta.url), '../tmp', (1 * new Date) + '.wav') 
+ tts.save(filePath, text, () => { 
+ resolve(readFileSync(filePath)) 
+ unlinkSync(filePath) 
+ }) 
+ } catch (e) { reject(e) } 
+ })}

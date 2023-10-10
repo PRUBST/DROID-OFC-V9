@@ -1,1 +1,53 @@
-import _0x1ae345 from'moment-timezone';let handler=async(_0x52a9cb,{conn:_0x3ef427})=>{const _0x8906f6=_0x1ae345()['tz']('America/Lima')['format']('DD/MM\x20HH:mm'),_0xae4db=_0x1ae345()['tz']('America/Mexico_City')['format']('DD/MM\x20HH:mm'),_0x44c6c0=_0x1ae345()['tz']('America/La_Paz')['format']('DD/MM\x20HH:mm'),_0x132b69=_0x1ae345()['tz']('America/Santiago')['format']('DD/MM\x20HH:mm'),_0xd114d8=_0x1ae345()['tz']('America/Argentina/Buenos_Aires')['format']('DD/MM\x20HH:mm'),_0x4417f0=_0x1ae345()['tz']('America/Bogota')['format']('DD/MM\x20HH:mm'),_0x452e88=_0x1ae345()['tz']('America/Guayaquil')['format']('DD/MM\x20HH:mm'),_0x464972=_0x1ae345()['tz']('America/Costa_Rica')['format']('DD/MM\x20HH:mm'),_0x29243d=_0x1ae345()['tz']('America/Havana')['format']('DD/MM\x20HH:mm'),_0x309fd3=_0x1ae345()['tz']('America/Guatemala')['format']('DD/MM\x20HH:mm'),_0x252af9=_0x1ae345()['tz']('America/Tegucigalpa')['format']('DD/MM\x20HH:mm'),_0x5cbc10=_0x1ae345()['tz']('America/Managua')['format']('DD/MM\x20HH:mm'),_0x211e21=_0x1ae345()['tz']('America/Panama')['format']('DD/MM\x20HH:mm'),_0x15b0c8=_0x1ae345()['tz']('America/Montevideo')['format']('DD/MM\x20HH:mm'),_0x54a63c=_0x1ae345()['tz']('America/Caracas')['format']('DD/MM\x20HH:mm'),_0x585a60=_0x1ae345()['tz']('America/Asuncion')['format']('DD/MM\x20HH:mm'),_0x56eeb7=_0x1ae345()['tz']('America/New_York')['format']('DD/MM\x20HH:mm'),_0x178f4f=_0x1ae345()['tz']('Asia/Jakarta')['format']('DD/MM\x20HH:mm'),_0x22913c=_0x1ae345()['tz']('America/Sao_Paulo')['format']('DD/MM\x20HH:mm'),_0xb9aab4=_0x1ae345()['tz']('Africa/Malabo')['format']('DD/MM\x20HH:mm');await _0x3ef427['sendMessage'](_0x52a9cb['chat'],{'text':'```\x0a「\x20ZONA-HORARIA\x20⏰\x20」\x0a⏱️Peru\x20\x20\x20\x20\x20\x20\x20:\x20'+_0x8906f6+'\x0a⏱️Mexico\x20\x20\x20\x20\x20:\x20'+_0xae4db+'\x0a⏱️Bolivia\x20\x20\x20\x20:\x20'+_0x44c6c0+'\x0a⏱️Chile\x20\x20\x20\x20\x20\x20:\x20'+_0x132b69+'\x0a⏱️Argentina\x20\x20:\x20'+_0xd114d8+'\x0a⏱️Colombia\x20\x20\x20:\x20'+_0x4417f0+'\x0a⏱️Ecuador\x20\x20\x20\x20:\x20'+_0x452e88+'\x0a⏱️Costa_Rica\x20:\x20'+_0x464972+'\x0a⏱️Cuba\x20\x20\x20\x20\x20\x20\x20:\x20'+_0x29243d+'\x0a⏱️Guatemala\x20\x20:\x20'+_0x309fd3+'\x0a⏱️Honduras\x20\x20\x20:\x20'+_0x252af9+'\x0a⏱️Nicaragua\x20\x20:\x20'+_0x5cbc10+'\x0a⏱️Panama\x20\x20\x20\x20\x20:\x20'+_0x211e21+'\x0a⏱️Uruguay\x20\x20\x20\x20:\x20'+_0x15b0c8+'\x0a⏱️Venezuela\x20\x20:\x20'+_0x54a63c+'\x0a⏱️Paraguay\x20\x20\x20:\x20'+_0x585a60+'\x0a⏱️New\x20York\x20\x20\x20:\x20'+_0x56eeb7+'\x0a⏱️Asia\x20\x20\x20\x20\x20\x20\x20:\x20'+_0x178f4f+'\x0a⏱️Brasil\x20\x20\x20\x20\x20:\x20'+_0x22913c+'\x0a⏱️G.N.Q\x20\x20\x20\x20\x20\x20:\x20'+_0xb9aab4+'\x0a```\x0a'+String['fromCharCode'](0x200e)['repeat'](0x352)+'\x0aZona\x20horaria\x20del\x20servidor\x20actual:\x0a[\x20'+Intl['DateTimeFormat']()['resolvedOptions']()['timeZone']+'\x20]\x0a'+_0x1ae345()['tz'](Intl['DateTimeFormat']()['resolvedOptions']()['timeZone'])['format']('DD/MM/YY\x20HH:mm:ss')},{'quoted':_0x52a9cb});};handler['help']=['horario'],handler['tags']=['info'],handler['command']=/^(horario)$/i,handler['register']=!![],handler['premium']=!![];export default handler;
+import moment from 'moment-timezone' 
+  
+ let handler = async (m, { conn }) => { 
+ const fechaper = moment().tz('America/Lima').format('DD/MM HH:mm') 
+ const fechamex = moment().tz('America/Mexico_City').format('DD/MM HH:mm') 
+ const fechabol = moment().tz('America/La_Paz').format('DD/MM HH:mm') 
+ const fechachi = moment().tz('America/Santiago').format('DD/MM HH:mm') 
+ const fechaarg = moment().tz('America/Argentina/Buenos_Aires').format('DD/MM HH:mm') 
+ const fechacol = moment().tz('America/Bogota').format('DD/MM HH:mm') 
+ const fechaecu = moment().tz('America/Guayaquil').format('DD/MM HH:mm') 
+ const fechacosr = moment().tz('America/Costa_Rica').format('DD/MM HH:mm') 
+ const fechacub = moment().tz('America/Havana').format('DD/MM HH:mm') 
+ const fechagua = moment().tz('America/Guatemala').format('DD/MM HH:mm') 
+ const fechahon = moment().tz('America/Tegucigalpa').format('DD/MM HH:mm') 
+ const fechanic = moment().tz('America/Managua').format('DD/MM HH:mm') 
+ const fechapan = moment().tz('America/Panama').format('DD/MM HH:mm') 
+ const fechauru = moment().tz('America/Montevideo').format('DD/MM HH:mm') 
+ const fechaven = moment().tz('America/Caracas').format('DD/MM HH:mm') 
+ const fechapar = moment().tz('America/Asuncion').format('DD/MM HH:mm') 
+ const fechanew = moment().tz('America/New_York').format('DD/MM HH:mm') 
+ const fechaasi = moment().tz('Asia/Jakarta').format('DD/MM HH:mm') 
+ const fechabra = moment().tz('America/Sao_Paulo').format('DD/MM HH:mm') 
+ const fechaafri = moment().tz('Africa/Malabo').format('DD/MM HH:mm') 
+ await conn.sendMessage(m.chat, { text: `\`\`\` 
+ 「 ZONA-HORARIA ⏰ 」 
+ 🇵🇪 Perú      : *${fechaper}* 
+ 🇲🇽 Mexico    : *${fechamex}* 
+ 🇧🇴 Bolivia   : *${fechabol}* 
+ 🇨🇱 Chile     : *${fechachi}* 
+ 🇦🇷 Argentina : *${fechaarg}* 
+ 🇨🇴 Colombia  : *${fechacol}* 
+ 🇪🇨 Ecuador   : *${fechaecu}* 
+ 🇨🇷 Costarica : *${fechacosr}* 
+ 🇨🇺 Cuba      : *${fechacub}* 
+ 🇬🇹 Guatemala : *${fechagua}* 
+ 🇭🇳 Honduras  : *${fechahon}* 
+ 🇳🇮 Nicaragua : *${fechanic}* 
+ 🇵🇦 Panamá    : *${fechapan}* 
+ 🇺🇾 Uruguay   : *${fechauru}* 
+ 🇻🇪 Venezuela : *${fechaven}* 
+ 🇵🇾 Paraguay  : *${fechapar}*  
+ 🇧🇷 Brasil    : *${fechabra}* 
+ ⏱️G.N.Q      : *${fechaafri}* 
+ \`\`\` 
+ ${String.fromCharCode(8206).repeat(850)} 
+ Zona horaria del servidor actual:\n[ ${Intl.DateTimeFormat().resolvedOptions().timeZone} ]\n${moment().tz(Intl.DateTimeFormat().resolvedOptions().timeZone).format('DD/MM/YY HH:mm:ss')}` }, {quoted: m }) 
+ } 
+  
+ handler.help = ['horario'] 
+ handler.tags = ['info'] 
+ handler.command = /^(horario)$/i 
+ handler.register = true 
+ export default handler

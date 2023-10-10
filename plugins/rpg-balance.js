@@ -1,1 +1,23 @@
-let handler=async(_0x18e121,{usedPrefix:_0xeacf3e})=>{let _0xaf76b;if(_0x18e121['isGroup'])_0xaf76b=_0x18e121['mentionedJid'][0x0]?_0x18e121['mentionedJid'][0x0]:_0x18e121['sender'];else _0xaf76b=_0x18e121['sender'];let _0x386724=conn['getName'](_0xaf76b);_0x18e121['reply']('乂✰𝐁𝐀𝐋𝐀𝐍𝐂𝐄✰乂\x0a乂✰'+_0x386724+'\x20ღ\x0a:Diamante s\x20'+global['db']['data']['users'][_0xaf76b]['limit']+'💎\x20ღ\x0a:dolares\x20'+global['db']['data']['users'][_0xaf76b]['joincount']+'\x20ღ\x0a:ʜᴀᴅᴇs-ᴄᴏɪɴs\x20'+global['db']['data']['users'][_0xaf76b]['money']+'\x20ღ\x0a乂✰Exp'+global['db']['data']['users'][_0xaf76b]['exp']+'\x20ღ');};handler['help']=['bal'],handler['tags']=['xp'],handler['command']=['bal','diamantes','diamond','dinero','balance'],handler['register']=!![];export default handler;
+let handler = async (m, {usedPrefix}) => {          
+  let who  
+  if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender  
+  else who = m.sender  
+  let name = conn.getName(who)   
+  m.reply(`╭「➻❥𝐃𝐑𝐎𝐈𝐃-8-𝐌𝐃➻❥」  
+  │💰 *《《BALANCE》》*   
+  │┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈  
+  │🧑🏻‍💻 *NOMBRE:*  ${name}  
+  │💎 *DIAMANTES:* ${global.db.data.users[who].limit}💎  
+  │💸 *DOLARES* ${global.db.data.users[who].joincount}  
+  │🕶 *DROID-COINS* ${global.db.data.users[who].money}  
+  │📝 *Exp* ${global.db.data.users[who].exp}  
+  ╰✩⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆  
+  ╭「➻❥𝐃𝐑𝐎𝐈𝐃-8-𝐌𝐃➻❥」  
+  │ *.shop* *.sell*  
+  ╰──────────────╯`)  
+  }  
+  handler.help = ['bal']  
+  handler.tags = ['xp']  
+  handler.command = ['bal', 'diamantes', 'diamond', 'dinero', 'balance']   
+  handler.register = true  
+  export default handler

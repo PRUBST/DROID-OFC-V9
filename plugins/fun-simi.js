@@ -50,7 +50,8 @@ let handler = async (_0xeb7f32, { text: _0x1ff34a, command: _0x3cba8e, args: _0x
 };
 
 handler['help'] = ['simi', 'bot']['map'](_0x532f0e => _0x532f0e + '\x20<teks>');
+handler.register = true
 handler['tags'] = ['fun'];
 handler['command'] = /^((sim)?simi|bot|alexa|cortana)$/i;
-
+h
 export default handler;

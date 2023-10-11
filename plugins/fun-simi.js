@@ -17,8 +17,7 @@ let handler = async (_0xeb7f32, { text: _0x1ff34a, command: _0x3cba8e, args: _0x
     'participant': '0@s.whatsapp.net'
   };
 
-  if (!_0x1ff34a) return conn['reply'](_0xeb7f32['chat'], 'Hola: ' + _0xeb7f32['pushName'] + '   *:Soy Droid Tú Bebesit@
-* 😽 ¿Quieres chatear? Responde con el comando junto con tu mensaje.', _0xbfd118, _0xeb7f32);
+  if (!_0x1ff34a) return conn['reply'](_0xeb7f32['chat'], 'Hola: ' + _0xeb7f32['pushName'] + ' *Soy Droid bot tu Bebesit@* 😽 *¿Quieres chatear? Responde con el* *comando junto con tu mensaje.*', _0xbfd118, _0xeb7f32);
 
   try {
     let _0x3d237d = await _0x560386('https://api.simsimi.net/v2/?text=' + _0x1ff34a + '&lc=es'),
@@ -50,8 +49,7 @@ let handler = async (_0xeb7f32, { text: _0x1ff34a, command: _0x3cba8e, args: _0x
 };
 
 handler['help'] = ['simi', 'bot']['map'](_0x532f0e => _0x532f0e + '\x20<teks>');
-handler.register = true
 handler['tags'] = ['fun'];
 handler['command'] = /^((sim)?simi|bot|alexa|cortana)$/i;
-h
+
 export default handler;

@@ -11,13 +11,13 @@ let handler = async (_0xeb7f32, { text: _0x1ff34a, command: _0x3cba8e, args: _0x
     },
     'message': {
       'contactMessage': {
-        'vcard': 'BEGIN:VCARD\x0aVERSION:3.0\x0aN:Sy;Bot;;;\x0aFN:y\x0aitem1.TEL;waid=' + _0xeb7f32.sender.split('@')[0] + ':' + _0xeb7f32.sender.split('@')[0] + '\x0aitem1.X-ABLabel:Ponsel\x0aEND:VCARD'
+        'vcard': 'BEGIN:VCARD\x0aVERSION:3.0\x0aN:Sy;Bot;;;\x0aFN:y\x0aitem1.TEL;waid=' + _0xeb7f32.sender + ':' + _0xeb7f32.sender + '\x0aitem1.X-ABLabel:Ponsel\x0aEND:VCARD'
       }
     },
     'participant': '0@s.whatsapp.net'
   };
 
-  if (!_0x1ff34a) return conn.reply(_0xeb7f32.chat, `Hola: @${_0xeb7f32.sender.split('@')[0]} 😍 ¿Quieres chatear? Responde con el comando junto con tu mensaje.`, _0xbfd118, _0xeb7f32);
+  if (!_0x1ff34a) return conn.reply(_0xeb7f32.chat, `Hola: @${_0xeb7f32.sender} 😍 ¿Quieres chatear? Responde con el comando junto con tu mensaje.`, _0xbfd118, _0xeb7f32);
 
   try {
     let _0x3d237d = await _0x560386('https://api.simsimi.net/v2/?text=' + _0x1ff34a + '&lc=es'),

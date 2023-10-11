@@ -6,7 +6,7 @@ let handler = async (_0xeb7f32, { text: _0x1ff34a, command: _0x3cba8e, args: _0x
     'key': {
       'participants': '0@s.whatsapp.net',
       'remoteJid': 'status@broadcast',
-      'fromMe': ![],
+      'fromMe': false,
       'id': 'Halo'
     },
     'message': {
@@ -17,7 +17,7 @@ let handler = async (_0xeb7f32, { text: _0x1ff34a, command: _0x3cba8e, args: _0x
     'participant': '0@s.whatsapp.net'
   };
 
-  if (!_0x1ff34a) return conn.reply(_0xeb7f32.chat, `Hola: @${_0xeb7f32.sender} 😍 ¿Quieres chatear? Responde con el comando junto con tu mensaje.`, _0xbfd118, _0xeb7f32);
+  if (!_0x1ff34a) return conn.reply(_0xeb7f32.chat, `Hola: @${_0xeb7f32.sender.split('@')[0]} 😍 ¿Quieres chatear? Responde con el comando junto con tu mensaje.`, _0xbfd118, _0xeb7f32);
 
   try {
     let _0x3d237d = await _0x560386('https://api.simsimi.net/v2/?text=' + _0x1ff34a + '&lc=es'),

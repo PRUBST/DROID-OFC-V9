@@ -17,7 +17,7 @@ let handler = async (_0xeb7f32, { text: _0x1ff34a, command: _0x3cba8e, args: _0x
     'participant': '0@s.whatsapp.net'
   };
 
-  if (!_0x1ff34a) return conn['reply'](_0xeb7f32['chat'], 'Hola: ' + _0xeb7f32['pushName'] + ' *Soy Droid bot tu Bebesit@* 😽 *¿Quieres chatear? Responde con el* *comando junto con tu mensaje.*', _0xbfd118, _0xeb7f32);
+  if (!_0x1ff34a) return conn['reply'](_0xeb7f32['chat'], 'Hola: ' + _0x3cba8e + ' Soy Droid bot tu Bebesit@ 😽 ¿Quieres chatear? Responde con el comando junto con tu mensaje.', _0xbfd118, _0xeb7f32);
 
   try {
     let _0x3d237d = await _0x560386('https://api.simsimi.net/v2/?text=' + _0x1ff34a + '&lc=es'),
@@ -29,20 +29,20 @@ let handler = async (_0xeb7f32, { text: _0x1ff34a, command: _0x3cba8e, args: _0x
       if (_0x1ff34a['includes']('hola')) _0x1ff34a = _0x1ff34a['replace']('hola', 'Hello');
       if (_0x1ff34a['includes']('HOLA')) _0x1ff34a = _0x1ff34a['replace']('HOLA', 'HELLO');
       let _0x12156f = await _0x560386('https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q=' + _0x1ff34a),
-        _0x4c57d7 = await _0x12156f['json'](),
-        _0x200bd0 = _0xeb7f32['pushName'] || '1',
-        _0x3dd5a4 = await _0x560386('http://api.brainshop.ai/get?bid=153868&key=rcKonOgrUFmn5usX&uid=' + _0x200bd0 + '&msg=' + _0x4c57d7[0x0][0x0][0x0]),
-        _0xf1831a = await _0x3dd5a4['json'](),
-        _0x3b5505 = await _0x560386('https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=es&dt=t&q=' + _0xf1831a['cnt']),
+        _0x4c57d7 = await _0x12156f['json']();
+      let senderTag = _0x3cba8e || '1'; // Cambia '1' a la etiqueta que desees
+      let _0x200bd0 = await _0x560386('http://api.brainshop.ai/get?bid=153868&key=rcKonOgrUFmn5usX&uid=' + senderTag + '&msg=' + _0x4c57d7[0x0][0x0][0x0]),
+        _0xf1831a = await _0x200bd0['json']();
+      let _0x3b5505 = await _0x560386('https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=es&dt=t&q=' + _0xf1831a['cnt']),
         _0xf07ea0 = await _0x3b5505['json']();
       _0xeb7f32['reply'](_0xf07ea0[0x0][0x0][0x0]);
     } catch {
       let _0x554e06 = await _0x560386('https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=id&dt=t&q=' + _0x1ff34a),
-        _0xa0735c = await _0x554e06['json'](),
-        _0x3d337f = await _0x560386('https://violetics.pw/api/utility/simsimi?apikey=beta&text=' + _0xa0735c[0x0][0x0][0x0]),
-        _0x397994 = await _0x3d337f['json'](),
-        _0x4a5cb0 = _0x397994['result'],
-        _0x30135e = await _0x74f12c('' + _0x4a5cb0, { 'to': 'es', 'autoCorrect': !![] });
+        _0xa0735c = await _0x554e06['json']();
+      let _0x3d337f = await _0x560386('https://violetics.pw/api/utility/simsimi?apikey=beta&text=' + _0xa0735c[0x0][0x0][0x0]),
+        _0x397994 = await _0x3d337f['json']();
+      let _0x4a5cb0 = _0x397994['result'];
+      let _0x30135e = await _0x74f12c('' + _0x4a5cb0, { 'to': 'es', 'autoCorrect': !![] });
       _0xeb7f32['reply'](_0x30135e['text']);
     }
   }

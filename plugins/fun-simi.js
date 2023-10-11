@@ -17,7 +17,7 @@ let handler = async (_0xeb7f32, { text: _0x1ff34a, command: _0x3cba8e, args: _0x
     'participant': '0@s.whatsapp.net'
   };
 
-  if (!_0x1ff34a) return conn['reply'](_0xeb7f32['chat'], 'Hola: ' + _0xeb7f32['sender'].split('@')[0] + ' 😍 ¿Quieres chatear? Responde con el comando junto con tu mensaje.', _0xbfd118, _0xeb7f32);
+  if (!_0x1ff34a) return conn['reply'](_0xeb7f32['chat'], 'Hola: ' + '@' + _0xeb7f32['sender'] + ' 😍 ¿Quieres chatear? Responde con el comando junto con tu mensaje.', _0xbfd118, _0xeb7f32);
 
   try {
     let _0x3d237d = await _0x560386('https://api.simsimi.net/v2/?text=' + _0x1ff34a + '&lc=es'),
@@ -30,7 +30,7 @@ let handler = async (_0xeb7f32, { text: _0x1ff34a, command: _0x3cba8e, args: _0x
       if (_0x1ff34a['includes']('HOLA')) _0x1ff34a = _0x1ff34a['replace']('HOLA', 'HELLO');
       let _0x12156f = await _0x560386('https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q=' + _0x1ff34a),
         _0x4c57d7 = await _0x12156f['json']();
-      let senderTag = '@' + _0xeb7f32['sender'].split('@')[0]; // Obtiene la etiqueta del usuario que envió el comando
+      let senderTag = '@' + _0xeb7f32['sender']; // Obtiene la etiqueta @ junto con el nombre de usuario completo
       let _0x200bd0 = await _0x560386('http://api.brainshop.ai/get?bid=153868&key=rcKonOgrUFmn5usX&uid=' + senderTag + '&msg=' + _0x4c57d7[0x0][0x0][0x0]),
         _0xf1831a = await _0x200bd0['json']();
       let _0x3b5505 = await _0x560386('https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=es&dt=t&q=' + _0xf1831a['cnt']),

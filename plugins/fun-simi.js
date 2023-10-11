@@ -17,7 +17,7 @@ import _0x74f12c from '@vitalets/google-translate-api';
      'participant': '0@s.whatsapp.net' 
    }; 
   
-   if (!_0x1ff34a) return conn['reply'](_0xeb7f32['chat'], 'Hola: '*+ _0xeb7f32['pushName'] +*' 😽 Soy Droid, tu Bebesit@. ¿Quieres chatear? Responde con el comando junto con tu mensaje.', _0xbfd118, _0xeb7f32); 
+   if (!_0x1ff34a) return conn['reply'](_0xeb7f32['chat'], 'Hola: *' + _0xeb7f32['pushName'] + '* 😽 Soy Droid, tu Bebesit@. ¿Quieres chatear? Responde con el comando junto con tu mensaje.', _0xbfd118, _0xeb7f32); 
   
    try { 
      let _0x3d237d = await _0x560386('https://api.simsimi.net/v2/?text=' + _0x1ff34a + '&lc=es'), 

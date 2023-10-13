@@ -15,9 +15,9 @@ global.db.data.users[who].exp -= rob
 m.reply(`*‣ Robaste ${rob} XP a @${who.split`@`[0]}*`, null, { mentions: [who] })
 global.db.data.users[m.sender].lastrob = new Date * 1
 }
-handler.help = ['rob xp']
+handler.help = ['robxp']
 handler.tags = ['econ']
-handler.command = ['robar xp', 'rob xp']
+handler.command = ['robarxp', 'robxp']
 export default handler  
 function msToTime(duration) {
 var milliseconds = parseInt((duration % 1000) / 100),

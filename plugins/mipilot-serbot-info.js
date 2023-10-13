@@ -1,1 +1,30 @@
-import _0x1b5ff from'ws';async function handler(_0x5a134a,{conn:_0xeb1a3a,usedPrefix:_0x4ae9a3}){const _0x30ac66=[...new Set([...global['conns']['filter'](_0x4bc54a=>_0x4bc54a['user']&&_0x4bc54a['ws']['socket']&&_0x4bc54a['ws']['socket']['readyState']!==_0x1b5ff['CLOSED'])['map'](_0x5e80ca=>_0x5e80ca['user'])])],_0x4e1da0=_0x30ac66['map']((_0x47b47b,_0x309c99)=>'*'+(_0x309c99+0x1)+'.-*\x20@'+_0x47b47b['jid']['replace'](/[^0-9]/g,'')+'\x0a*Link:*\x20wa.me/'+_0x47b47b['jid']['replace'](/[^0-9]/g,'')+'?text='+_0x4ae9a3+'estado\x0a*Nombre:*\x20'+(_0x47b47b['name']||'-')+'\x0a\x0a')['join']('\x0a'),_0x54cca4=_0x4e1da0['length']===0x0?'*No\x20hay\x20SubBots\x20activos\x20en\x20estos\x20momentos.*':_0x4e1da0,_0x2c721b=_0x30ac66['length'],_0x2fa484=('🌿Bot\x20Status🌿\x0a💥Active\x20bot\x20💮\x0a🤖connected\x20bots\x20=\x20('+(_0x2c721b||'0')+')\x0a📌public\x20bot👥\x0a💥To\x20see\x20the\x20list\x20of\x20connected\x20users\x20use\x20the\x20command💥\x0a/listjadibot')['trim']();await _0xeb1a3a['sendMessage'](_0x5a134a['chat'],{'text':_0x2fa484,'mentions':_0xeb1a3a['parseMention'](_0x2fa484)},{'quoted':_0x5a134a});}handler['command']=handler['help']=['bots'],handler['tags']=['jadibot'];export default handler;
+let ro = 180 
+ let handler = async (m, { conn, usedPrefix, command}) => { 
+ let time = global.db.data.users[m.sender].lastrob + 1000 
+ if (new Date - global.db.data.users[m.sender].lastrob < 1000) throw `*⏱️¡Hey! Espera ${msToTime(time - new Date())} para volver a robar*` 
+ let who 
+ if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false 
+ else who = m.chat 
+ if (!who) throw `*[❗] Etiqueta a alguien para robar.*` 
+ if (!(who in global.db.data.users)) throw `*[❗] El usuario no se encuentra en mi base de datos.*` 
+ let users = global.db.data.users[who] 
+ let rob = Math.floor(Math.random() * ro) 
+ if (users.exp < rob) return m.reply(`😔 @${who.split`@`[0]} tiene menos de *${ro} XP*\nNo robes a un pobre v":`, null, { mentions: [who] })     
+ global.db.data.users[m.sender].exp += rob 
+ global.db.data.users[who].limit -= rob  
+ m.reply(`*‣ Robaste ${rob} Diamantes a @${who.split`@`[0]}*`, null, { mentions: [who] }) 
+ global.db.data.users[m.sender].lastrob = new Date * 1 
+ } 
+ handler.help = ['robdiamantes'] 
+ handler.tags = ['econ'] 
+ handler.command = ['robardiamantes', 'robarDiamante'] 
+ export default handler   
+ function msToTime(duration) { 
+ var milliseconds = parseInt((duration % 1000) / 100), 
+ seconds = Math.floor((duration / 1000) % 60), 
+ minutes = Math.floor((duration / (1000 * 60)) % 60), 
+ hours = Math.floor((duration / (1000 * 60 * 60)) % 24) 
+ hours = (hours < 0) ? "0" + hours : hours 
+ minutes = (minutes < 0) ? "0" + minutes : minutes 
+ seconds = (seconds < 4) ? "0" + seconds : seconds 
+ return hours + " Hora(s) " + minutes + " Minuto(s)"}

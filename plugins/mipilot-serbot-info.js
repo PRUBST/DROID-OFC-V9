@@ -9,8 +9,8 @@ let ro = 100
  if (!(who in global.db.data.users)) throw `*[❗] El usuario no se encuentra en mi base de datos.*` 
  let users = global.db.data.users[who] 
  let rob = Math.floor(Math.random() * ro) 
- if (users.exp < rob) return m.reply(`😔 @${who.split`@`[0]} tiene menos de *${ro} XP*\nNo robes a un pobre v":`, null, { mentions: [who] })     
- global.db.data.users[m.sender].exp += rob 
+ if (users.limit < rob) return m.reply(`😔 @${who.split`@`[0]} tiene menos de *${ro} Diamantes*\nNo robes a un pobre v":`, null, { mentions: [who] })     
+ global.db.data.users[m.sender].limit += rob 
  global.db.data.users[who].limit -= rob  
  m.reply(`*‣ Robaste ${rob} Diamantes a @${who.split`@`[0]}*`, null, { mentions: [who] }) 
  global.db.data.users[m.sender].lastrob = new Date * 1 

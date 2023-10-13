@@ -1,11 +1,11 @@
-let ro = 180 
+let ro = 100 
  let handler = async (m, { conn, usedPrefix, command}) => { 
  let time = global.db.data.users[m.sender].lastrob + 1000 
  if (new Date - global.db.data.users[m.sender].lastrob < 1000) throw `*⏱️¡Hey! Espera ${msToTime(time - new Date())} para volver a robar*` 
  let who 
  if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false 
  else who = m.chat 
- if (!who) throw `*[❗] Etiqueta a alguien para robar.*` 
+ if (!who) throw `*[❗] Etiqueta a alguien para robarle algunos Diamantes 😈*` 
  if (!(who in global.db.data.users)) throw `*[❗] El usuario no se encuentra en mi base de datos.*` 
  let users = global.db.data.users[who] 
  let rob = Math.floor(Math.random() * ro) 

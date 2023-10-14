@@ -12,27 +12,27 @@ let vn = './Audios/dylan1.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })} 
     
-if (!chat.isBanned && chat.audios && m.text.match(/(@50240289706|@50258487658|tony|TONY)/gi)) {    
+if (!chat.isBanned && chat.audios && m.text.match(/(@50240289706|@50258487658|tony|Tony|TONY)/gi)) {    
 let vn = './Audios/Ara.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })} 
     
-if (!chat.isBanned && chat.audios && m.text.match(/(miarda de bot|mierda de bot|mearda de bot|Miarda de Bot|Mierda de Bot|Mearda de Bot)/gi)) {    
+if (!chat.isBanned && chat.audios && m.text.match(/(puto bot|PUTO BOT|saquen al bot|SAQUEN AL BOT|bot de mierda|BOT DE MIERDA|bot de mrd|El bot no sirve|EL BOT NO SIRVE)/gi)) {    
 let vn = './Audios/insultar.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}     
     
-if (!chat.isBanned && chat.audios && m.text.match(/(bañate|Bañate)/gi)) {    
+if (!chat.isBanned && chat.audios && m.text.match(/(I DRIVE|i drive|drive|DRIVE)/gi)) {    
 let vn = './Audios/Banate.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}     
     
-if (!chat.isBanned && chat.audios && m.text.match(/(baneado|Baneado)/gi)) {    
+if (!chat.isBanned && chat.audios && m.text.match(/(soy ése|SOY ÉSE|soy ese|SOY ESE)/gi)) {    
 let vn = './Audios/baneado.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}    
    
-if (!chat.isBanned && chat.audios && m.text.match(/(bebito fiu fiu|bff|Bebito Fiu Fiu|Bff)/gi)) {    
+if (!chat.isBanned && chat.audios && m.text.match(/(si soy|SI SOY|Bebito Fiu Fiu|Bff)/gi)) {    
 let vn = './Audios/bff.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}   

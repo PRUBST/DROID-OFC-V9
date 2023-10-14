@@ -1,7 +1,7 @@
 let ro = 3000
 let handler = async (m, { conn, usedPrefix, command}) => {
-let time = global.db.data.users[m.sender].lastrob + 1000
-if (new Date - global.db.data.users[m.sender].lastrob < 1000) throw `*⏱️¡Hey! Espera ${msToTime(time - new Date())} para volver a robar*`
+let time = global.db.data.users[m.sender].lastrob + 30000
+if (new Date - global.db.data.users[m.sender].lastrob < 30000) throw `*⏱️¡Hey! Espera ${msToTime(time - new Date())} para volver a robar*`
 let who
 if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
 else who = m.chat
@@ -26,5 +26,5 @@ minutes = Math.floor((duration / (1000 * 60)) % 60),
 hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
 hours = (hours < 0) ? "0" + hours : hours
 minutes = (minutes < 0) ? "0" + minutes : minutes
-seconds = (seconds < 4) ? "0" + seconds : seconds
+seconds = (seconds < 30) ? "0" + seconds : seconds
 return hours + " Hora(s) " + minutes + " Minuto(s)"}

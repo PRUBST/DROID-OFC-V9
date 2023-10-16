@@ -41,11 +41,11 @@ let handler = async (m, { args, usedPrefix, command }) => {
  end = `*GANASTE! 🎁 +${apuesta + apuesta} Diamantes*` 
  users.exp += apuesta 
  } else if (a == b || a == c || b == c) { 
- end = `*🔮 𝙲𝙰𝚂𝙸 𝙻𝙾 𝙻𝙾𝙶𝚁𝙰𝚂!, 𝚂𝙸𝙶𝚄𝙴 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝙽𝙳𝙾*\n*𝚃𝙾𝙼𝙰 +10 XP*` 
+ end = `*🔮 𝙲𝙰𝚂𝙸 𝙻𝙾 𝙻𝙾𝙶𝚁𝙰𝚂!, 𝚂𝙸𝙶𝚄𝙴 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝙽𝙳𝙾*\n*𝚃𝙾𝙼𝙰 +10 Diamantes*` 
  users.limit += 10 
  } else { 
  end = `*❌ PERDISTE -${apuesta} Diamantes😹*` 
- users.exp -= apuesta 
+ users.limit -= apuesta 
  } 
  users.lastslot = new Date * 1 
  return await m.reply( 

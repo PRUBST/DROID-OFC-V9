@@ -1,1 +1,78 @@
-const _0x25cc8b=_0x4e90;(function(_0x38bf06,_0xb61252){const _0x3641bb=_0x4e90,_0x3dd14b=_0x38bf06();while(!![]){try{const _0x1f634b=-parseInt(_0x3641bb(0xab))/0x1+-parseInt(_0x3641bb(0x99))/0x2+parseInt(_0x3641bb(0x9d))/0x3*(-parseInt(_0x3641bb(0x9a))/0x4)+parseInt(_0x3641bb(0x94))/0x5+parseInt(_0x3641bb(0x9e))/0x6*(-parseInt(_0x3641bb(0x9f))/0x7)+-parseInt(_0x3641bb(0xae))/0x8*(parseInt(_0x3641bb(0xa4))/0x9)+parseInt(_0x3641bb(0x9b))/0xa;if(_0x1f634b===_0xb61252)break;else _0x3dd14b['push'](_0x3dd14b['shift']());}catch(_0x2d44a7){_0x3dd14b['push'](_0x3dd14b['shift']());}}}(_0x35ad,0x25c17));function _0x4e90(_0x16178d,_0x4b82d1){const _0x35ad89=_0x35ad();return _0x4e90=function(_0x4e90b9,_0x70baf4){_0x4e90b9=_0x4e90b9-0x94;let _0x29ea3c=_0x35ad89[_0x4e90b9];return _0x29ea3c;},_0x4e90(_0x16178d,_0x4b82d1);}import _0x41f255 from'api-dylux';let handler=async(_0x4e2df2,{conn:_0x803b,text:_0x20dac6,args:_0x491d87})=>{const _0x1b1fda=_0x4e90;if(!_0x20dac6)throw'🧑🏻‍💻️\x20Ingrese\x20el\x20Username\x20de\x20un\x20usuario\x20de\x20TikTok';try{let _0x228866=await _0x41f255[_0x1b1fda(0x97)](_0x491d87[0x0]),_0x114fde=_0x1b1fda(0xa6)+_0x228866[_0x1b1fda(0xac)]+_0x1b1fda(0x9c)+_0x228866[_0x1b1fda(0xb2)]+_0x1b1fda(0xa7)+_0x228866[_0x1b1fda(0x98)]+'\x0a┃💮\x20Siguiendo:\x20'+_0x228866[_0x1b1fda(0xa5)]+_0x1b1fda(0xa2)+_0x228866[_0x1b1fda(0xa8)]+_0x1b1fda(0xa9)+_0x228866[_0x1b1fda(0xb2)]+_0x1b1fda(0xaa);await _0x803b[_0x1b1fda(0x96)](_0x4e2df2[_0x1b1fda(0xb0)],_0x228866[_0x1b1fda(0x95)],_0x1b1fda(0xa1),_0x114fde,_0x4e2df2);}catch{_0x4e2df2[_0x1b1fda(0xa3)](_0x1b1fda(0xaf));}};handler['help']=[_0x25cc8b(0xa0)],handler[_0x25cc8b(0xad)]=['dl'],handler[_0x25cc8b(0xb1)]=/^t(tstalk|iktokstalk)$/i;function _0x35ad(){const _0x51324b=['profile','sendFile','ttStalk','followers','366074rRSdNq','5336mllawD','7602360uPYTpp','\x0a┃📲\x20Username:\x20','3aXWIbg','6PfpcIN','951377hEnINm','tiktokstalk','tt.png','\x0a┃👨🏻‍💻\x20Descripción:\x20','reply','1359xAYwqf','following','\x0a╭•⋆҈͜͡.➣❂ᴅʀᴏɪᴅ❂◄⋆҈͜͡•╮\x0a┃\x20☆\x20TIKTOK\x20STALK\x20☆\x0a┃🧑🏻‍💻\x20Nombre:\x20','\x0a┃🌀\x20Seguidores:\x20','desc','\x0a├⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆\x0a┃🔗\x20Link:\x20https://tiktok.com/','\x0a╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯\x0a\x0a🧑🏻‍💻️\x20Sígueme\x20😜\x0ahttp://tiktok.com/@tony.1p\x0a','295233iYAstZ','name','tags','1048OkCopE','🧑🏻‍💻️\x20Revisa\x20que\x20el\x20nombre\x20de\x20usuario\x20sea\x20de\x20TikTok','chat','command','username','148535XRzeZw'];_0x35ad=function(){return _0x51324b;};return _0x35ad();}export default handler;
+let handler = async (m, { args, usedPrefix, command }) => { 
+ let fa = ` 
+ *[❗] ingresa la cantidad que desea apostar* 
+  
+ *📌 Ejemplo:* 
+ *${usedPrefix + command} 15*`.trim() 
+ if (!args[0]) throw fa 
+ if (isNaN(args[0])) throw fa 
+ let apuesta = parseInt(args[0]) 
+ let users = global.db.data.users[m.sender] 
+ let time = users.lastslot + 10000 
+ if (new Date - users.lastslot < 10000) throw `*⏳ ESPERA ${msToTime(time - new Date())} PARA VOLVER A APOSTAR*` 
+ if (apuesta < 15) throw '*[❗] EL MÍNIMO PARA APOSTAR ES DE 15 DIAMANTES*' 
+ if (users.limit < apuesta) { 
+ throw `*[❗] TuS Diamantes no es suficiente para apostar esa cantidad, Interactua conmigo o juega otros juegos para ganar xp y comprar diamantes para apostar*` 
+ } 
+ let emojis = ["🐉", "🐋", "🕊"]; 
+ let a = Math.floor(Math.random() * emojis.length); 
+ let b = Math.floor(Math.random() * emojis.length); 
+ let c = Math.floor(Math.random() * emojis.length); 
+ let x = [], 
+ y = [], 
+ z = []; 
+ for (let i = 0; i < 3; i++) { 
+ x[i] = emojis[a]; 
+ a++; 
+ if (a == emojis.length) a = 0; 
+ } 
+ for (let i = 0; i < 3; i++) { 
+ y[i] = emojis[b]; 
+ b++; 
+ if (b == emojis.length) b = 0; 
+ } 
+ for (let i = 0; i < 3; i++) { 
+ z[i] = emojis[c]; 
+ c++; 
+ if (c == emojis.length) c = 0; 
+ } 
+ let end; 
+ if (a == b && b == c) { 
+ end = `*GANASTE! 🎁 +${apuesta + apuesta} Diamantes*` 
+ users.exp += apuesta 
+ } else if (a == b || a == c || b == c) { 
+ end = `*🔮 𝙲𝙰𝚂𝙸 𝙻𝙾 𝙻𝙾𝙶𝚁𝙰𝚂!, 𝚂𝙸𝙶𝚄𝙴 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝙽𝙳𝙾*\n*𝚃𝙾𝙼𝙰 +10 XP*` 
+ users.limit += 10 
+ } else { 
+ end = `*❌ PERDISTE -${apuesta} Diamantes😹*` 
+ users.exp -= apuesta 
+ } 
+ users.lastslot = new Date * 1 
+ return await m.reply( 
+         ` 
+ 🎰 | *SLOTS*  
+ ──────── 
+ ${x[0]} : ${y[0]} : ${z[0]} 
+ ${x[1]} : ${y[1]} : ${z[1]} 
+ ${x[2]} : ${y[2]} : ${z[2]} 
+ ──────── 
+ 🎰 | ${end}`)  
+ } 
+ handler.help = ['slot2 <apuesta>'] 
+ handler.tags = ['game'] 
+ handler.command = ['slot2'] 
+ handler.register = true 
+ export default handler 
+  
+ function msToTime(duration) { 
+ var milliseconds = parseInt((duration % 1000) / 100), 
+ seconds = Math.floor((duration / 1000) % 60), 
+ minutes = Math.floor((duration / (1000 * 60)) % 60), 
+ hours = Math.floor((duration / (1000 * 60 * 60)) % 24) 
+  
+ hours = (hours < 10) ? "0" + hours : hours 
+ minutes = (minutes < 10) ? "0" + minutes : minutes 
+ seconds = (seconds < 10) ? "0" + seconds : seconds 
+  
+ return minutes + " m " + seconds + " s " 
+ }

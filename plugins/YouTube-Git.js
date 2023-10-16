@@ -41,8 +41,8 @@ let handler = async (m, { args, usedPrefix, command }) => {
  end = `*GANASTE! 🎁 +${apuesta + apuesta} Diamantes*` 
  users.exp += apuesta 
  } else if (a == b || a == c || b == c) { 
- end = `*🔮 𝙲𝙰𝚂𝙸 𝙻𝙾 𝙻𝙾𝙶𝚁𝙰𝚂!, 𝚂𝙸𝙶𝚄𝙴 𝙸𝙽𝚃𝙴𝙽𝚃𝙰𝙽𝙳𝙾*\n*𝚃𝙾𝙼𝙰 +10 Diamantes*` 
- users.limit += 10 
+ end = `*CASI LO LOGRAS, SIGUE INTENTANDO*\n*TOMA +10 Diamantes*` 
+ users.limit += 15 
  } else { 
  end = `*❌ PERDISTE -${apuesta} Diamantes😹*` 
  users.limit -= apuesta 
@@ -50,13 +50,13 @@ let handler = async (m, { args, usedPrefix, command }) => {
  users.lastslot = new Date * 1 
  return await m.reply( 
          ` 
- 🎰 | *SLOTS*  
+ 🎰 | *SLOTS* | 🎰
  ──────── 
  ${x[0]} : ${y[0]} : ${z[0]} 
  ${x[1]} : ${y[1]} : ${z[1]} 
  ${x[2]} : ${y[2]} : ${z[2]} 
  ──────── 
- 🎰 | ${end}`)  
+ 🎰 | ${end}`) | 🎰
  } 
  handler.help = ['slot2 <apuesta>'] 
  handler.tags = ['game'] 

@@ -31,12 +31,7 @@ if (!chat.isBanned && chat.audios && m.text.match(/(soy ése|SOY ÉSE|soy ese|SO
 let vn = './Audios/baneado.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}    
-   
-if (!chat.isBanned && chat.audios && m.text.match(/(menu|Menú|MENU)/gi)) {    
-let vn = './Audios/bff.mp3'
-this.sendPresenceUpdate('recording', m.chat)   
-this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}   
-    
+      
 if (!chat.isBanned && chat.audios && m.text.match(/(buenas noches|Buenas noches|Boanoite|boanoite)/gi)) {    
 let vn = './Audios/boanoite.mp3'
 this.sendPresenceUpdate('recording', m.chat)   

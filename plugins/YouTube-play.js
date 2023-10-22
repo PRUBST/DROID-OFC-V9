@@ -27,7 +27,7 @@ import fetch from "node-fetch"
  showAdAttribution: true, 
  renderLargerThumbnail: true 
  }}} , { quoted: m }) 
- if (command == 'audio',play') {         
+ if (command == 'audio') {         
  try { 
  let q = '128kbps' 
  let v = yt_play[0].url 
@@ -103,7 +103,7 @@ import fetch from "node-fetch"
  } catch { 
  }}}}} 
  }   
- if (command == 'video',play2') { 
+ if (command == 'video') { 
  try { 
  let qu = '360' 
  let q = qu + 'p' 

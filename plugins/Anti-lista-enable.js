@@ -1,14 +1,13 @@
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 let optionsFull = `╭─────( 🦆 )─────╮
 ├➽  /enable antilink 
-├➽ /enable antilink2 
 ├➽ /enable detect 
 ├➽ /enable detect2
 ├➽ /enable audios 
 ├──────────⋆
 ├➽ /enable antitoxic
-├➽ /enable antitraba
-├➽ /enable modoadmin  
+├➽ /enable welcome 
+├➽ /enable antitraba  
 │───── ⋆⋅☆⋅⋆ ───── 
 │/enable *[para activar]*
 │/disable *[para desactivar]*

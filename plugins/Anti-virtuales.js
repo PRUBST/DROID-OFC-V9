@@ -21,19 +21,19 @@ let handler = async (m, { conn, args, participants }) => {
 ╰───────────────╯ 
 ╭「☆ *TOP ${len} DOLARES 💵* ☆」 
 │➯Tú : *${usersDola.indexOf(m.sender) + 1}* de *${usersDola.length}* 
-│➯${sortedDola.slice(0, len).map(({ jid, joincount, name }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `@${jid.split('@')[0]}` : ''} : ${joincount} dolares`).join`\n`} 
+│➯${sortedDola.slice(0, len).map(({ jid, joincount, name }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `@${jid.split('@')[0]}` : ''} (${conn.getName(jid)}) : ${joincount} dolares`).join`\n`} 
 ────────────────⋆ 
 ╭「☆ *TOP ${len} XP* ☆」 
 │➯Tú : *${usersExp.indexOf(m.sender) + 1}* de *${usersExp.length}* 
-│➯${sortedExp.slice(0, len).map(({ jid, exp, name }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `@${jid.split('@')[0]}` : ''} : ${exp} Exp`).join`\n`} 
+│➯${sortedExp.slice(0, len).map(({ jid, exp, name }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `@${jid.split('@')[0]}` : ''} (${conn.getName(jid)}) : ${exp} Exp`).join`\n`} 
 ────────────────⋆ 
 ╭「☆ *TOP ${len} DIAMANTES* 💎 ☆」 
 │➯Tú : *${usersLim.indexOf(m.sender) + 1}* de *${usersLim.length}* 
-│➯${sortedLim.slice(0, len).map(({ jid, limit, name }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `@${jid.split('@')[0]}` : ''} : ${limit} Diamantes`).join`\n`} 
+│➯${sortedLim.slice(0, len).map(({ jid, limit, name }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `@${jid.split('@')[0]}` : ''} (${conn.getName(jid)}) : ${limit} Diamantes`).join`\n`} 
 ────────────────⋆ 
 ╭「☆ *TOP ${len} NIVEL* ☆」 
 │➯Tú : *${usersLevel.indexOf(m.sender) + 1}* de *${usersLevel.length}* 
-│➯${sortedLevel.slice(0, len).map(({ jid, level, name }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `@${jid.split('@')[0]}` : ''} : Nivel ${level}`).join`\n`} 
+│➯${sortedLevel.slice(0, len).map(({ jid, level, name }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `@${jid.split('@')[0]}` : ''} (${conn.getName(jid)}) : Nivel ${level}`).join`\n`} 
 ────────────────⋆`.trim() 
 
     m.reply(text, null, { mentions: conn.parseMention(text) }) 

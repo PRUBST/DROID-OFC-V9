@@ -7,5 +7,4 @@ handler.help = ['meme']
 handler.tags = ['random']
 handler.command = /^(meme|memes)$/i
 handler.register = true
-handler.premium = true
 export default handler

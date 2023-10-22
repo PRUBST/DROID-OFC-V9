@@ -36,7 +36,8 @@ let handler = async (m, { conn, args, participants }) => {
 │➯${sortedLevel.slice(0, len).map(({ jid, level, name }, i) => `${i + 1}. ${participants.some(p => jid === p.jid) ? `@${jid.split('@')[0]}` : ''} (${conn.getName(jid)}) : Nivel ${level}`).join`\n`} 
 ────────────────⋆`.trim() 
 
-    m.reply(text, null, { mentions: conn.parseMention(text) }) 
+    let mentionText = conn.mentions(text, participants, true)
+    m.reply(mentionText, null, { mentions: mentionText }) 
 } 
 handler.help = ['top'] 
 handler.tags = ['xp'] 

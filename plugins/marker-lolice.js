@@ -8,5 +8,4 @@ handler.help = ['lolice'];
 handler.tags = ['maker'];
 handler.command = /^(lolice)$/i;
 handler.register = true
-handler.premium = true
 export default handler;

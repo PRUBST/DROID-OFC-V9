@@ -18,7 +18,6 @@ handler.help = ["remini", "hd", "enhance"];
 handler.tags = ["ai", "tools"];
 handler.command = ["remini", "hd", "enhance"];
 handler.register = true
-handler.premium = true
 export default handler;
 
 async function remini(imageData, operation) {

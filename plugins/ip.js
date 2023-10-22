@@ -12,5 +12,5 @@ let handler = async (m, { conn, command, text }) => {
   
  handler.command = /^(Follar|violar)/i 
  handler.fail = null 
- handler.premium = true 
+ handler.register = true 
  export default handler

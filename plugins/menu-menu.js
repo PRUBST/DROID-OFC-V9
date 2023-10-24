@@ -1,13 +1,20 @@
-let handler = async(m, { conn, usedPrefix, command }) => {
+import { sticker } from '../lib/sticker.js'
 
-        let img = await conn.getFile(global.API('fgmods', '/api/asupan-la', { }, 'apikey'))
-    let asupan = img.data
-    conn.sendButton(m.chat, `🧑🏻‍💻 Resultado`, igfg, asupan, [['▷▷ SIGUIENTE', `${usedPrefix + command}`]], m)
-    m.react(dmoji)
+let handler = async (m, { conn }) => {
 
+  let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+  let marah = global.API('https://some-random-api.ml', '/canvas/triggered', {
+    avatar: await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png'), 
+  })
+let stiker = await sticker(false, marah, global.packname, global.author)
+  if (stiker) return await conn.sendFile(m.chat, stiker, null, { asSticker: true }, m)
+
+  throw stiker.toString()
 }
-handler.help = ['tvid']
-handler.tags = ['img']
-handler.command = ['asupan', 'tvid', 'videos', 'vid', 'video']
+
+
+handler.help = ['trigger <@user>']
+handler.tags = ['sticker']
+handler.command = ['trigger', 'triggered', 'ger'] 
 
 export default handler

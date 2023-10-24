@@ -1,37 +1,34 @@
-import { sticker } from '../lib/sticker.js';
-import fetch from 'node-fetch';
-import MessageType from '@whiskeysockets/baileys';
+import fetch from 'node-fetch'
+import axios from 'axios'
+import { sticker } from '../lib/sticker.js'
+import MessageType from '@adiwajshing/baileys'
+//import db from '../lib/database.js'
 
-let handler = async (m, { conn }) => {
-  try {
-    if (m.quoted?.sender) m.mentionedJid.push(m.quoted.sender);
-    if (!m.mentionedJid.length) m.mentionedJid.push(m.sender);
-    let res = await fetch('https://neko-love.xyz/api/v1/slap');
-    let json = await res.json();
-    let { url } = json;
-    let mentionedNames = [];
-    
-    for (let user of m.mentionedJid) {
-      let contact = conn.contacts[user];
-      if (contact) {
-        mentionedNames.push(contact.notify);
-      } else {
-        mentionedNames.push(`+${user.split('@')[0]}`);
-      }
-    }
+let handler = async (m, { conn, args, usedPrefix, command }) => {
 
-    let senderName = conn.contacts[m.sender] ? conn.contacts[m.sender].notify : `+${m.sender.split('@')[0]}`;
-    let message = `${senderName} le dio una bofetada a ${mentionedNames.join(', ')}`;
-    
-    let stiker = await sticker(null, url, message);
-    conn.sendFile(m.chat, stiker, null, { asSticker: true });
-  } catch (e) {}
-};
+         let who
+    if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
+    else who = m.chat
+    if (!who) throw `🧑🏻‍💻 Etiqueta o menciona a alguien\n\n🤖 Ejemplo : ${usedPrefix + command} @tag` 
 
-handler.help = ['slap'];
-handler.tags = ['General'];
-handler.command = /^slap/i;
-handler.register = true;
-handler.register = true;
+    let user = global.db.data.users[who]
+    let name = conn.getName(who) 
+   let name2 = conn.getName(m.sender) 
+   m.react(rwait)
 
-export default handler;
+  let rki = await fetch(`https://api.waifu.pics/sfw/kill`)
+    if (!rki.ok) throw await rki.text()
+   let jkis = await rki.json()
+   let { url } = jkis
+   let stiker = await sticker(null, url, `(${name2}) mató a`, `${name}`)
+   conn.sendFile(m.chat, stiker, null, { asSticker: true }, m)
+   m.react('💣️') 
+
+}
+
+handler.help = ['kill @tag']
+handler.tags = ['rnime']
+handler.command = /^(kill|matar)$/i
+handler.group = true
+
+export default handler

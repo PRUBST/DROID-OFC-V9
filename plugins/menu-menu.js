@@ -12,7 +12,7 @@ conn.sendButton(m.chat, `Hola 👋🏻 soy DROID bot 🧑🏻‍💻 ${name} \n 
 conn.sendFile(m.chat, av, 'audio.mp3', null, m, true, { type: 'audioMessage', ptt: true })
 } 
 
-handler.customPrefix = /^(bot|bot)$/i
+handler.customPrefix = /^(droid|droid)$/i
 handler.command = new RegExp
 
 export default handler

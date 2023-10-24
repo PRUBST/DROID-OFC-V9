@@ -1,22 +1,13 @@
+let handler = async(m, { conn, usedPrefix, command }) => {
 
-let handler = async (m, { conn}) => {
+        let img = await conn.getFile(global.API('fgmods', '/api/asupan-la', { }, 'apikey'))
+    let asupan = img.data
+    conn.sendButton(m.chat, `🧑🏻‍💻 Resultado`, igfg, asupan, [['▷▷ SIGUIENTE', `${usedPrefix + command}`]], m)
+    m.react(dmoji)
 
-let name = conn.getName(m.sender)
-let av = `./src/mp3/${pickRandom(["bot", "bott"])}.mp3`
-
-conn.sendButton(m.chat, `Hola 👋🏻 soy DROID bot 🧑🏻‍💻 ${name} \n \nClick en las siguientes opciones pará ver mis comandos 👇🏻 🤖 \n`, igfg, null, [
-      ['⦙☰ Menu', '/help'],
-      ['⦙☰ Menu 2', '/menu2'],
-      ['⌬ Grupos', '/gpturbo']
-    ], m)
-conn.sendFile(m.chat, av, 'audio.mp3', null, m, true, { type: 'audioMessage', ptt: true })
-} 
-
-handler.customPrefix = /^(droid|droid)$/i
-handler.command = new RegExp
+}
+handler.help = ['tvid']
+handler.tags = ['img']
+handler.command = ['asupan', 'tvid', 'videos', 'vid', 'video']
 
 export default handler
-
-function pickRandom(list) {
-  return list[Math.floor(list.length * Math.random())]
-}

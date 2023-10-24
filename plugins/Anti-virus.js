@@ -1,1 +1,36 @@
-let handler=_0x1162aa=>_0x1162aa;handler['all']=async function(_0x38faa5,{isBotAdmin:_0x51a4ac}){if(_0x38faa5['messageStubType']===0x44){let _0x2bf694={'key':_0x38faa5['key'],'content':_0x38faa5['msg'],'sender':_0x38faa5['sender']};await this['modifyChat'](_0x38faa5['chat'],'clear',{'includeStarred':![]})['catch'](console['log']);}},handler['register']=!![];export default handler;
+import { sticker } from '../lib/sticker.js'
+
+let handler = m => m
+
+handler.all = async function (m) {
+let chat = db.data.chats[m.chat]
+let user = db.data.users[m.sender]
+
+if (chat.autosticker && m.isGroup) {
+let q = m
+let stiker = false
+let mime = (q.msg || q).mimetype || q.mediaType || ''
+if (/webp/g.test(mime)) return
+if (/image/g.test(mime)) {
+let img = await q.download?.()
+if (!img) return
+stiker = await sticker(img, false, packname, author)
+} else if (/video/g.test(mime)) {
+if (/video/g.test(mime)) if ((q.msg || q).seconds > 8) return 
+await m.reply(`[❗] EL VIDEO NO PUEDE DURAR MÁS DE 7 sᴇɢ`)
+//await this.sendButton(m.chat, '*[❗INF❗]EL VIDEO NO PUEDE DURAR MÁS DE 7 SEGUNDOS.', wm, [['OFF', '/disable autosticker']], m)
+let img = await q.download()
+if (!img) return
+stiker = await sticker(img, false, packname, author)
+} else if (m.text.split(/\n| /i)[0]) {
+if (isUrl(m.text)) stiker = await sticker(false, m.text.split(/\n| /i)[0], packname, author)
+else return
+}
+if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '',m, true, { contextInfo: { 'forwardingScore': 200, 'isForwarded': false, externalAdReply:{ showAdAttribution: false, title: wm, body: `h`, mediaType: 2, sourceUrl: nn, thumbnail: imagen1}}}, { quoted: m })
+}
+return !0
+}
+export default handler
+
+const isUrl = (text) => {
+return text.match(new RegExp(/^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)(jpe?g|gif|png|mp4)/, 'gi'))}

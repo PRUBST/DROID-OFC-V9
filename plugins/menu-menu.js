@@ -1,20 +1,19 @@
 import { sticker } from '../lib/sticker.js'
+import fetch from 'node-fetch'
+import axios from 'axios'
 
-let handler = async (m, { conn }) => {
-
-  let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-  let marah = global.API('https://some-random-api.ml', '/canvas/triggered', {
-    avatar: await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png'), 
-  })
-let stiker = await sticker(false, marah, global.packname, global.author)
-  if (stiker) return await conn.sendFile(m.chat, stiker, null, { asSticker: true }, m)
-
-  throw stiker.toString()
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+        let img = (await axios.get(`https://raw.githubusercontent.com/fgmods/fg-team/main/img/hu.json`)).data
+    let stiker = await sticker(null, global.API(`${pickRandom(img)}`), global.packname, global.author)
+    if (stiker) return await conn.sendFile(m.chat, stiker, 'sticker.webp', { asSticker: true }, m)
+    throw stiker.toString()   
 }
 
-
-handler.help = ['trigger <@user>']
-handler.tags = ['sticker']
-handler.command = ['trigger', 'triggered', 'ger'] 
+handler.customPrefix = /^(khajs)$/i
+handler.command = new RegExp
 
 export default handler
+
+function pickRandom(list) {
+  return list[Math.floor(list.length * Math.random())]
+}

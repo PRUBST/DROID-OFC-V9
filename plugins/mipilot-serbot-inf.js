@@ -1,29 +1,42 @@
+import fetch from 'node-fetch'
+import axios from 'axios'
 
-import didyoumean from 'didyoumean'
-import similarity from 'similarity'
-//import { plugins } from '../lib/plugins.js'
+let handler = async (m, { conn, args, usedPrefix, command }) => {
+m.react(rwait)
 
-export async function before(m, { conn, match, usedPrefix, command }) {
+let type = (command).toLowerCase()
 
-             if ((usedPrefix = (match[0] || '')[0])) {
-                let noPrefix = m.text.replace(usedPrefix, '')
-                let args = noPrefix.trim().split` `.slice(1)
-                let text = args.join` `
-                let help = Object.values(plugins).filter(v => v.help && !v.disabled).map(v => v.help).flat(1)
-               if (help.includes(noPrefix)) return
-                let mean = didyoumean(noPrefix, help)
-                let sim = similarity(noPrefix, mean)
-                let som = sim * 100
-                let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-                let name = await conn.getName(who)
-                let caption = `
-🧑🏻‍💻  Hola @${who.split("@")[0]}
+switch (type) {
 
-Quisiste decir : 
+        case 'loli':
+             let img = await conn.getFile(global.API('fgmods', '/api/loli', {}, 'apikey'))
+             let loli = img.data 
+             conn.sendButton(m.chat, `🧑🏻‍💻️ aquí tienes ${command}`, igfg, loli, [['▷▷ SIGUIENTE', `${usedPrefix + command}`]], m)
+             m.react(dmoji) 
+        break
 
- ☣️ ${usedPrefix + mean}
- ☣️ Similitud: _${parseInt(som)}%_`
-            if (mean) this.sendButton(m.chat, caption, igfg, null, [['👀️ SI', `${usedPrefix + mean}`], ['📵 NO', 'khajs']], m, { mentions: [who]})
-            }
+case 'waifu':
+case 'megumin':
+case 'neko':
+  let res = await fetch(`https://api.waifu.pics/sfw/${command}`)
+    if (!res.ok) throw await res.text()
+    let json = await res.json()
+    if (!json.url) throw '📵 Error'
+    conn.sendButton(m.chat, `✔️ Aqui tienes ${command}`, igfg, json.url, [['▷▷ SIGUIENTE', `${usedPrefix + command}`]], m)
+   m.react(dmoji) 
+break
+
+
+default:
+ }
 }
-export const disabled = false
+
+handler.help = ['botwaifu', 'botneko', 'botmegumin', 'botloli']
+handler.tags = ['nime']
+handler.command = ['botwaifu', 'botneko', 'botmegumin', 'botloli'] 
+
+export default handler
+
+function pickRandom(list) {
+  return list[Math.floor(list.length * Math.random())]
+}

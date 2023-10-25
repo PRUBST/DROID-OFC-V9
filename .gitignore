@@ -1,15 +1,19 @@
-#| Folders |#
+FROM node:lts-buster
 
-.github
-node_modules
-Session-activas
-tmp
-jadibts
-pluginpilot
-plugins/supersecretlistener.js
-datasecret
+RUN apt-get update && \
+  apt-get install -y \
+  ffmpeg \
+  imagemagick \
+  webp && \
+  apt-get upgrade -y && \
+  rm -rf /var/lib/apt/lists/*
 
-#| Files |#
+COPY package.json .
 
-package-lock.json
-database.json
+RUN npm install && npm install qrcode-terminal
+
+COPY . .
+
+EXPOSE 5000
+
+CMD ["node", "index.js", "--server"]

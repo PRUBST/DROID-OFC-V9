@@ -1,13 +1,13 @@
-#| Folders |#
-
-.github
-node_modules
-Session-activa
-tmp
-jadibts
-pluginpilot
-
-#| Files |#
-
-package-lock.json
-database.json
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": "google",
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+    }
+}

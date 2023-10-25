@@ -1,10 +1,10 @@
 {
-  "name": "DROID-8-MD",
-  "website": "http://tiktok.com/@tony.1p",
-  "description": "subscribe to the channel HADES-BOT (≧▽≦)",
-  "repository": "http://tiktok.com/@tony.1p ",
+  "name": "TONY-OFC",
+  "website": "http://tiktok.com/@coin.exe1",
+  "description": "Super Bot WhatsApp",
+  "repository": "https://chat.whatsapp.com/HCJozD71O1VBtW68E5hu4L",
   "logo": "https://i.imgur.com/AmzlKVi.jpeg",
-  "success_url": "http://tiktok.com/@tony.1p",
+  "success_url": "",
   "keywords": [
     "nodejs",
     "heroku",
@@ -14,15 +14,12 @@
     "spanish",
     "whatsapp",
     "termux",
-    "hades",
+    "shadow",
     "multi-device",
     "md",
     "whatsappbot",
     "oficial",
     "whatsapp-md",
-    "thehadesbot",
-    "thehades-bot",
-    "thehades-bot-md"],
   "image": "heroku/nodejs",
   "buildpacks": [
     {

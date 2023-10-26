@@ -1,19 +1,40 @@
-import uploadImage from '../lib/uploadImage.js'
-import { sticker } from '../lib/sticker.js'
-let handler = async (m, { conn, text }) => {
-let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
+import fetch from 'node-fetch'
+let handler = async(m, { conn, text, command, usedPrefix }) => {
+if (!text) return conn.reply(m.chat, `Escriba el nombre de usuario de tiktok, sin usar "@"\nEjemplo\n*${usedPrefix + command} tony.1p*`, m)
 try {
-let q = m.quoted ? m.quoted : m
-let mime = (q.msg || q).mimetype || ''
-let img = await q.download()
-let url = await uploadImage(img)
-let sremovebg = global.API(`https://api.lolhuman.xyz/api/removebg?apikey=${lolkeysapi}&img=${url}`) 
-let stickerr = await sticker(false, sremovebg, global.igfg, global.author)
-conn.sendFile(m.chat, stickerr, 'sticker.webp', '', m, { asSticker: true })
+let res = await fetch(`https://api.lolhuman.xyz/api/stalktiktok/${text}?apikey=9b817532fadff8fc7cb86862`)
+let res2 = `https://api.lolhuman.xyz/api/pptiktok/${text}?apikey=9b817532fadff8fc7cb86862`
+let json = await res.json()
+if (res.status !== 200) throw await res.text()
+if (!json.status) throw json
+let thumb = await (await fetch(json.result.user_picture)).buffer()
+let gata = `👤 usuario 
+${json.result.username}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+🧑🏻‍💻 Nombre 
+${json.result.nickname}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+✅ Seguidores 
+${json.result.followers}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+❇️ seguidos
+${json.result.followings}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+❤️ Me gusta 
+${json.result.likes}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+👻 publicaciones 
+${json.result.video}
+┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
+👀 Descripción 
+${json.result.bio}
+`.trim()
+await conn.sendFile(m.chat, res2, 'error.jpg', gata, m, false)
 } catch (e) {
-conn.reply(m.chat, `[❗] sorry an error occurred`, fkontak, m)
-}} 
-handler.command = /^sremovebg|removebg$/i
-handler.register = true
-handler.premium = true
+throw `${lenguajeGB['smsAvisoFG']()}No se encontró el nombre del usuario.`
+}}
+handler.help = ['tiktokstalk'].map(v => v + ' <username>')
+handler.tags = ['stalk']
+handler.command = /^(tiktokstalk|ttstalk)$/i
+handler.exp = 48
 export default handler

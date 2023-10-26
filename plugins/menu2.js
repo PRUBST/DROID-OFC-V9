@@ -1,1 +1,64 @@
-import _0x10281a from'node-fetch';let handler=async(_0x5a63bd,{conn:_0x472c79,usedPrefix:_0x4dedf6,usedPrefix:_0x4fdf54,__dirname:_0x4654c3,text:_0x3fa6bd,isPrems:_0x339a50})=>{try{let _0x2c4e64=imagen3,_0x5126b6='./Audios/menu.mp3',_0x3ddc42=await(await _0x10281a('https://i.imgur.com/JP52fdP.jpg'))['buffer'](),_0x36857b=new Date(new Date()+0x36ee80),_0x2fe3ef='es',_0x58c8e7=_0x36857b['toLocaleDateString'](_0x2fe3ef,{'weekday':'long'}),_0x1a6c6b=_0x36857b['toLocaleDateString'](_0x2fe3ef,{'day':'numeric','month':'long','year':'numeric'}),_0xdbefcc=process['uptime']()*0x3e8,_0x37b715=clockString(_0xdbefcc),_0x49507d=global['db']['data']['users'][_0x5a63bd['sender']],{money:_0x269459,joincount:_0x26181b}=global['db']['data']['users'][_0x5a63bd['sender']],{exp:_0x14bd91,limit:_0x4de3df,level:_0x1510d6,role:_0x1bb6de}=global['db']['data']['users'][_0x5a63bd['sender']],_0x15a1f4=Object['values'](global['db']['data']['users'])['filter'](_0x301e30=>_0x301e30['registered']==!![])['length'],_0x4eb96b=String['fromCharCode'](0x200e),_0x5eb3cc=_0x4eb96b['repeat'](0x352),_0x2f6355='@'+_0x5a63bd['sender']['split']('@s.whatsapp.net')[0x0],_0x2f253b=(gt+'\x0a乂✰\x20✨\x20*𝗛ᴏʟᴀ\x20'+_0x2f6355+'\x0a〔乂✰ᴍᴇɴᴜ2「ᴀᴜᴅɪᴏ\x20ʟɪsᴛ」\x0a├π\x20Puto\x20bot*\x0a├π\x20Miau*\x0a├π\x20Buenos\x20dias*\x0a├π\x20La\x20cumbia\x20del\x20tilín*\x0a├π\x20buenas\x20noches*\x0a├π\x20No\x20pedí\x20tu\x20opinión*\x0a├π\x20Senpai*\x0a├π\x20esto\x20va\x20a\x20ser\x20épico*\x0a├π\x20insulta*\x0a├π\x20Audio\x20hentai*\x0a├π\x20Tiene\x20la\x20cara*\x0a├π\x20Fiesta\x20del\x20admin*\x0a├π\x20tengo*\x0a├π\x20tranquilo*\x0a├π\x20Viernes*\x0a├π\x20Chica\x20lgante*\x0a├π\x20No\x20soy\x20pati*\x0a├π\x20Baneado*\x0a├π\x20Bien\x20pensado\x20woody*\x0a├π\x20Homero\x20chino*\x0a├π\x20El\x20pepe*\x0a├π\x20A\x20nadie\x20le\x20importa*\x0a├a├π\x20viernecito*\x0a├π\x20Wenas*\x0a├π\x20Wtf*\x0a├π\x20Wtf\x20y\x20este*\x0a├π\x20Y\x20este\x20quien\x20es*\x0a├π\x20Y\x20este\x20quien*\x0a├π\x20Yamete-kudasai2*')['trim']();if(_0x5a63bd['isGroup']){await _0x472c79['sendFile'](_0x5a63bd['chat'],_0x5126b6,'menu.mp3',null,_0x5a63bd,!![],{'type':'audioMessage','ptt':!![]});let _0xdd04bd={'key':{'participants':'0@s.whatsapp.net','remoteJid':'status@broadcast','fromMe':![],'id':'Halo'},'message':{'contactMessage':{'vcard':'BEGIN:VCARD\x0aVERSION:3.0\x0aN:Sy;Bot;;;\x0aFN:y\x0aitem1.TEL;waid='+_0x5a63bd['sender']['split']('@')[0x0]+':'+_0x5a63bd['sender']['split']('@')[0x0]+'\x0aitem1.X-ABLabel:Ponsel\x0aEND:VCARD'}},'participant':'0@s.whatsapp.net'};_0x472c79['sendMessage'](_0x5a63bd['chat'],{'image':_0x2c4e64,'caption':_0x2f253b['trim'](),'mentions':[..._0x2f253b['matchAll'](/@([0-9]{5,16}|0)/g)]['map'](_0x16fccc=>_0x16fccc[0x1]+'@s.whatsapp.net')},{'quoted':_0xdd04bd});}else{await _0x472c79['sendFile'](_0x5a63bd['chat'],_0x5126b6,'menu.mp3',null,_0x5a63bd,!![],{'type':'audioMessage','ptt':!![]});let _0x54a3ae={'key':{'participants':'0@s.whatsapp.net','remoteJid':'status@broadcast','fromMe':![],'id':'Halo'},'message':{'contactMessage':{'vcard':'BEGIN:VCARD\x0aVERSION:3.0\x0aN:Sy;Bot;;;\x0aFN:y\x0aitem1.TEL;waid='+_0x5a63bd['sender']['split']('@')[0x0]+':'+_0x5a63bd['sender']['split']('@')[0x0]+'\x0aitem1.X-ABLabel:Ponsel\x0aEND:VCARD'}},'participant':'0@s.whatsapp.net'};_0x472c79['sendMessage'](_0x5a63bd['chat'],{'image':_0x2c4e64,'caption':_0x2f253b['trim'](),'mentions':[..._0x2f253b['matchAll'](/@([0-9]{5,16}|0)/g)]['map'](_0x3878cf=>_0x3878cf[0x1]+'@s.whatsapp.net')},{'quoted':_0x54a3ae});}}catch{_0x472c79['reply'](_0x5a63bd['chat'],'*[❗𝐈𝐍𝐅𝐎❗]\x20𝙴𝙻\x20𝙼𝙴𝙽𝚄\x20𝚃𝙸𝙴𝙽𝙴\x20𝚄𝙽\x20𝙴𝚁𝚁𝙾𝚁\x20𝚈\x20𝙽𝙾\x20𝙵𝚄𝙴\x20𝙿𝙾𝚂𝙸𝙱𝙻𝙴\x20𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾,\x20𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾\x20𝙰𝙻\x20𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾\x20𝙳𝙴𝙻\x20𝙱𝙾𝚃*',_0x5a63bd);}};handler['command']=/^(menu2|audios|menú2|memu2|menuaudio|menuaudios|memuaudios|memuaudio|audios|audios|keyaudio|keyaudios)$/i,handler['exp']=0x32,handler['fail']=null,handler['register']=!![];export default handler;function clockString(_0xc84e6d){let _0x526bfc=isNaN(_0xc84e6d)?'--':Math['floor'](_0xc84e6d/0x36ee80),_0x5ded61=isNaN(_0xc84e6d)?'--':Math['floor'](_0xc84e6d/0xea60)%0x3c,_0x51fc51=isNaN(_0xc84e6d)?'--':Math['floor'](_0xc84e6d/0x3e8)%0x3c;return[_0x526bfc,_0x5ded61,_0x51fc51]['map'](_0x31714e=>_0x31714e['toString']()['padStart'](0x2,0x0))['join'](':');}
+import fetch from 'node-fetch'
+let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems }) => {
+try {
+let pp = imagen3
+let vn = './Audios/menu.mp3'
+let img = await(await fetch('https://i.imgur.com/JP52fdP.jpg')).buffer()
+let d = new Date(new Date + 3600000)
+let locale = 'es'
+let week = d.toLocaleDateString(locale, { weekday: 'long' })
+let date = d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' })
+let _uptime = process.uptime() * 1000
+let uptime = clockString(_uptime)
+let user = global.db.data.users[m.sender]
+let { money, joincount } = global.db.data.users[m.sender]
+let { exp, limit, level, role } = global.db.data.users[m.sender]
+let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered == true).length 
+let more = String.fromCharCode(8206)
+let readMore = more.repeat(850)   
+let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
+let str = `╭「➻❥𝐃𝐑𝐎𝐈𝐃-8-𝐌𝐃➻❥」
+│➯✨ *𝗛ᴏʟᴀ,➟${taguser}*
+│➯🎙️*menu2*
+︎╰───────────────╯
+🍁᭢━━━━━━━━━᭥🍁᭢
+╭「❥🎤 *notas de voz* 🎙️❥」
+│1:🧑🏻‍💻 *Hola*
+│2:🧑🏻‍💻 *Tony*
+│3:🧑🏻‍💻 *I drive*
+│4:🧑🏻‍💻 *México*
+│5:🧑🏻‍💻 *Te amo*
+│6:🧑🏻‍💻 *negros*
+│7:🧑🏻‍💻 *chamba*
+│➯🎙️ *Tengo*
+│➯🎙️ *vrg*
+│➯🎙️ *ya ya mijo ya*
+│➯🎙️ *el admin*
+│➯🎙️ *grupo en decadencia*
+│➯🎙️ *tengo*
+│➯🎙️ **
+│➯🎙️ *Viernes*
+│➯🎙️ *Chica lgante*
+│➯🎙️ *No soy pati*
+︎╰───────────────╯`.trim()
+if (m.isGroup) {
+await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
+let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }  
+conn.sendMessage(m.chat, { image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')}, { quoted: fkontak2 })  
+} else {    
+await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
+let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }  
+conn.sendMessage(m.chat, { image: pp, caption: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net')}, { quoted: fkontak2 })}
+} catch {
+conn.reply(m.chat, '*[❗𝐈𝐍𝐅𝐎❗] 𝙴𝙻 𝙼𝙴𝙽𝚄 𝚃𝙸𝙴𝙽𝙴 𝚄𝙽 𝙴𝚁𝚁𝙾𝚁 𝚈 𝙽𝙾 𝙵𝚄𝙴 𝙿𝙾𝚂𝙸𝙱𝙻𝙴 𝙴𝙽𝚅𝙸𝙰𝚁𝙻𝙾, 𝚁𝙴𝙿𝙾𝚁𝚃𝙴𝙻𝙾 𝙰𝙻 𝙿𝚁𝙾𝙿𝙸𝙴𝚃𝙰𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃*', m)
+}}
+handler.command = /^(menu2|menú2)$/i
+handler.exp = 50
+handler.fail = null
+handler.register = true
+export default handler
+function clockString(ms) {
+let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000)
+let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}

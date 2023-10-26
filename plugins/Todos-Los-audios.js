@@ -23,7 +23,7 @@ this.sendPresenceUpdate('recording', m.chat)
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}     
     
 if (!chat.isBanned && chat.audios && m.text.match(/(I DRIVE|i drive|drive|DRIVE)/gi)) {    
-let vn = './Audios/Banate.mp3'
+let vn = './Audios/Drive.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}     
     

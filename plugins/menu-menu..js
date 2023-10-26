@@ -66,8 +66,8 @@ let str = `╭──❯.⋆☆☆☆⋆.❮──╮
 
 ╭═•⋆ঈ❥ NIVEL & ECONOMIA
 ├➽ .trabajar 
-├➽ .adddi <@user>
-├➽ .addxp <@user>
+├➽ .shop <Tienda>
+├➽ .listprem 
 ├➽ .balance | .bal
 ├➽ .claim 
 ├➽ .top2 <tabla de calificación>
@@ -187,13 +187,15 @@ let str = `╭──❯.⋆☆☆☆⋆.❮──╮
 ├➽ .simi <texto>
 ├➽ .hd <Imagen>
 ├➽ .clima 
-├➽. horario <horario de los países de latam>
+├➽ .pixel <imagen>
+├➽ .horario <horario de los países de latam>
 ╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
 
 ╭═•⋆ঈ❥ DATABASE
 ├➽ .delcmd <text>
 ├➽ .listcmd
 ├➽ .setcmd <txt>
+├➽ .reporte <reportar errores>
 ╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
 
 ╭═•⋆ঈ❥ OWNER

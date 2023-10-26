@@ -47,7 +47,7 @@ let str = `╭──❯.⋆☆☆☆⋆.❮──╮
 ├➽ .grupos
 ├➽ .logos <menu de logos>
 ├➽ .anime <menu anime>
-╰•⋆҈͜͡.𝐓𝐔𝐑𝐁𝐎⋆𝐍𝐈𝐓𝐑𝐎⋆҈͜͡•╯
+╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
 
 ╭═•⋆ঈ❥ JUEGOS
 ├➽ .Mates <modo>
@@ -216,13 +216,7 @@ let str = `╭──❯.⋆☆☆☆⋆.❮──╮
 ├➽ .unbanchat
 ├➽ .update
 ╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-
-╭═•⋆ঈ❥ AVANZADO
-├➽ >
-├➽ =>
-├➽ $
-╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-❂𝐓𝐔𝐑𝐁𝐈𝐓𝐎 𝐁𝐎𝐓❂`.trim()
+❂𝐃𝐑𝐎𝐈𝐃𝐈𝐓𝐎❂`.trim()
 if (m.isGroup) {
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
 let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }  

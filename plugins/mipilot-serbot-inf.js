@@ -1,32 +1,37 @@
+let handler = async (m, { conn, text }) => {
+function no(number){
+return number.replace(/\s/g,'').replace(/([@+-])/g,'')}
+text = no(text)
 
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-
-        if (global.db.data.chats[m.chat].expired < 1) throw `🧑🏻‍💻 Este grupo no está configurado para caducar`
-    let who
-    if (m.isGroup) who = args[1] ? args[1] : m.chat
-    else who = args[1]
-
-    var nDays = 86400000 * args[0]
-    var now = new Date() * 1
-
-    m.reply(`🧑🏻‍💻️ Su alquiler expira en 
-    
-    ${msToDate(global.db.data.chats[who].expired - now)}
-
-  _Despues el bot saldrá automáticamente del grupo_`) 
-
+if(isNaN(text)) {
+var number = text.split`@`[1]
+} else if(!isNaN(text)) {
+var number = text
 }
-handler.help = ['checkexpired']
-handler.tags = ['group']
-handler.command = /^(checkexpired|cexpired)$/i
-handler.group = true
+
+if(!text && !m.quoted) return conn.reply(m.chat, `*ETIQUETE AL USUARIO, ESCRIBA SU NUMERO O RESPONDA AL MENSAJE PARA REINICIAR DATOS*`, m)
+if(isNaN(number)) return conn.reply(m.chat, `*EL NÚMERO QIE INGRESÓ NO ES VÁLIDO PARA REINICIAR LOS DATOS*`, m)
+try {
+if(text) {
+var user = number + '@s.whatsapp.net'
+} else if(m.quoted.sender) {
+var user = m.quoted.sender
+} else if(m.mentionedJid) {
+var user = number + '@s.whatsapp.net'
+}} catch (e) {
+} finally {
+  
+let groupMetadata = m.isGroup ? await conn.groupMetadata(m.chat) : {}
+let participants = m.isGroup ? groupMetadata.participants : []
+let users = m.isGroup ? participants.find(u => u.jid == user) : {}
+let number = user.split('@')[0]
+  
+delete global.global.db.data.users[user]
+conn.reply(m.chat, `*SE REINICIO A @${number} DE LA BASE DE DATOS*`, null, { mentions: [user] })
+}}
+
+handler.tags = ['owner']
+handler.command = ['restablecerdatos', 'borrardatos', 'deletedatauser'] 
+handler.owner = true
 
 export default handler
-
-function msToDate(ms) {
-  let d = isNaN(ms) ? '--' : Math.floor(ms / 86400000)
-  let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
-  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
-  let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [d, ' Días\n ', h, ' Horas\n ', m, ' Minutos\n ', s, ' Segundos '].map(v => v.toString().padStart(2, 0)).join('')
-}

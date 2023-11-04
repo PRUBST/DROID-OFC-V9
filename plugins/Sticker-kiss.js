@@ -21,12 +21,12 @@ let handler = async (_0x734089, { conn: _0x1952bd }) => {
 
     let _0x20fedb = await sticker(null, _0x1309b9, message);
 
-    _0x1952bd['sendFile'](_0x734089['chat'], _0x20fedb, null, { 'asSticker': !![] });
+    await _0x1952bd.sendFile(_0x734089.chat, _0x20fedb, null, { asSticker: true, quoted: _0x734089 });
   } catch (_0x44f6c6) {}
 };
 
 handler['command'] = /^(kiss|skiss|kis|besos|beso)$/i;
-handler['register'] = !![];
-handler['limit'] = 0x3;
+handler['register'] = true;
+handler['limit'] = 3;
 
 export default handler;

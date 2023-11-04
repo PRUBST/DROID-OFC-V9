@@ -20,7 +20,7 @@ else return conn.reply(m.chat, `[❗] sorry an error occurred`, fkontak, m)
 }}
 handler.help = ['wm <packname>|<author>']
 handler.tags = ['sticker']
-handler.command = /^take|robar|wm$/i
+handler.command = /^takewm$/i
 handler.register = true
 handler.premium = true
 export default handler

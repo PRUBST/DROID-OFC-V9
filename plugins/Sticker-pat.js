@@ -17,16 +17,16 @@ let handler = async (_0x3534e4, { conn: _0x4a531d }) => {
       .map(_0xb7b834 => _0xb7b834 === _0x3534e4['sender'] ? 'alguien\x20' : _0x4a531d.getName(_0xb7b834))
       .join(',\x20');
 
-    let message = senderName + (mentionedNames.length > 0 ? '\x20te dio palmaditas a ' + mentionedNames : '\x20te dio palmaditas');
+    let message = senderName + (mentionedNames.length > 0 ? '\x20le dio palmaditas a ' + mentionedNames : '\x20te dio palmaditas');
 
     let _0xca6154 = await sticker(null, _0x5dd3a5, message);
 
-    await _0x4a531d.reply(_0x3534e4.chat, _0xca6154, _0x3534e4.id, { asSticker: true });
+    _0x4a531d['sendFile'](_0x3534e4['chat'], _0xca6154, null, { 'asSticker': !![] });
   } catch (_0x17e172) {}
 };
 
 handler['command'] = /^(pat|palmaditas|cariños|mimos|patt)$/i;
-handler['register'] = true;
-handler['limit'] = 3;
+handler['register'] = !![];
+handler['limit'] = 0x3;
 
 export default handler;

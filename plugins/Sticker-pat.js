@@ -12,14 +12,21 @@ let handler = async (_0x3534e4, { conn: _0x4a531d }) => {
     let { url: _0x5dd3a5 } = _0x199a1b;
 
     let senderName = _0x4a531d.getName(_0x3534e4.sender);
-    let _0xca6154 = await sticker(null, _0x5dd3a5, '+' + senderName + '\x20te dio palmaditas a\x20' + _0x3534e4['mentionedJid']['map'](_0xb7b834 => _0xb7b834 === _0x3534e4['sender'] ? 'alguien\x20' : '+' + _0x4a531d.getName(_0xb7b834) + '\x20te dio palmaditas a\x20')['join'](',\x20'));
 
-    _0x4a531d['sendFile'](_0x3534e4['chat'], _0xca6154, null, { 'asSticker': !![] });
+    let mentionedNames = _0x3534e4['mentionedJid']
+      .map(_0xb7b834 => _0xb7b834 === _0x3534e4['sender'] ? 'alguien\x20' : _0x4a531d.getName(_0xb7b834))
+      .join(',\x20');
+
+    let message = senderName + (mentionedNames.length > 0 ? '\x20te dio palmaditas a ' + mentionedNames : '\x20te dio palmaditas');
+
+    let _0xca6154 = await sticker(null, _0x5dd3a5, message);
+
+    await _0x4a531d.reply(_0x3534e4.chat, _0xca6154, _0x3534e4.id, { asSticker: true });
   } catch (_0x17e172) {}
 };
 
 handler['command'] = /^(pat|palmaditas|cariños|mimos|patt)$/i;
-handler['register'] = !![];
-handler['limit'] = 0x3;
+handler['register'] = true;
+handler['limit'] = 3;
 
 export default handler;

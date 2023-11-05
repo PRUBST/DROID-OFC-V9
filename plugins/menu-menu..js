@@ -185,6 +185,7 @@ let str = `╭──❯.⋆☆☆☆⋆.❮──╮
 ╭═•⋆ঈ❥ *Tecnología/ia* 🧑🏻‍💻
 ├➽ .ia <texto>
 ├➽ .ia2 <texto generador de imág>
+├➽ .iavoz <texto>
 ├➽ .bot <texto>
 ├➽ .simi <texto>
 ├➽ .hd <Imagen>

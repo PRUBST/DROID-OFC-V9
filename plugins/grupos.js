@@ -22,9 +22,9 @@ let str = `${gt}
 
 ╭「❥🧿 *Grupos y cuentas*🧿 ❥」
 ├π *gp-ofc*
-├π https://chat.whatsapp.com/KXaAogRpQWOFwlAcP9JkQX
+├π https://chat.whatsapp.com/LRsyMbo0Ls6FBsBmbjDrX7
 ├π *gp-ofc*
-├π https://chat.whatsapp.com/KmgfBWEdJgZ8fF3Ve1nMIK
+├π https://chat.whatsapp.com/JaKs6rSpydaD8D8XmGyEGp
 ├π *FACEBOOK*
 ├π  https://www.facebook.com/profile.php?id=61550042923816&mibextid=ZbWKwL
 ├π 🔮 *KIKTOK*

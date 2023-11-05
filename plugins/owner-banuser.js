@@ -9,10 +9,10 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     let users = global.db.data.users
     users[who].banned = true
     conn.reply(m.chat, `
-😈 BANEADO 😎
+😈 BANEADO 🧑🏻‍💻
 
 ⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆
-@${who.split`@`[0]} 🧑🏻‍💻 Ya no podras usarme, Hasta que sea desbanedo por un admin`, m, { mentions: [who] })
+@${who.split`@`[0]} Ya no podras usarme 😿, Hasta que seas desbanedo por un admin.`, m, { mentions: [who] })
 }
 handler.help = ['ban @user']
 handler.tags = ['owner']

@@ -1,6 +1,7 @@
 import fetch from 'node-fetch'
 let handler = async (m, { conn, usedPrefix, usedPrefix: _p, __dirname, text, isPrems }) => {
 try {
+let pp = imagen3
 let vn = './Audios/naa.mp3'
 let img = await(await fetch('https://i.imgur.com/JP')).buffer()
 let d = new Date(new Date + 3600000)

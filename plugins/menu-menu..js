@@ -118,10 +118,10 @@ let str = `╭──❯.⋆☆☆☆⋆.❮──╮
 ├➽ .demote (@tag)
 ├➽ .infogp
 ├➽ .hidetag
-├➽ .invite <549xxx>
+├➽ .invite <Número>
 ├➽ .kick @user
 ├➽ .link
-├➽ .poll <hola|como|xd>
+├➽ .encuesta <hola|como|xd>
 ├➽ .perfil
 ├➽ .promote
 ├➽ .resetlink

@@ -47,6 +47,8 @@ let str = `╭──❯.⋆☆☆☆⋆.❮──╮
 ├➽ .grupos
 ├➽ .logos <menu de logos>
 ├➽ .anime <menu anime>
+├➽ .instalarbot <tutorial completó>
+├➽ .Errordroid <SMS invisible solución> 
 ╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
 
 ╭═•⋆ঈ❥ *JUEGOS* 😼

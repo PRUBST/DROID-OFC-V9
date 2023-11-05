@@ -31,7 +31,7 @@ const handler = async (m, { conn, usedPrefix }) => {
   await conn.sendMessage(m.chat, {text: `*👋 ¡Hola! Ahora me ves?*\n\n*[❗] Si el Bot no le responde a sus comandos por favor haga un pequeño spam*\n\n*—◉ Ejemplo:*\n${usedPrefix}s\n${usedPrefix}s\n${usedPrefix}s`}, {quoted: m});
 };
 handler.help = ['del_reg_in_session_owner'];
-handler.tags = ['owner'];
+handler.tags = ['admin'];
 handler.command = /^(del_reg_in_session_owner|dsowner|clearallsession)$/i;
 handler.rowner = true
 export default handler;

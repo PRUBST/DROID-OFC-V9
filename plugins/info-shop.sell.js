@@ -1,1 +1,34 @@
-let handler=async(_0x58bbc7,{conn:_0x569259,usedPrefix:_0x46bf47})=>{var _0x14f10d=['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document'],_0xf6fc35=_0x14f10d[Math['floor'](Math['random']()*_0x14f10d['length'])];let _0x1e3b70=(gt+'\x0a乂✰\x20✳️TIENDA-ᴘʀᴇᴍɪᴜᴍ✨✰乂\x0a乂✰\x20ᴘʀᴇᴍɪᴜᴍ»ᴄʟᴀsᴇ»⓵ᴘᴀss»⓵»\x203\x20hours\x20/prem1\x201\x20(30\x20dolares💵)\x0a乂✰\x20ᴘʀᴇᴍɪᴜᴍ»ᴄʟᴀsᴇ»⓶ᴘᴀss»⓶»\x206\x20hours\x20/prem2\x201\x20(60\x20dolares💵)\x0a乂✰\x20ᴘʀᴇᴍɪᴜᴍ»ᴄʟᴀsᴇ»⓷ᴘᴀss»⓷»\x2012\x20hours\x20/prem3\x201\x20(80\x20dolares💵)\x0a乂✰\x20ᴘʀᴇᴍɪᴜᴍ»ᴄʟᴀsᴇ»⓸ᴘᴀss»⓸»\x2024\x20hours\x20/prem4\x201\x20(130\x20dolares💵)\x0a乂✰\x20ᴘʀᴇᴍɪᴜᴍ️»ᴄʟᴀsᴇ»⓹ᴘᴀss»⓹»\x2044\x202days\x20/prem5\x201\x20(200\x20dolares💵)\x0a乂✰\x20ᴘʀᴇᴍɪᴜᴍ»ᴄʟᴀsᴇ»⓺ᴘᴀss»⓺»\x20168\x20one\x20week\x20/prem6\x201\x20(400\x20dolares💵)\x0a乂✰\x20ᴘʀᴇᴍɪᴜᴍ»ᴄʟᴀsᴇ»⓻ᴘᴀss»⓻»\x20336\x20two\x20weeks\x20/prem7\x201\x20(800\x20dolares💵)\x0a乂✰\x20ᴘʀᴇᴍɪᴜᴍ»ᴄʟᴀsᴇ»⓼ᴘᴀss»⓼»\x20730\x20one\x20month\x20/prem8\x201\x20(1000\x20dolares💵)\x0a\x0a乂✰\x20Para\x20ver\x20tu\x20tiempo\x20de\x20premium\x20usa\x20el\x20comandor\x0a乂✰\x20/listprem')['trim'](),_0x59d47a={'document':{'url':'tiktok.com/@tony.1p'},'mimetype':'application/'+_0xf6fc35,'fileName':'⫷᭄DROID-8-MD﹏✍','fileLength':0x5af3107a3fff,'pageCount':0xc8,'contextInfo':{'forwardingScore':0xc8,'isForwarded':!![],'externalAdReply':{'mediaUrl'http://tiktok.com/@tony.1p','mediaType':0x2,'previewType':'pdf','title':'ᴇʟ\x20ᴍᴇᴊᴏʀ\x20ʙᴏᴛ\x20ᴅᴇ\x20ᴡʜᴀᴛsᴀᴘᴘ⁩','body':wm,'thumbnail':imagen1,'sourceUrl'http://tiktok.com/@tony.1p'}},'caption':_0x1e3b70,'footer':wm,'headerType':0x6};_0x569259['sendMessage'](_0x58bbc7['chat'],_0x59d47a,{'quoted':_0x58bbc7});};handler['help']=['owner','creator'],handler['tags']=['info'],handler['command']=/^(sell|Sell)$/i,handler['register']=!![];export default handler;
+let handler = async (m, {usedPrefix}) => {         
+ let who 
+ if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender 
+ else who = m.sender 
+ let name = conn.getName(who)  
+ m.reply(`╭「➻❥𝐃𝐑𝐎𝐈𝐃-8-𝐌𝐃➻❥」 
+ │   *TIENDA* 🏪  
+ │┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈ 
+ │🧑🏻‍💻 *HOLA:* ${name} 
+ │compras de *diamantes/dólares*
+ │💎 /buy [cantidad]
+ │💎 /buyall 
+ │💎 /bus
+ │💵 /dólares <cantidad>
+ │ *--------------------*
+ │👑 Compras  *precio* 👇
+ │/prem1 <cantidad> *[15  dolares]*
+ │/prem2 <cantidad> *[25  dolares]*
+ │/prem3 <cantidad> *[35  dolares]*
+ │/prem4 <cantidad> *[50  dolares]*
+ │/prem5 <cantidad> *[60  dolares]*
+ │/prem6 <cantidad> *[70  dolares]*
+ │/prem7 <cantidad> *[80  dolares]*
+ │/prem8 <cantidad> *[100 dolares]*
+ │ *Compras premium*  ⬆️
+ ╭「
+ │/bal [para ver toda tú xp/💎/💵] 
+ ╰──────────────╯`) 
+ } 
+ handler.help = ['sell'] 
+ handler.tags = ['xp'] 
+ handler.command = ['sell', 'sell1', 'premium', 'shop3', 'shop2']  
+ handler.register = true 
+ export default handler

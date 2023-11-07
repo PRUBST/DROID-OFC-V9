@@ -14,17 +14,18 @@ let handler = async (m, {usedPrefix}) => {
  │💵 /dólares <cantidad>
  │ *--------------------*
  │👑 Compras  *precio* 👇
- │/prem1 <cantidad> *[15  dolares]*
- │/prem2 <cantidad> *[25  dolares]*
- │/prem3 <cantidad> *[35  dolares]*
- │/prem4 <cantidad> *[50  dolares]*
- │/prem5 <cantidad> *[60  dolares]*
- │/prem6 <cantidad> *[70  dolares]*
- │/prem7 <cantidad> *[80  dolares]*
- │/prem8 <cantidad> *[100 dolares]*
+ │/prem1 <cantidad> *[30  dolares]*
+ │/prem2 <cantidad> *[60  dolares]*
+ │/prem3 <cantidad> *[80  dolares]*
+ │/prem4 <cantidad> *[130 dolares]*
+ │/prem5 <cantidad> *[200  dolares]*
+ │/prem6 <cantidad> *[400  dolares]*
+ │/prem7 <cantidad> *[800  dolares]*
+ │/prem8 <cantidad> *[1000 dolares]*
  │ *Compras premium*  ⬆️
  ╭「
  │/bal [para ver toda tú xp/💎/💵] 
+ │/listprem [usuarios premium"s]
  ╰──────────────╯`) 
  } 
  handler.help = ['sell'] 

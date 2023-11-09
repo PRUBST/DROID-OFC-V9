@@ -45,7 +45,7 @@ let str = `╭──❯.⋆☆☆☆⋆.❮──╮
 ├➽ .menu2 <Audios del bot>
 ├➽ .owner <creador>
 ├➽ .grupos
-├➽ .labiblia *comandos +18 🙊*
+├➽ .labiblia *>comandos +18>* 
 ├➽ .logos <menu de logos>
 ├➽ .anime <menu anime>
 ├➽ .instalarbot <tutorial completó>

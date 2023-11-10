@@ -1,7 +1,6 @@
 import fs from "fs"
 let handler = m => m
 handler.all = async function (m) {
-let vn = './Audios/bot.mp3'
 let chat = global.db.data.chats[m.chat]
 if (/^sticker|funciones|ayuda$/i.test(m.text) && !chat.isBanned) { 
 conn.sendPresenceUpdate('recording', m.chat)   

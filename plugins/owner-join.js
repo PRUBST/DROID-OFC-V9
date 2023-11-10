@@ -4,7 +4,7 @@ let handler = async (m, { conn, text, isMods, isOwner, isPrems }) => {
 let link = (m.quoted ? m.quoted.text ? m.quoted.text : text : text) || text
 let [_, code] = link.match(linkRegex) || []
 
-if (!code) throw '*¡Error! Por favor, inténtalo de nuevo y asegúrate de que el enlace no esté caducado. Aquí tienes un ejemplo:*\n\n/join https://chat.whatsapp.com/LRsyMbo0Ls6FBsBmbjDrX7'
+if (!code) throw '⚠️ *¡Error! Por favor, inténtalo de nuevo y asegúrate de que el enlace no esté caducado. Aquí tienes un ejemplo:*\n\n/join https://chat.whatsapp.com/LRsyMbo0Ls6FBsBmbjDrX7'
 
 if ( isPrems || isMods || isOwner || m.fromMe) {
 let res = await conn.groupAcceptInvite(code)

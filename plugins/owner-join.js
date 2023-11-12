@@ -6,7 +6,7 @@ let [_, code] = link.match(linkRegex) || []
 
 if (!code) throw '⚠️ *¡Error! Por favor, inténtalo de nuevo y asegúrate de que el enlace no esté caducado. Aquí tienes un ejemplo:*\n\n/join https://chat.whatsapp.com/LRsyMbo0Ls6FBsBmbjDrX7'
 
-if ( isPrems || isMods || isOwner || m.fromMe) {
+if (isOwner m.fromMe) {
 let res = await conn.groupAcceptInvite(code)
 await m.reply(`*¡Me he unido con éxito al grupo! Listo para ayudar y ofrecer mis servicios.* 😊`)
 } else {

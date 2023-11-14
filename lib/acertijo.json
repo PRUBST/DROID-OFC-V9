@@ -212,7 +212,216 @@
         "response": "Todos"
     },
     {
-       "question": "No lo puedes ver, pero no puedes vivir sin él. ¿Qué es?",
-       "response": "El aire"
+       "question": "¿Qué es largo, duro y tiene venas, y en ocasiones puede contener algo blanco y cremoso?",
+        "response": "Un plátano"
+    },
+    {
+        "question": "¿Qué es pequeño, verde y grita "soy una rana",
+        "response": "Una calabaza que se hace pasar por una rana"
+    },
+    {
+        "question": "¿Qué empieza con "P" y termina con "O" y tiene un agujero en el medio?",
+        "response": "Un paquete"
+    },
+    {
+        "question": "¿Qué es lo que un hombre tiene en sus pantalones que una mujer no puede tener?",
+        "response": "Bolsillos"
+    },
+    {
+        "question": "¿Qué comienza con "p" y termina con "orno" y a veces hace llorar a las mujeres?",
+        "response": "El popcorn (palomitas de maíz)"
+    },
+    {
+        "question": "¿Cuál es el animal más antiguo?",
+        "response": "La cebra, porque está en blanco y negro"
+    },
+    {
+        "question": "¿Qué tiene un corazón que no late?",
+        "response": "Un embudo"
+    },
+    {
+        "question": "¿Cuál es el colmo de la electricidad?",
+        "response": "No ser alámbrica"
+    },
+    {
+        "question": "¿Cuál es el país que sólo los conocen por los tacos?",
+        "response": "México"
+    },
+    {
+        "question": "¿Qué comen los argentinos?",
+        "response": "Copas"
+    },
+    {
+        "question": "¿Cómo se llama el país con las personas con las narices grandes?",
+        "response": "Argentina"
+    },
+    {
+        "question": "¿Puedo volar sin alas. Puedo llorar sin ojos. Dondequiera que vaya, la oscuridad le sigue. ¿Qué soy?",
+        "response": "Las nubes"
+    },
+    {
+        "question": "Cuanto más lo miras, menos ves. ¿Qué es?",
+        "response": "La oscuridad"
+    },
+    {
+        "question": "¿Qué tiene dientes pero no puede masticar?",
+        "response": "Un peine"
+    },
+    {
+        "question": "¿Qué tiene agujas pero no puede coser?",
+        "response": "Un reloj"
+    },
+    {
+        "question": "Puede ser compartido, pero no se puede prestar. Puede ser gastado, pero nunca se puede guardar. ¿Qué es?",
+        "response": "Un secreto"
+    },
+    {
+        "question": "No tiene pies, pero corre rápido. No tiene boca, pero siempre tiene algo que decir. ¿Qué es?",
+        "response": "Un reloj"
+    },
+    {
+        "question": "Puedo ser tan largo como una serpiente y tan corto como un ratón. ¿Qué soy?",
+        "response": "Un cable"
+    },
+    {
+        "question": "Es algo que todos buscan, pero cuando lo encuentran, lo arrojan. ¿Qué es?",
+        "response": "Un chiste"
+    },
+    {
+        "question": "Puedo ser grande o pequeño, tengo forma y color. Todos me necesitan, pero a veces me desechan. ¿Qué soy?",
+        "response": "Un consejo"
+    },
+    {
+        "question": "Aunque hables de él, no te pertenece. Lo ves todo el tiempo, pero nunca lo tocas. ¿Qué es?",
+        "response": "El horizonte"
+    },
+    {
+        "question": "Siempre está delante de ti, pero no puedes verlo. ¿Qué es?",
+        "response": "El futuro"
+    },
+    {
+        "question": "Puedes medirlo con reglas, pero nunca entenderlo completamente. ¿Qué es?",
+        "response": "El tiempo"
+    },
+    {
+        "question": "Aunque no habla, siempre responde. ¿Qué es?",
+        "response": "Un teléfono"
+    },
+    {
+        "question": "Puede ser grande o pequeño, y a veces está en el medio. Puede ser delante o detrás, pero nunca en el extremo. ¿Qué es?",
+        "response": "La letra a"
+    },
+    {
+        "question": "Se utiliza más después de que se rompe. ¿Qué es?",
+        "response": "Un huevo"
+    },
+    {
+        "question": "Aunque siempre está corriendo, nunca se cansa. ¿Qué es?",
+        "response": "El agua"
+    },
+    {
+        "question": "Puedes encontrarlo en un campo de juego, pero no puedes jugar con él. ¿Qué es?",
+        "response": "Un hoyo de golf"
+    },
+    {
+        "question": "Puedo volar sin alas. Siempre estoy presente en el aire. ¿Qué soy?",
+        "response": "El sonido"
+    },
+    {
+        "question": "Cuanto más lo llevas, más ligero te vuelves. ¿Qué es?",
+        "response": "Un agujero"
+    },
+    {
+        "question": "Aunque es pequeño como una semilla, puede crecer hasta ser muy alto. ¿Qué es?",
+        "response": "Un árbol"
+    },
+    {
+        "question": "Siempre va, pero nunca regresa. ¿Qué es?",
+        "response": "Un paso"
+    },
+    {
+        "question": "Aunque no puedes agarrarlo, siempre está en tus manos. ¿Qué es?",
+        "response": "El futuro"
+    },
+    {
+        "question": "Puedo ser tan dulce como una rosa, pero también agrio como un limón. ¿Qué soy?",
+        "response": "El amor"
+    },
+    {
+        "question": "Nunca lo ves, pero siempre lo sientes. Puede ser un amigo o un enemigo. ¿Qué es?",
+        "response": "El tiempo."
+    },
+    {
+        "question": "Es pequeño como un ratón, pero puede pesar mucho. ¿Qué es?",
+        "response": "Un sobre"
+    },
+    {
+        "question": "Puede volar sin tener alas. Siempre está hambriento, pero nunca come. ¿Qué es?",
+        "response": "El viento"
+    },
+    {
+        "question": "Cuanto más caliente, más frío se pone. ¿Qué es?",
+        "response": "El fuego"
+    },
+    {
+        "question": "Puedo estar lleno o vacío, pero siempre tengo espacio. ¿Qué soy?",
+        "response": "Un vaso"
+    },
+    {
+        "question": "Aunque no tiene huesos, siempre tiene dedos. ¿Qué es?",
+        "response": "Un guante"
+    },
+    {
+        "question": "Es un arma que dispara sin matar. ¿Qué es?",
+        "response": "Una cámara"
+    },
+    {
+        "question": "Puedo ser corto o largo, y a veces soy un juego. ¿Qué soy?",
+        "response": "Un chiste"
+    },
+    {
+        "question": "Aunque no hablo, siempre tengo algo que decir. ¿Qué soy?",
+        "response": "Un libro"
+    },
+    {
+        "question": "Puedo tener ramas, pero no soy un árbol. Puedo tener letras, pero no soy una carta. ¿Qué soy?",
+        "response": "Un banco"
+    },
+    {
+        "question": "Puedo ser blanco o negro, pero siempre soy leído. ¿Qué soy?",
+        "response": "Un periódico"
+    },
+    {
+        "question": "Aunque no puedes verlo, siempre está contigo. ¿Qué es?",
+        "response": "El aire"
+    },
+    {
+        "question": "Puedo ser alto o bajo, y siempre estoy en el suelo. ¿Qué soy?",
+        "response": "Una sombra"
+    },
+    {
+        "question": "Puedo ser dulce o salado, y siempre estoy en una mesa. ¿Qué soy?",
+        "response": "Un condimento"
+    },
+    {
+        "question": "Puedo ser fuerte o débil, y siempre estoy en el medio. ¿Qué soy?",
+        "response": "Un argumento"
+    },
+    {
+       "question": "Siempre se estira y nunca se rompe. ¿Qué es?",
+        "response": "Una cadena"
+    },
+    {
+       "question": "¿Qué es largo y erecto, entra suavemente en un agujero y sale lleno de líquido?",
+        "response": "Un dedo en el tubo de pasta de dientes."
+    },
+    {
+       "question": "Soy largo y duro, y las mujeres se deleitan en sostenerme. ¿Qué soy?",
+        "response": "Un bolso de compras"
+    },
+    {
+       "question": "¿Qué es algo que todos los hombres tienen más largo que las mujeres y que va directo al agujero?",
+        "response": "La cartera"
+      
 }
 ]

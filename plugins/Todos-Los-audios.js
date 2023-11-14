@@ -8,7 +8,7 @@ this.sendPresenceUpdate('recording', m.chat)
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}    
 
 if (!chat.isBanned && chat.audios && m.text.match(/(@50240289706|@50258487658|TONY|tony|Tony)/gi)) {
-let vn = './Audios/tony.mp3'
+let vn = './Audios/Tony.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })} 
     

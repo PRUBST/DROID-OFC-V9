@@ -1,42 +1,15 @@
-import fetch from 'node-fetch'
-import axios from 'axios'
+export async function all(m) {
 
-let handler = async (m, { conn, args, usedPrefix, command }) => {
-m.react(rwait)
+    // cuando alguien envía un enlace de un grupo al dm del bot
+    if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Abre este enlace')) && !m.isBaileys && !m.isGroup) {
+     this.sendButton(m.chat, `Invitar bot a un grupo 
+        
+  Hola 👋🏻 @${m.sender.split('@')[0]} 
+  quieres rentar el bot para tú grupo? 
+  más info click en el botón
+`.trim(), igfg, null, [['Alquilar', '/buyprem']] , m, { mentions: [m.sender] })
+    m.react('💠️')
+  } 
 
-let type = (command).toLowerCase()
-
-switch (type) {
-
-        case 'loli':
-             let img = await conn.getFile(global.API('fgmods', '/api/loli', {}, 'apikey'))
-             let loli = img.data 
-             conn.sendButton(m.chat, `🧑🏻‍💻️ aquí tienes ${command}`, igfg, loli, [['▷▷ SIGUIENTE', `${usedPrefix + command}`]], m)
-             m.react(dmoji) 
-        break
-
-case 'waifu':
-case 'megumin':
-case 'neko':
-  let res = await fetch(`https://api.waifu.pics/sfw/${command}`)
-    if (!res.ok) throw await res.text()
-    let json = await res.json()
-    if (!json.url) throw '📵 Error'
-    conn.sendButton(m.chat, `✔️ Aqui tienes ${command}`, igfg, json.url, [['▷▷ SIGUIENTE', `${usedPrefix + command}`]], m)
-   m.react(dmoji) 
-break
-
-
-default:
- }
-}
-
-handler.help = ['waifu2', 'neko2', 'megumin2', 'loli']
-handler.tags = ['nime']
-handler.command = ['waifu2', 'neko2', 'megumin2', 'loli'] 
-
-export default handler
-
-function pickRandom(list) {
-  return list[Math.floor(list.length * Math.random())]
+   return !0
 }

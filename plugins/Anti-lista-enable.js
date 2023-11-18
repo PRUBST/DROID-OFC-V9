@@ -18,7 +18,7 @@ let optionsFull = `╭─────( 🦆 )─────╮
 │   *ACTIVAR/DESACTIVAR*
  ╰─────────────╯`.trim()
 
-let isEnable = /true|enable|(turn)?on|1/i.test(command)
+let isEnable = /true|enable1|(turn)?on|1/i.test(command)
 let chat = global.db.data.chats[m.chat]
 let user = global.db.data.users[m.sender]
 let bot = global.db.data.settings[conn.user.jid] || {}

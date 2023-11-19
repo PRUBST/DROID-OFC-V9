@@ -9,7 +9,7 @@ let handler = async (m, { conn, usedPrefix, participants, isPrems }) => {
   if (!(who in global.db.data.users)) throw `El usuario que está mencionando no está registrado en mi base de datos`;
 
   try {
-    let ppBuffer = await conn.getProfilePicture(who);
+    let ppBuffer = await conn.getProfilePictureThumb(who);
     pp = `data:image/jpeg;base64,${ppBuffer.toString('base64')}`;
   } catch (e) {
     // Maneja la excepción si la obtención de la imagen falla

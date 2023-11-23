@@ -19,17 +19,17 @@ let readMore = more.repeat(850)
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
 var doc = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var document = doc[Math.floor(Math.random() * doc.length)]    
-let str = `╭──❯.⋆☆☆☆⋆.❮──╮
-╽ *HOLA• ${taguser}*
-╽  BIENVENID@ AL MENÚ 
-╽ ⋆DROID MENÚ⋆
-╽ 📅 *FECHA ACTUAL:➟${date}*
-├──────────⋆
-┃❮❮❮☆☆☆☆☆☆☆ ❱❱❱
-┃❤ ️TONY-OFC ❤️
-┃ SÍGUEME EN TIK-TOK
-┃https://tiktok.com/@tony.1p 
-╰•⋆҈͜͡.➣❂ᗪᖇOIᗪITO❂◄⋆҈͜͡•╯
+let str = `╭「➻❥DROID-8-MD➻❥」
+│➯🐥 *HOLA,➟${taguser}*
+│➯🧑🏻‍💻  DROID *MENU*
+│➯📅 *FECHA ACTUAL:➟${date}*
+︎╰───────────────╯
+╭「➻❥𝐃𝐑𝐎𝐈𝐃-8-𝐌𝐃➻❥」
+│➯👨🏻‍💻 *HOLA,➟${taguser}*
+│ *BIENVENID@ AL MENU*
+│ *PUEDES SEGUIRME EN TIK-TOK*
+│ *http://tiktok.com/@tony.1p*
+︎╰───────────────╯
 🦅᭢━━━━━━━━━᭥🦅᭢
 ╭─「➻❥ *Estadísticas* ➻❥」
 ├➽ *👑Nivel:* ${level}
@@ -40,186 +40,225 @@ let str = `╭──❯.⋆☆☆☆⋆.❮──╮
 ├➽ *💵dolares:* ${joincount}
 ├➽ *Premium:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
 ╰───────────────╯
+🦅᭢━━━━━━━━━᭥🦅᭢
+╭─「❥ *INFO* ❥」
+├➽ *.menu2 <AUDIOS>* *nuevo*
+├➽ *.animes [imagenes]*
+├➽ *.grupos*
+├➽ *.owner [contactos]*
+├➽ *.enable [Opciones para admin"s]
+├➽ *.tagall*
+├➽ *.comangrupos
+├➽ *.shop [tienda]*
+├➽ *.leaderboard <tabla de calificación>
+╰───────────────╯
 
-╭═•⋆ঈ❥ *ACERCA DE* 🧑🏻‍💻
-├➽ .menu2 <Audios del bot>
-├➽ .owner <creador>
-├➽ .grupos
-├➽ .logos <menu de logos>
-├➽ .anime <menu anime>
-├➽ .instalarbot <tutorial completó>
-├➽ .Errordroid <SMS invisible solución> 
-╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-
-╭═•⋆ঈ❥ *JUEGOS* 😼
-├➽ .Mates <modo>
-├➽ .ppt <piedra/papel/tijera>
-├➽ .slot <apuesta>
-├➽ .tictactoe <nombre Sala>
-├➽ .gay @user
-├➽ .doxear @user
-├➽ .follar @user
-├➽ .love @user <medidor de amor>
-├➽ .formarpareja <aleatoria>
-├➽ .acertijo 
-├➽ .top <texto random>
-├➽ .gay2 @user
-╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-
-╭═•⋆ঈ❥ *NIVEL & ECONOMIA* 👀
-├➽ .trabajar 
-├➽ .shop <Tienda>
-├➽ .listprem 
-├➽ .balance | .bal
-├➽ .claim 
-├➽ .top2 <tabla de calificación>
-├➽ .levelup
-├➽ .minar/2/3
-├➽ .buy <cantidad>
-├➽ .buyall
-├➽ .transfer [tipo] [monto] [@tag]
-╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-
-╭═•⋆ঈ❥ *REGISTRO* 🤓
-├➽ .reg <nombre.edad>
-├➽ .mysn
-├➽ .unreg <Num Serie>
-╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-
-╭═•⋆ঈ❥ *STICKER* 💐
-├➽ .stickersearch <text>
-├➽ .emojimix <emoji&emoji>
-├➽ .s
-├➽ .sticker
-├➽ .toimg <sticker>
-╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-
-╭═•⋆ঈ❥ *IMAGEN* 🗣
-├➽ .imagen <texto>
-├➽ .meme
-├➽ .pinterest
-├➽ .wallpaper
-╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-
-╭═•⋆ঈ❥ *MAKER | anime* 👻
-├➽ .loli
-├➽ .neko
-├➽ .messi
-├➽ .cristiano Ronaldo 
-├➽ .waifu 
-╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-
-╭═•⋆ঈ❥ *ADMIN"S* 😜
-├➽ .Enable/disable 
-├➽ .comangrupos <comandos para admin"s>
-╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-
-╭═•⋆ঈ❥ *GRUPO* 🌸
-├➽ .delete
-├➽ .delwarn @user
-├➽ .demote (@tag)
-├➽ .infogp
-├➽ .hidetag
-├➽ .invite <Número>
-├➽ .kick @user
-├➽ .link
-├➽ .encuesta <hola|como|xd>
-├➽ .perfil
-├➽ .promote
-├➽ .resetlink
-├➽ .setbye <text>
-├➽ .group *open/close*
-├➽ .setwelcome <text>
-├➽ .staff <admin"s>
-├➽ .tagall <text>
-├➽ .totag <texto>
-├➽ .warn @user
-├➽ .warns
-╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-
-╭═•⋆ঈ❥ *ADMIN"S X2* 🐱
-├➽ .enable <option>
-├➽ .disable <option>
-╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-
-╭═•⋆ঈ❥ *ANIME* 🐢
-├➽ .waifu
-├➽ .neko
-├➽ .megumin
-├➽ .loli
-╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-
-╭═•⋆ঈ❥ *ANIME REACCION* 😽
-├➽ .kill @user
-├➽ .kiss @user
-├➽ .pat @user
-├➽ .slap @user
-╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-
-╭═•⋆ঈ❥ *DESCARGAS* 🌷
-├➽ .instagram <link ig>
-├➽ .mediafire <url>
-├➽ .audio
-├➽ .video 
-├➽ .tiktok
-├➽ .tiktokstalk
-├➽ .twitter <url>
-├➽ .ytmp3 <url>
-├➽ .ytsearch
-├➽ .ytmp4 <link yt>
-╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-
-╭═•⋆ঈ❥ *TOOLS* 🐸
-├➽ .cal <ecuacion>
-├➽ .google
-├➽ .lyrics
-├➽ .readmore <text1>|<text2>
-├➽ .readvo
-├➽ .ssweb <url>
-├➽ .tourl
-├➽ .trad <traductor>
-├➽ .tts <texto a voz>
-├➽ .wikipedia
-╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-
-╭═•⋆ঈ❥ *Tecnología/ia* 🧑🏻‍💻
-├➽ .ia <texto>
-├➽ .ia2 <texto generador de imág>
-├➽ .iavoz <texto>
-├➽ .bot <texto>
-├➽ .simi <texto>
-├➽ .hd <Imagen>
-├➽ .clima 
-├➽ .pixel <imagen>
-├➽ .horario <horario de los países de latam>
-╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-
-╭═•⋆ঈ❥ *DATABASE* 🥸
-├➽ .delcmd <text>
-├➽ .listcmd
-├➽ .setcmd <txt>
-├➽ .reporte <reportar errores>
-╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-
-╭═•⋆ঈ❥ *OWNER* 😶‍🌫️
-├➽ .expired <días>
-├➽ .addprem <@tag>
-├➽ .ban @user
-├➽ .banchat
-├➽ .listban
-├➽ .cleartmp
-├➽ .delexpired
-├➽ .delprem @user
-├➽ .getplugin <name file>
-├➽ .getfile <name file>
-├➽ .join <chat.whatsapp.com> <dias>
-├➽ .reset <54xxx>
-├➽ .restart
-├➽ .unban @user
-├➽ .unbanchat
-├➽ .update
-╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯
-❂𝐃𝐑𝐎𝐈𝐃𝐈𝐓𝐎❂`.trim()
+🧑🏻‍💻᭢━━━━━━━━━᭥🧑🏻‍💻᭢
+╭──「❥ *CHATGPT* ❥」
+├➽ *.ia *<Chatgpt>*
+├➽ *.ia2 <Regenerador de imágenes>
+├➽ *.iavoz <chatgpt respuesta con audio>
+├➽ *.bot* <texto>
+╰───────────────╯
+😼᭢━━━━━━━━━᭥😼᭢
+╭─「❥❤️ *Stickers* ❤️❥」
+├➽ *.sticker
+├➽ *.stickersearch <buscador de 📦 de stickers>
+├➽ *.wm <paquete | nombre>*
+├➽ *.sermoverbg [sticker sin fondo]*
+├➽ *.scircle [sticker circular]*
+├➽ *.emojimix ☺&😈*
+├➽ *.dados*
+╰───────────────╯
+👀᭢━━━━━━━━━᭥👀᭢
+╭─「❥💵 *PREMIUM"S* 🚀❥」
+├➽ *.hd <imagen>*
+├➽ *.topdf*
+├➽ *.ytcomment*
+├➽ *.removebg*
+├➽ *.wpgaming*
+├➽ *.doraemon*
+├➽ *.planeta*
+├➽ *.technology*
+├➽ *.ciberespacio*
+├➽ *.caricatura*
+├➽ *.pubg*
+├➽ *.wprandom*
+├➽ *.styletext*
+├➽ *.lb*
+├➽ *.perfil*
+├➽ *.clima*
+├➽ *.covid*
+├➽ *.horario*
+︎╰────────────────╯
+🦅᭢━━━━━━━━━᭥🦅᭢
+╭─「❥ *Grupos*  ❥」
+├➽ *.welcome @tag*
+├➽ *.welcome @tag*
+├➽ *bye @tag*
+├➽ *.promote @tag*
+├➽ *.demote @tag*
+├➽ *.infogp <info del grupo>*
+├➽ *.infobot <estado del bot>*
+├➽ *.hidetag*
+├➽ *.afk <razón>
+├➽ *.delete*
+├➽ *.del*
+├➽ *.join* [link del grupo]*
+├➽ *.link [link de tu grupo*
+├➽ *.advertir/warn @tag*
+├➽ *.unwarn/delwarn*
+├➽ *.ban/unban*
+├➽ *.kick @tag*
+╰───────────────╯
+🦅᭢━━━━━━━━━᭥🦅᭢
+╭─「❥💎 *transfer* 💎❥」
+├➽ *.transferjoincount mas <cantidad>*
+├➽ *.transferlimit mas <cantidad>*
+├➽ *.transferxp mas <cantidad>*
+╰───────────────╯
+🦅᭢━━━━━━━━━᭥🦅᭢
+╭─「❥ *RECOMPENSAS Y COMPRAS* ❥」
+├➽ *.minar*
+├➽ *.minar2*
+├➽ *.minar3*
+├➽ *.claim*
+├➽ *.coffer*
+├➽ *.bal* 
+├➽ *.busyall*
+├➽ *.bus <cantidad>* 
+├➽ *.buyall*
+├➽ *.buy <cantidad>*
+├➽ *.dolares*
+╰───────────────╯
+🦅᭢━━━━━━━━━᭥🦅᭢
+╭─「❥💎 *comandos-owner-add* 🧿❥」
+├➽ *.añadirxp <cantidad> @tag*
+├➽ *.añadirdiamantes @tag <cantidad>*
+├➽ *.añadirdolares  @tag <cantidad>*
+├➽ *.añadirdolares @tag <cantidad>*
+├➽ *.addprem @tag days*
+╰───────────────╯
+🦅᭢━━━━━━━━━᭥🦅᭢
+╭─「❥🤖 *Reportar* 🤖❥」
+├➽ *.reporte [comandos en fallos]*
+╰───────────────╯
+🦅᭢━━━━━━━━━᭥🦅᭢
+╭─「❥🤣 *Acciones* 😚❥」
+├➽ *.kiss .beso <tag>*
+├➽ *.follar <tag>*
+├➽ *.pat* <tag>
+├➽ *.slap* <tag>
+╰───────────────╯
+🦅᭢━━━━━━━━━᭥🦅᭢
+╭──「❥🎙️ *Descargas* 📽️❥」
+├➽ *.wikipedia <busqueda>*
+├➽ *.animeinfo <nombre>*
+├➽ *.audio* <nombre de la música>
+├➽ *.video* <nombre del video>
+├➽ *.audiodocu*
+├➽ *.videodocu*
+├➽ *.ytmp3 <link yt>
+├➽ *.ytmp4 <link yt>*
+├➽ *.ytmp3doc*
+├➽ *.ytmp4doc*
+├➽ *.facebook*
+├➽ *.tiktok* <link>
+├➽ *.mediafir*
+├➽ *.twitter*
+├➽ *.ig*
+├➽ *.google*
+├➽ *.ytbuscar*
+├➽ *.gdrive*
+├➽ *.whatmusic*
+├➽ *.calculadora/calc
+├➽ *.ssweb link de tu img*
+├➽ *.tts [texto a Audio]
+├➽ *.quemusica resultado*
+╰───────────────╯
+🦅᭢━━━━━━━━━᭥🦅᭢
+╭─「❥🎮 *Juegos* 🎮❥」
+├➽ *.gay* <@tag> [perfil gay]
+├➽ *doxear <@tag>
+├➽ *Top* ejemplo: <.top pendejos>
+├➽ *.love <@tag>*
+├➽ *.gay2 <@tag>*
+├➽ *.puta <@tag>*
+├➽ *.puto <@tag>*
+├➽ *.pajero <@tag>*
+├➽ *.pajera <@tag>*
+├➽ *.lesbiana <@tag>*
+├➽ *.pvp*  <@tag>
+├➽ *.sopa*
+├➽ *.juego [piedra/papel/tijera]*
+├➽ *.reto [reto del bot]*
+├➽ *.acertijo *no disponible* 🤥
+├➽ *.verdad [verdad del bot]*
+├➽ *.formarpareja [parejas ramdon]*
+├➽ *.slot [ruleta]*
+├➽ *.piropo [piropo del bot]*
+├➽ *.casino <apuesta>*
+├➽ *.meme <meme>*
+︎╰───────────────
+🦅᭢━━━━━━━━━᭥🦅᭢
+╭─「❥🤴 *comandos-owner/admin"s* 🤴❥」
+├➽ *.block*
+├➽ *.limpiarbot*
+├➽ *.blocklist*
+├➽ *.unblocklist*
+├➽ *.banuser*
+├➽ *.setprefix*
+├➽ *.resetprefix*
+├➽ *.unbanuser*
+├➽ *.kick* @tag
+├➽ *.fantasmas*
+├➽ *.invitar*
+├➽ *.resetlink*
+├➽ *.banchat [banea el chat]*
+├➽ *.unbanchat [desbanea el chat]*
+├➽ *.grupo abrir/cerrar*
+├➽ *.addcmd*
+├➽ *.delcmd*
+├➽ *.listcmd*
+├➽ *.actualizar*
+╰───────────────╯
+🦅᭢━━━━━━━━━᭥🦅᭢
+╭─「❥🎙️ *convertidor&mp3* 📽️❥」
+├➽ *.mp3*
+├➽ *.toimg*
+├➽ *.togifaus*
+├➽ *.ptt*
+├➽ *.tomp4*
+├➽ *.tts*
+├➽ *.attp3*
+├➽ *.ttp*
+├➽ *.ttp2*
+├➽ *.ttp3*
+├➽ *.ttp5*
+├➽ *.tovn*
+├➽ *.togifaud*
+︎╰───────────────╯
+🦅᭢━━━━━━━━━᭥🦅᭢
+╭─「❥📊 *Otros Comandos* ⚙️❥」
+├➽ *.hd <imagen>*
+├➽ *.topdf*
+├➽ *.ytcomment*
+├➽ *.removebg*
+├➽ *.wpgaming*
+├➽ *.doraemon*
+├➽ *.planeta*
+├➽ *.technology*
+├➽ *.ciberespacio*
+├➽ *.caricatura*
+├➽ *.pubg*
+├➽ *.wprandom*
+├➽ *.styletext*
+├➽ *.lb*
+├➽ *.perfil*
+├➽ *.clima*
+├➽ *.covid*
+├➽ *.horario*
+︎╰────────────────╯`.trim()
 if (m.isGroup) {
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
 let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }  

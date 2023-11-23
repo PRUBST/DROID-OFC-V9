@@ -78,7 +78,7 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.waifu*
 ├➽ *.lolice @tag*
 ├➽ *.simpcard @tag*
-├➽ *..hornycard <Tu licencia virtual pal bot>
+├➽ *.hornycard <licencia virtual FUN😍>
 ├➽ *.technology*
 ├➽ *.ciberespacio*
 ├➽ *.caricatura*

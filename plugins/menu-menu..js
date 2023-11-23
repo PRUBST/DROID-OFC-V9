@@ -76,7 +76,8 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.lolice @tag*
 ├➽ *.simpcard @tag*
 ├➽ *.hornycard <licencia virtual FUN😍>
-├➽ *.estúpido @tag*
+├➽ *.estúpido @tag
+├➽ *.meme*
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
 ╭─「❥🍓 *Wallpaper* 😻 ❥」
@@ -160,26 +161,14 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 🦅᭢━━━━━━━━━᭥🦅᭢
 ╭─「❥🎮 *Juegos* 🎮❥」
 ├➽ *.gay* <@tag> [perfil gay]
-├➽ *doxear <@tag>
-├➽ *Top* ejemplo: <.top pendejos>
+├➽ *.doxear <@tag>
+├➽ *.Top* <ejemplo: <.top pendejos>
 ├➽ *.love <@tag>*
-├➽ *.gay2 <@tag>*
-├➽ *.puta <@tag>*
-├➽ *.puto <@tag>*
-├➽ *.pajero <@tag>*
-├➽ *.pajera <@tag>*
-├➽ *.lesbiana <@tag>*
 ├➽ *.pvp*  <@tag>
-├➽ *.sopa*
 ├➽ *.juego [piedra/papel/tijera]*
-├➽ *.reto [reto del bot]*
-├➽ *.acertijo *no disponible* 🤥
-├➽ *.verdad [verdad del bot]*
+├➽ *.acertijo *no disponible* 
 ├➽ *.formarpareja [parejas ramdon]*
-├➽ *.slot [ruleta]*
-├➽ *.piropo [piropo del bot]*
-├➽ *.casino <apuesta>*
-├➽ *.meme <meme>*
+├➽ *.slot [ruleta]
 ︎╰───────────────
 🦅᭢━━━━━━━━━᭥🦅᭢
 ╭─「❥🤴 *comandos-owner/admin"s* 🤴❥」

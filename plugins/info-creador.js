@@ -21,49 +21,12 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
 //------------ BIO
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => imagen1[1]) 
 let teksbio = `
-*𝘾𝙤𝙣𝙩𝙖𝙘𝙩𝙤* 
-*Wa.me/5492266466080 (no bot)*
-*Wa.me/573183650526 (bot)*
-*wa.me/595986172767 (bot ²)*
+*CREADOR"ES* 
+*Wa.me/50240289706 (no bot)*
+*Wa.me/50258487658 (no bot)*
+*wa.me/59169981813 (no bot)*
 `
-  let teks = ' '
-const sections = [
-   {
-	title: `𝙋𝙍𝙊𝙋𝙄𝙀𝙏𝘼𝙍𝙄𝙊/𝙊𝙒𝙉𝙀𝙍`,
-	rows: [
-	    {title: "🔰 • NUMERO", rowId: ".owner bio"},
-	{title: "🌐 • CUENTAS OFICIALES", rowId: ".cuentasgb"},
-	{title: "🙌 • GRUPOS", rowId: ".grupos"},
-	]
-    },{
-	title: `–––––––·• 𝘼𝙋𝙊𝙔𝘼 𝘼𝙇 𝘽𝙊𝙏 –––––––·•`,
-	rows: [
-	{title: "🤖 • INSTALARBOT", rowId: ".instalarbot"},
-	{title: "🌟 • SC", rowId: "Sc"},
-	]
-  },
-]
 
-const listMessage = {
-text: `~ *PROPIETARIO/OWNER DEL BOT*`,
-footer: `╭┄〔 *OWNER* 〕┄⊱
-┆ *Hola👋 ${name}*
-┆——————«•»——————
-┆• 𝙑𝙚𝙧𝙨𝙞𝙤𝙣 𝙙𝙚𝙡 𝙗𝙤𝙩: ${vs}  
-┆———————————
-┆• 𝙏𝙤𝙩𝙖𝙡 𝙙𝙚𝙡 𝙐𝙨𝙪𝙖𝙧𝙞𝙤𝙨: *${totalreg}* 
-┆———————————
-┆• 𝙈𝙤𝙙𝙤: ${global.db.data.settings[conn.user.jid].self ? '*Privado*' : '*Público*'}
-┆———————————
-┆• 𝙋𝙧𝙚𝙛𝙞𝙟𝙤: *${usedPrefix}* 
-┆———————————
-┆• 𝙋𝙧𝙚𝙢𝙞𝙪𝙢: ${user.premiumTime > 0 ? 'Siu ✅' : 'No ❌'}
-┆———————————
-┆• 𝘾𝙝𝙖𝙩(𝙨) 𝙋𝙧𝙤𝙝𝙞𝙗𝙞𝙙𝙤(𝙨): ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
-┆———————————
-┆• 𝙐𝙨𝙪𝙖𝙧𝙞𝙤(𝙨) 𝙋𝙧𝙤𝙝𝙞𝙗𝙞𝙙𝙤(𝙨): ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
-╰━━━⊰ 𓃠 ${vs} ⊱━━━━დ
-${wm}`,
 title: null,
 buttonText: `HAGA CLICK AQUI`,
 sections }

@@ -71,14 +71,14 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.dados*
 ╰───────────────╯
 👀᭢━━━━━━━━━᭥👀᭢
-╭─「❥💵 *PREMIUM"S* 🚀❥」
-├➽ *.hd <imagen>*
-├➽ *.topdf*
-├➽ *.ytcomment*
-├➽ *.removebg*
-├➽ *.wpgaming*
-├➽ *.doraemon*
-├➽ *.planeta*
+╭─「❥🤪 *MAKER | FUN* 😍❥」
+├➽ *.lolivid*
+├➽ *.loli*
+├➽ *.neko*
+├➽ *.waifu*
+├➽ *.lolice @tag*
+├➽ *.simpcard @tag*
+├➽ *..hornycard <Tu licencia virtual pal bot>
 ├➽ *.technology*
 ├➽ *.ciberespacio*
 ├➽ *.caricatura*

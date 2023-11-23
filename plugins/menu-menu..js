@@ -30,7 +30,7 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 │ *PUEDES SEGUIRME EN TIK-TOK*
 │ *http://tiktok.com/@tony.1p*
 ︎╰───────────────╯
-🦅᭢━━━━━━━━━᭥🦅᭢
+✫᭢━━━━━━━━━᭥✫᭢
 ╭─「➻❥ *Estadísticas* ➻❥」
 ├➽ *👑Nivel:* ${level}
 ├➽ *📃Experiencia:* ${exp}
@@ -40,8 +40,8 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *💵dolares:* ${joincount}
 ├➽ *Premium:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
 ╰───────────────╯
-🦅᭢━━━━━━━━━᭥🦅᭢
-╭─「❥ *INFO* ❥」
+✫᭢━━━━━━━━━᭥✫᭢
+╭─「❥ *INFO* 📡 ❥」
 ├➽ *.menu2 <AUDIOS>* *nuevo*
 ├➽ *.animes [imagenes]*
 ├➽ *.grupos*
@@ -51,6 +51,7 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.comangrupos
 ├➽ *.shop [tienda]*
 ├➽ *.leaderboard <tabla de calificación>
+├➽ *.reporte [comandos en fallos]*
 ╰───────────────╯
 
 🧑🏻‍💻᭢━━━━━━━━━᭥🧑🏻‍💻᭢
@@ -79,36 +80,21 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.lolice @tag*
 ├➽ *.simpcard @tag*
 ├➽ *.hornycard <licencia virtual FUN😍>
-├➽ *.technology*
-├➽ *.ciberespacio*
-├➽ *.caricatura*
-├➽ *.pubg*
-├➽ *.wprandom*
-├➽ *.styletext*
-├➽ *.lb*
-├➽ *.perfil*
-├➽ *.clima*
-├➽ *.covid*
-├➽ *.horario*
-︎╰────────────────╯
+├➽ *.estúpido @tag*
+╰───────────────╯
 🦅᭢━━━━━━━━━᭥🦅᭢
-╭─「❥ *Grupos*  ❥」
-├➽ *.welcome @tag*
-├➽ *.welcome @tag*
-├➽ *bye @tag*
+╭─「❥ *GRUPO*  ❥」
 ├➽ *.promote @tag*
 ├➽ *.demote @tag*
 ├➽ *.infogp <info del grupo>*
-├➽ *.infobot <estado del bot>*
 ├➽ *.hidetag*
 ├➽ *.afk <razón>
 ├➽ *.delete*
-├➽ *.del*
-├➽ *.join* [link del grupo]*
-├➽ *.link [link de tu grupo*
-├➽ *.advertir/warn @tag*
-├➽ *.unwarn/delwarn*
-├➽ *.ban/unban*
+├➽ *.link [link del grupo*
+├➽ *.warn @tag*
+├➽ *.unwarn @tag*
+├➽ *.ban @tag*
+├➽ *.unban @tag*
 ├➽ *.kick @tag*
 ╰───────────────╯
 🦅᭢━━━━━━━━━᭥🦅᭢
@@ -118,7 +104,7 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.transferxp mas <cantidad>*
 ╰───────────────╯
 🦅᭢━━━━━━━━━᭥🦅᭢
-╭─「❥ *RECOMPENSAS Y COMPRAS* ❥」
+╭─「❥ *ECONOMÍA Y RECOMPENSAS* ❥」
 ├➽ *.minar*
 ├➽ *.minar2*
 ├➽ *.minar3*

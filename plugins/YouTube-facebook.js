@@ -25,7 +25,7 @@ Quisiste decir :
  ☣️ Similitud: _${parseInt(som)}%_
 
 ¿SI? • ¿NO?`
-            if (mean) this.sendButton(m.chat, caption, igfg, null, [['👀️ SI', `${usedPrefix + mean}`], ['📵 NO', 'khajs']], m, { mentions: [who]})
+            if (mean) this.sendButton(m.chat, caption, igfg, null, m, { mentions: [who]})
             }
 }
 export const disabled = false

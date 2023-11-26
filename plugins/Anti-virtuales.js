@@ -38,7 +38,7 @@ let text = `╭「➻❥DROID-8-MD➻❥」
 }
 handler.help = ['top']
 handler.tags = ['xp']
-handler.command = ['top2', 'lb'] 
+handler.command = ['leaderboard', 'lb'] 
 
 
 

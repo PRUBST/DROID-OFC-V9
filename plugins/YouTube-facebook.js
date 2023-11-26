@@ -1,21 +1,29 @@
 
-let handler = async (m, { conn, text, args, usedPrefix, command }) => {
+import didyoumean from 'didyoumean'
+import similarity from 'similarity'
+//import { plugins } from '../lib/plugins.js'
 
-if (!args[0]) throw `🧑🏻‍💻️ Falta texto para encuesta \n\nEjemplo: 👉🏻 \n${usedPrefix + command} Mensaje  |xd|si`
-if (!text.includes('|')) throw  `🧑🏻‍💻 Separe las encuestas con 👉🏻 | \n\nEjemplo: 👉🏻 \n${usedPrefix + command} mi encuesta|n  |como|xd|vale`
+export async function before(m, { conn, match, usedPrefix, command }) {
 
-let name = await conn.getName(m.sender)
-let a = []
-let b = text.split('|')
-for (let c = 1 || 0; c < b.length; c++) {
-a.push([b[c]])
-                        }
-                        return conn.sendPoll(m.chat, `📊 Encuesta solicitado por: ${name}\n\nMensaje: ${text.split('|')[0]}`, a, m)
+             if ((usedPrefix = (match[0] || '')[0])) {
+                let noPrefix = m.text.replace(usedPrefix, '')
+                let args = noPrefix.trim().split` `.slice(1)
+                let text = args.join` `
+                let help = Object.values(plugins).filter(v => v.help && !v.disabled).map(v => v.help).flat(1)
+               if (help.includes(noPrefix)) return
+                let mean = didyoumean(noPrefix, help)
+                let sim = similarity(noPrefix, mean)
+                let som = sim * 100
+                let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
+                let name = await conn.getName(who)
+                let caption = `
+🧑🏻‍💻  Hola @${who.split("@")[0]}
+
+Quisiste decir : 
+
+ ☣️ ${usedPrefix + mean}
+ ☣️ Similitud: _${parseInt(som)}%_`
+ 
+            }
 }
-handler.help = ['poll <hola|como|xd>']
-handler.tags = ['group'] 
-handler.command = ['poll', 'encuesta', 'polling'] 
-handler.group = true
-handler.admin = true
-
-export default handler
+export const disabled = false

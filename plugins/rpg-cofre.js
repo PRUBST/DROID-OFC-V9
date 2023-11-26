@@ -1,1 +1,64 @@
-let handler=async(_0x147db3,{isPrems:_0x42d411,conn:_0x4f798f})=>{let _0x2a4df5=global['db']['data']['users'][_0x147db3['sender']]['lastcofre']+0x5265c00;if(new Date()-global['db']['data']['users'][_0x147db3['sender']]['lastcofre']<0x5265c00)throw'[❗𝐈𝐍𝐅𝐎❗]\x20𝚈𝙰\x20𝚁𝙴𝙲𝙻𝙰𝙼𝙰𝚂𝚃𝙴\x20𝚃𝚄\x20𝙲𝙾𝙵𝚁𝙴𝚗𝚅𝚄𝙴𝙻𝚅𝙴\x20𝙴𝙽\x20*'+msToTime(_0x2a4df5-new Date())+'*\x20𝙿𝙰𝚁𝙰\x20𝚅𝙾𝙻𝚅𝙴𝚁\x20𝙰\x20𝚁𝙴𝙲𝙻𝙰𝙼𝙰𝚁';let _0x1af931='https://img.freepik.com/vector-gratis/cofre-monedas-oro-piedras-preciosas-cristales-trofeo_107791-7769.jpg?w=2000',_0x42fb7f=Math['floor'](Math['random']()*0x1e),_0x4f20f5=Math['floor'](Math['random']()*0xa),_0x45f71f=Math['floor'](Math['random']()*0xfa0),_0x3f486d=Math['floor'](Math['random']()*0x1388);global['db']['data']['users'][_0x147db3['sender']]['limit']+=_0x42fb7f,global['db']['data']['users'][_0x147db3['sender']]['money']+=_0x45f71f,global['db']['data']['users'][_0x147db3['sender']]['joincount']+=_0x4f20f5,global['db']['data']['users'][_0x147db3['sender']]['exp']+=_0x3f486d;let _0x25d01d='乂✰𝙾𝙱𝚃𝙸𝙴𝙽𝙴𝚂\x20𝚄𝙽\x20𝙲𝙾𝙵𝚁𝙴✰乂\x0a乂✰'+_0x42fb7f+'➟Diamantes\x20ღ\x0a乂✰'+_0x4f20f5+'➟dolares\x20ღ\x0a乂✰️'+_0x45f71f+'➟ʜᴀᴅᴇs-ᴄᴏɪɴs\x20ღ\x0a乂✰'+_0x3f486d+'➟Exp\x20ღ';const _0x12c4c1={'key':{'participants':'0@s.whatsapp.net','remoteJid':'status@broadcast','fromMe':![],'id':'Halo'},'message':{'contactMessage':{'vcard':'BEGIN:VCARD\x0aVERSION:3.0\x0aN:Sy;Bot;;;\x0aFN:y\x0aitem1.TEL;waid='+_0x147db3['sender']['split']('@')[0x0]+':'+_0x147db3['sender']['split']('@')[0x0]+'\x0aitem1.X-ABLabel:Ponsel\x0aEND:VCARD'}},'participant':'0@s.whatsapp.net'};await _0x4f798f['sendFile'](_0x147db3['chat'],_0x1af931,'hades.jpg',_0x25d01d,_0x12c4c1),global['db']['data']['users'][_0x147db3['sender']]['lastcofre']=new Date()*0x1;};handler['help']=['daily'],handler['tags']=['xp'],handler['command']=['coffer','cofre','abrircofre','cofreabrir'],handler['register']=!![];export default handler;function pickRandom(_0x71d6fb){return _0x71d6fb[Math['floor'](Math['random']()*_0x71d6fb['length'])];}function msToTime(_0x1ec132){var _0x50ef2c=parseInt(_0x1ec132%0x3e8/0x64),_0x8c2364=Math['floor'](_0x1ec132/0x3e8%0x3c),_0x1c4153=Math['floor'](_0x1ec132/(0x3e8*0x3c)%0x3c),_0x3cc232=Math['floor'](_0x1ec132/(0x3e8*0x3c*0x3c)%0x18);return _0x3cc232=_0x3cc232<0xa?'0'+_0x3cc232:_0x3cc232,_0x1c4153=_0x1c4153<0xa?'0'+_0x1c4153:_0x1c4153,_0x8c2364=_0x8c2364<0xa?'0'+_0x8c2364:_0x8c2364,_0x3cc232+'\x20Horas\x20'+_0x1c4153+'\x20Minutos';}
+let handler = async (m, { isPrems, conn }) => {
+let time = global.db.data.users[m.sender].lastcofre + 86400000 // 36000000 10 Horas //86400000 24 Horas
+if (new Date - global.db.data.users[m.sender].lastcofre < 86400000) throw `YA RECLAMASTE TU COFRE\𝚗VUELVE EN *${msToTime(time - new Date())}* PARA VOLVER A RECLAMAR`
+
+
+let img = 'https://images.app.goo.gl/zxhX35PyRUQp3V5z7'
+let dia = Math.floor(Math.random() * 250)
+let tok = Math.floor(Math.random() * 10)
+let hadesb = Math.floor(Math.random() * 8000)
+let expp = Math.floor(Math.random() * 1000)
+
+  global.db.data.users[m.sender].limit += dia
+  global.db.data.users[m.sender].money += hadesb
+  global.db.data.users[m.sender].joincount += tok
+  global.db.data.users[m.sender].exp += expp
+
+let texto = `╭「➻❥𝐃𝐑𝐎𝐈𝐃-8-𝐌𝐃➻❥」
+│🛒 OBTIENES UN COFRE
+│┈┈┈┈┈┈┈┈┈┈┈┈┈
+│➯🍁*${dia}➟DIAMANTES* 💎
+│➯🌱*${tok}➟dolares* 💵
+│➯✴️${hadesb}➟DROID-COINS
+│➯🌀*${expp}➟Exp* ⚡
+╰───────────────╯`
+
+const fkontak = {
+        "key": {
+    "participants":"0@s.whatsapp.net",
+                "remoteJid": "status@broadcast",
+                "fromMe": false,
+                "id": "Halo"
+        },
+        "message": {
+                "contactMessage": {
+                        "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+                }
+        },
+        "participant": "0@s.whatsapp.net"
+}
+await conn.sendFile(m.chat, img, 'droid.jpg', texto, fkontak)
+//await conn.sendButton(m.chat, texto, wm, img, [['🔰 𝙼𝙴𝙽𝚄', '/menu'] ], fkontak, m)  
+global.db.data.users[m.sender].lastcofre = new Date * 1
+}
+handler.help = ['daily']
+handler.tags = ['xp']
+handler.command = ['coffer', 'cofre', 'abrircofre', 'cofreabrir'] 
+handler.register = true
+export default handler
+
+function pickRandom(list) {
+return list[Math.floor(Math.random() * list.length)]}
+
+function msToTime(duration) {
+  var milliseconds = parseInt((duration % 1000) / 100),
+    seconds = Math.floor((duration / 1000) % 60),
+    minutes = Math.floor((duration / (1000 * 60)) % 60),
+    hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
+
+  hours = (hours < 20) ? "0" + hours : hours
+  minutes = (minutes < 10) ? "0" + minutes : minutes
+  seconds = (seconds < 10) ? "0" + seconds : seconds
+
+  return hours + " Horas " + minutes + " Minutos"
+}

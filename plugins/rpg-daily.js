@@ -1,1 +1,35 @@
-const free=0x1388,prem=0x4e20;let handler=async(_0x48e777,{isPrems:_0x545322})=>{let _0x56ac38=global['db']['data']['users'][_0x48e777['sender']]['lastclaim']+0x5265c00;if(new Date()-global['db']['data']['users'][_0x48e777['sender']]['lastclaim']<0x5265c00)throw'🎁\x20you\x20already\x20received\x20yours\x20you\x20received\x20your\x20reward\x0a\x0a🕚\x20come\x20back\x20in\x20'+msToTime(_0x56ac38-new Date())+'\x20';global['db']['data']['users'][_0x48e777['sender']]['exp']+=_0x545322?prem:free,_0x48e777['reply']('乂✰ʀᴇᴄᴏᴍᴘᴇɴsᴀ\x20ᴅɪᴀʀɪᴀ✰乂\x0a乂✰\x20you\x20have\x20received\x20a\x20reward\x20ღ\x0a乂✰\x20xp\x20:\x20+'+(_0x545322?prem:free)+'\x20ღ'),global['db']['data']['users'][_0x48e777['sender']]['lastclaim']=new Date()*0x1;};handler['help']=['daily'],handler['tags']=['xp'],handler['command']=['daily','claim'],handler['register']=!![];export default handler;function msToTime(_0x4761c8){var _0x270bce=parseInt(_0x4761c8%0x3e8/0x64),_0x8252b7=Math['floor'](_0x4761c8/0x3e8%0x3c),_0x4df927=Math['floor'](_0x4761c8/(0x3e8*0x3c)%0x3c),_0x4c7d45=Math['floor'](_0x4761c8/(0x3e8*0x3c*0x3c)%0x18);return _0x4c7d45=_0x4c7d45<0xa?'0'+_0x4c7d45:_0x4c7d45,_0x4df927=_0x4df927<0xa?'0'+_0x4df927:_0x4df927,_0x8252b7=_0x8252b7<0xa?'0'+_0x8252b7:_0x8252b7,_0x4c7d45+'\x20Horas\x20'+_0x4df927+'\x20Minutos';}
+const free = 210
+const prem = 300
+let handler = async (m, { isPrems }) => {
+  let time = global.db.data.users[m.sender].lastclaim + 86400000
+  if (new Date - global.db.data.users[m.sender].lastclaim < 86400000) throw `🎁 *Ya recogiste tu recompensa diaria*\n\n🕚 Vuelve en *${msToTime(time - new Date())}* `
+  global.db.data.users[m.sender].limit += isPrems ? prem : free
+  m.reply(`╭「➻❥DROID-8-MD-𝑐.ᵇᵒᵗ➻❥」
+│🛒 RECOMPENSA DIARIA 
+│┈┈┈┈┈┈┈┈┈┈┈┈┈
+│➯🎁 *RECOMPENSA DIARIA*
+│➯▢ *Has recibido:*
+│➯🆙 *Diamantes* : +${isPrems ? prem : free}
+╰───────────────╯`)
+  global.db.data.users[m.sender].lastclaim = new Date * 1
+}
+handler.help = ['daily']
+handler.tags = ['xp']
+handler.command = ['daily', 'claim'] 
+handler.register = true
+export default handler
+
+
+
+function msToTime(duration) {
+  var milliseconds = parseInt((duration % 1000) / 100),
+    seconds = Math.floor((duration / 1000) % 60),
+    minutes = Math.floor((duration / (1000 * 60)) % 60),
+    hours = Math.floor((duration / (1000 * 60 * 60)) % 24)
+
+  hours = (hours < 20) ? "0" + hours : hours
+  minutes = (minutes < 10) ? "0" + minutes : minutes
+  seconds = (seconds < 10) ? "0" + seconds : seconds
+
+  return hours + " Horas " + minutes + " Minutos"
+}

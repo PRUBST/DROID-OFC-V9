@@ -17,7 +17,7 @@ let vn = './Audios/Ara.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })} 
     
-if (!chat.isBanned && chat.audios && m.text.match(/(puto bot|PUTO BOT|saquen al bot|SAQUEN AL BOT|bot de mierda|BOT DE MIERDA|bot de mrd|El bot no sirve|EL BOT NO SIRVE)/gi)) {    
+if (!chat.isBanned && chat.audios && m.text.match(/(puto bot|PUTO BOT|saquen al bot|SAQUEN AL BOT|bot de mierda|BOT DE MIERDA|bot de mrd|pinche bot|PINCHE BOT|maldito bot| MALDITO BOT|BOT INVECIL|bot inbecil|bot pendejo|BOT PENDEJO)/gi)) {    
 let vn = './Audios/insultar.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })}     

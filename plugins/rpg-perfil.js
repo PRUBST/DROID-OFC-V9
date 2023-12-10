@@ -1,51 +1,30 @@
-import { createHash } from 'crypto';
+let handler = async(m, { conn, text, args, usedPrefix, command }) => {
+if (!text) throw `${mg}Pon el texto para que lo convierte en sticker, Ejemplo:\n*${usedPrefix + command}* Hola`
+let teks = encodeURI(text)
 
-let handler = async (m, { conn, usedPrefix, participants, isPrems }) => {
-  let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
+if (command == 'attp') {
+conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/attp?apikey=${lolkeysapi}&text=${teks}`, 'sticker.webp', '', m, { asSticker: true })}
 
-  if (!(who in global.db.data.users)) {
-    // Si no encuentra el perfil, envía la imagen predeterminada
-    let ppDefault = 'https://i.imgur.com/HE1dWt6.png';
-    return conn.sendMessage(m.chat, { image: { url: ppDefault } }, 'extendedTextMessage', { quoted: m });
-  }
+if (command == 'attp2') {
+conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/attp2?apikey=9b817532fadff8fc7cb86862&text=${teks}`, 'sticker.webp', '', m)}
 
-  let pp;
-  try {
-    pp = await conn.getProfilePicture(who);
-  } catch (e) {
-    // Maneja la excepción si la obtención de la imagen falla
-    throw `Error al obtener la imagen de perfil: ${e}`;
-  }
+if (command == 'ttp5') {
+conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/ttp6?apikey=9b817532fadff8fc7cb86862&text=${teks}`, 'sticker.webp', '', m, { asSticker: true })}
 
-  if (pp) {
-    let { name, role, role2, level, limit, money, exp, joincount, lastclaim, registered, regTime, age, premiumTime } = global.db.data.users[who];
-    let username = conn.getName(who);
-    let prem = global.prems.includes(who.split `@`[0]);
-    let sn = createHash('md5').update(who).digest('hex');
-    let str = `╭「➻❥DROID-8-MD➻❥」
-│➯ *𝙽𝙾𝙼𝙱𝚁𝙴:* ${username} ${registered ? '(' + name + ') ' : ''}
-│➯ *link:* wa.me/${who.split`@`[0]}${registered ? '\n*𝙴𝙳𝙰𝙳:* ' + age + ' años' : ''}
-│➯ *⚓Rango:* ${role}
-│➯ *📊Poder:* ${role2}
-│➯ *✳️️Nivel:* ${level}
-│➯ *🧿Experiencia:* ${exp}
-│➯ *💎Diamantes:* ${limit} Usos
-│➯ *👾Droid-Coins:* ${money}
-│➯ *💵dolares:* ${joincount}
-│➯ *💥Registrado:* ${registered ? 'Si' : 'No'}
-│➯ *✔️premium:* ${premiumTime > 0 ? 'Si' : (isPrems ? 'Si' : 'No') || ''}
-│➯ *📝número de serie:* 
-│➯ *${sn}*
-╰───────────────╯`;
+if (command == 'ttp4') {
+conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/ttp5?apikey=9b817532fadff8fc7cb86862&text=${teks}`, 'sticker.webp', '', m, { asSticker: true })}
 
-    return conn.sendMessage(m.chat, { image: { url: pp } }, 'extendedTextMessage', { quoted: m });
-  } else {
-    throw 'No se pudo encontrar la imagen de perfil.';
-  }
-};
+if (command == 'ttp3') {
+conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/ttp3?apikey=9b817532fadff8fc7cb86862&text=${teks}`, 'sticker.webp', '', m, { asSticker: true })}
 
-handler.help = ['profile [@user]'];
-handler.tags = ['xp'];
-handler.command = /^perfil|profile?$/i;
+if (command == 'ttp2') {
+conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/ttp2?apikey=9b817532fadff8fc7cb86862&text=${teks}`, 'sticker.webp', '', m, { asSticker: true })}
 
+if (command == 'ttp') {
+conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/ttp?apikey=9b817532fadff8fc7cb86862&text=${teks}`, 'sticker.webp', '', m, { asSticker: true })}
+
+}
+handler.command = handler.help = ['ttp', 'ttp2', 'ttp3', 'ttp4', 'ttp5', 'attp', 'attp2']
+handler.tags = ['sticker']
+handler.register = true
 export default handler

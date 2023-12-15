@@ -1,18 +1,28 @@
-let handler = async (m, { conn, text, command, usedPrefix }) => {
-let pp = './views/warn.jpg.png'
-let who
-if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text
-else who = m.chat
-let user = global.db.data.users[who]
-let bot = global.db.data.settings[conn.user.jid] || {}
-let warntext = `[❗] tag a user or reply to a message\n\n example:\n${usedPrefix + command} @${global.suittag}`
-if (!who) throw m.reply(warntext, m.chat, { mentions: conn.parseMention(warntext)}) 
-if (m.mentionedJid.includes(conn.user.jid)) return
-if (user.warn == 0) throw '[❗] user has zero warnings'  
-user.warn -= 1
-await m.reply(`${user.warn == 1 ? `@${who.split`@`[0]}*` : `♻️ *@${who.split`@`[0]}*`} a warning was removed\n WARNINGS ${user.warn}/3*`, null, { mentions: [who]})}
-handler.command = /^(unwarn|delwarn|deladvertir|deladvertencia|delwarning)$/i
+
+let handler = async (m, { conn, args, groupMetadata}) => {
+        let who
+        if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : false
+        else who = m.chat
+        if (!who) throw `🧑🏻‍💻️ Etiqueta o menciona a alguien`
+        if (!(who in global.db.data.users)) throw `🧑🏻‍💻️ El usuario no se encuentra en mi base de datos`
+       let warn = global.db.data.users[who].warn
+       if (warn > 0) {
+         global.db.data.users[who].warn -= 1
+         m.reply(`🧑🏻‍💻 DELWARN ⚠️
+         
+☢️ Warns: -1
+☢️ Warns total: ${warn - 1}`)
+         m.reply(`🧑🏻‍💻️ Un admin redujo su advertencia, ahora tienes ${warn - 1}`, who)
+         } else if (warn == 0) {
+            m.reply('🧑🏻‍💻️ El usuario no tiene ninguna advertencia')
+        }
+
+}
+handler.help = ['delwarn @user']
+handler.tags = ['group']
+handler.command = ['delwarn', 'unwarn'] 
 handler.group = true
-handler.admin = true
+handler.rowner = true
 handler.botAdmin = true
+
 export default handler

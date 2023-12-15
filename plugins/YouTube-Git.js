@@ -2,7 +2,7 @@
 let handler = async (m, { conn}) => {
 
 let name = conn.getName(m.sender)
-let av = `./src/mp3/${pickRandom(["bot", "bott"])}.mp3`
+let av = `./src/mp3/${pickRandom(["bot1", "bot5"])}.mp3`
 
 conn.sendButton(m.chat, `Hola 👋🏻 soy droid bot 🧑🏻‍💻 ${name} \n \nClick en las siguientes opciones pará ver mis comandos 👇🏻 🤖 \n`, igfg, null, [
       ['⦙☰ Menu', '/help'],

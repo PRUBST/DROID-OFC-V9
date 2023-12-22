@@ -1,1 +1,20 @@
-let linkRegex=/chat.whatsapp.com\/([0-9A-Za-z]{20,24})/i,handler=async(_0x2dfc8b,{conn:_0x1c6165,text:_0x34d773,isMods:_0x186caf,isOwner:_0x47a671,isPrems:_0x246328})=>{let _0x1f1f94=(_0x2dfc8b['quoted']?_0x2dfc8b['quoted']['text']?_0x2dfc8b['quoted']['text']:_0x34d773:_0x34d773)||_0x34d773,[_0x3933cc,_0x2c74d6]=_0x1f1f94['match'](linkRegex)||[];if(!_0x2c74d6)throw'[\x20⚠️\x20𝐀𝐋𝐄𝐑𝐓𝐀\x20⚠️\x20]\x20ERROR\x20TRY\x20AGAIN\x20CHECK\x20THAT\x20YOUR\x20LINK\x20IS\x20NOT\x20EXPIRED\x20AN\x20EXAMPLE\x0a/join\https://chat.whatsapp.com/LRsyMbo0Ls6FBsBmbjDrX7';if(_0x246328||_0x186caf||_0x47a671||_0x2dfc8b['fromMe']){let _0x368347=await _0x1c6165['groupAcceptInvite'](_0x2c74d6);await _0x2dfc8b['reply']('THE\x20BOT\x20HAS\x20JOINED\x20SUCCESSFULLY\x20ENJOY\x20THE\x20BOT✔️');}else{const _0x33f568=global['owner']['filter'](([_0x5cafbf])=>_0x5cafbf);for(let _0x12927a of _0x33f568['map'](([_0x18bc89])=>[_0x18bc89]+'@s.whatsapp.net')['filter'](_0x3069d8=>_0x3069d8!=_0x1c6165['user']['jid']))await _0x2dfc8b['reply']('[❗𝐈𝐍𝐅𝐎❗]\x20BOT\x20REQUEST\x20FOR\x20A\x20GROUP\x20[❗𝐈𝐍𝐅O❗]*\x0a\x0a*—◉\x20REQUEST\x20NUMBER:*\x20'+'wa.me/'+_0x2dfc8b['sender']['split']('@')[0x0]+'\x0a*—◉\x20LINK\x20WHERE\x20THE\x20BOT\x20IS\x20REQUESTED*'+_0x1f1f94,_0x12927a);await _0x2dfc8b['reply']('[❗]');}};handler['help']=['join\x20[chat.whatsapp.com]'],handler['tags']=['owner'],handler['command']=/^join|nuevogrupo$/i,handler['rowner']=!![],handler['register']=!![];export default handler;
+let handler = async (m, { conn, text, isMods, isOwner, isPrems }) => {
+let link = (m.quoted ? m.quoted.text ? m.quoted.text : text : text) || text
+let [_, code] = link.match(linkRegex) || []
+
+if (!code) throw '*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] ERROR VUELVA A INTENTARLO VERIFIQUES QUE SU ENLACE NO ESTÉ VENCIDO UN EJEMPLO\n/join https://chat.whatsapp.com/BgyxmpSY2VYE3MT0UbLAgf*\n\n\n*[ ⚠️ 𝐀𝐋𝐄𝐑𝐓𝐀 ⚠️ ] ERROR TRY AGAIN CHECK THAT YOUR LINK IS NOT EXPIRED AN EXAMPLE\n/join https://chat.whatsapp.com/BgyxmpSY2VYE3MT0UbLAgf'
+
+if ( isPrems || isMods || isOwner || m.fromMe) {
+let res = await conn.groupAcceptInvite(code)
+await m.reply(`*𝙴𝙻 𝙱𝙾𝚃 𝚂𝙴 𝚄𝙽𝙸𝙾 𝙲𝙾𝙽 𝙴𝚇𝙸𝚃𝙾 𝙰𝙻 𝙶𝚁𝚄𝙿𝙾, 𝙳𝙸𝚂𝙵𝚁𝚄𝚃𝙴 𝙳𝙴𝙻 𝙱𝙾𝚃! ✔️*\n\n\n THE BOT HAS JOINED SUCCESSFULLY ENJOY THE BOT✔️`)
+} else {
+const data = global.owner.filter(([id]) => id)
+
+for (let jid of data.map(([id]) => [id] + '@s.whatsapp.net').filter(v => v != conn.user.jid)) await m.reply('*[❗𝐈𝐍𝐅𝐎❗] 𝙽𝚄𝙴𝚅𝙰 𝚂𝙾𝙻𝙸𝙲𝙸𝚃𝚄𝙳 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝚄𝙽 𝙶𝚁𝚄𝙿𝙾 [❗𝐈𝐍𝐅𝐎❗]*\n\n*—◉ 𝙽𝚄𝙼𝙴𝚁𝙾 𝙳𝙴𝙻 𝚂𝙾𝙻𝙸𝙲𝙸𝚃𝙰𝙽𝚃𝙴:* ' + 'wa.me/' + m.sender.split('@')[0] + '\n*—◉ 𝙻𝙸𝙽𝙺 𝙳𝙴𝙻 𝙶𝚁𝚄𝙿𝙾 𝙳𝙾𝙽𝙳𝙴 𝚂𝙴 𝚂𝙾𝙻𝙸𝙲𝙸𝚃𝙰 𝙴𝙻 𝙱𝙾𝚃:*\n\n\n*[❗𝐈𝐍𝐅𝐎❗] BOT REQUEST FOR A GROUP [❗𝐈𝐍𝐅O❗]*\n\n*—◉ REQUEST NUMBER:* ' + 'wa.me/' + m.sender.split('@')[ 0] + '\n*—◉ LINK WHERE THE BOT IS REQUESTED*' + link, jid)
+await m.reply('*[[❗𝐈𝐍𝐅𝐎❗] SE HA MANDADO LA SOLICITUD AL PROPIETARIO DEL BOT TAMBIÉN PUEDES CONTACTAR A LOS SUBBOTS Y PUEDES PEDIRLES DE LA MANERA MÁS AMABLE QUE SE UNAN A TU GRUPO\n LO ÚNICO QUE LES PEDIMOS ES QUE NO LE HAGAN SPAM Y NO LE HAGAN UN MAL USO AL BOT\n Y NO LO AGREGUEN SIN CONSENTIMIENTO DEL PROPIETARIO PARA NO TENER PROBLEMAS\n GRACIAS POR SU PREFERENCIA😉*\n\n\n*[❗𝐈𝐍𝐅𝐎❗] THE REQUEST HAS BEEN SENT TO THE BOT OWNER YOU CAN ALSO CONTACT THE SUBBOTS AND YOU CAN ASK THEM IN THE KINDEST WAY TO JOIN YOUR GROUP\n THE ONLY THING WE ASK OF THEM IS THAT😉*')}}
+handler.help = ['join [chat.whatsapp.com]']
+handler.tags = ['premium']
+handler.command = /^join|nuevogrupo$/i
+handler.register = true
+handler.limit = 2
+export default handler

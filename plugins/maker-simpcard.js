@@ -8,5 +8,4 @@ handler.help = ['simpcard'];
 handler.tags = ['maker'];
 handler.command = /^(simpcard)$/i;
 handler.register = true
-handler.premium = true
 export default handler;

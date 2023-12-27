@@ -10,5 +10,4 @@ handler.help = ['pixel', 'difuminar'];
 handler.tags = ['maker'];
 handler.command = /^(pixel|pixelar|difuminar)$/i;
 handler.register = true
-handler.premium = true
 export default handler;

@@ -1,32 +1,14 @@
- 
-import didyoumean from 'didyoumean'
-import similarity from 'similarity'
-//import { plugins } from '../lib/plugins.js'
+export async function all(m) {
 
-export async function before(m, { conn, match, usedPrefix, command }) {
+    // cuando alguien envía un enlace de un grupo al dm del bot
+    if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Abre este enlace')) && !m.isBaileys && !m.isGroup) {
+     this.sendButton(m.chat, `Invitar bot a un grupo 
+        
+  Hola 👋🏻 @${m.sender.split('@')[0]} 
+  quieres rentar el bot para tú grupo? 
+  más info click en el botón
+`.trim(), igfg, null, [['Alquilar', '/buyprem']] , m, { mentions: [m.sender] })
+  } 
 
-             if ((usedPrefix = (match[0] || '')[0])) {
-                let noPrefix = m.text.replace(usedPrefix, '')
-                let args = noPrefix.trim().split` `.slice(1)
-                let text = args.join` `
-                let help = Object.values(plugins).filter(v => v.help && !v.disabled).map(v => v.help).flat(1)
-               if (help.includes(noPrefix)) return
-                let mean = didyoumean(noPrefix, help)
-                let sim = similarity(noPrefix, mean)
-                let som = sim * 100
-                let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-                let name = await conn.getName(who)
-                let caption = `
-🧑🏻‍💻  Hola @${who.split("@")[0]}
-
-Quisiste decir : 
-
- ☣️ ${usedPrefix + mean}
- ☣️ Similitud: _${parseInt(som)}%_
-
-¿SI? • ¿NO?`
-            if (mean) this.sendButton(m.chat, caption, igfg, null, m, { mentions: [who]})
-            }
+   return !0
 }
-export const disabled = false
-

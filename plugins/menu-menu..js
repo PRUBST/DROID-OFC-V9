@@ -75,6 +75,12 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.bot* <texto>*
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
+╭──「❥ *REGISTRO* 🧑🏻‍💻
+├➽ *.reg <nombre.edad>*
+├➽ *.unreg <número de serie>*
+├➽ *.mysn <Tú número de serie>
+╰───────────────╯
+✫᭢━━━━━━━━━᭥✫᭢
 ╭─「❥ *STICKERS* ❥」
 ├➽ *.s*
 ├➽ *.sticker*

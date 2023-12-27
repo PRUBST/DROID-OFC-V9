@@ -40,8 +40,9 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
 ╭─「❥ *ACERCA DE:📝*
+├➽ *join *<se une el bot a tu grupo>*
 ├➽ *.logos <menu de logos>*
-├➽ *.link [link del bot]*
+├➽ *.link <de tu grupo>*
 ├➽ *.menu2 <AUDIOS>*
 ├➽ *.animes [imagenes]*
 ├➽ *.grupos <grupos del creador>*
@@ -49,7 +50,7 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.enable [Opciones para admin"s]*
 ├➽ *.tagall*
 ├➽ *.shop [tienda]*
-├➽ *.leaderboard <tabla de calificación>
+├➽ *.leaderboard <tabla de calificación>*
 ├➽ *.reporte [reportar cmd con errores]*
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
@@ -78,7 +79,7 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ╭──「❥ *REGISTRO* 🧑🏻‍💻
 ├➽ *.reg <nombre.edad>*
 ├➽ *.unreg <número de serie>*
-├➽ *.mysn <Tú número de serie>
+├➽ *.mysn <Tú número de serie>*
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
 ╭─「❥ *STICKERS* ❥」
@@ -104,7 +105,7 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
 ╭─「❥ *PREMIUM* 🏆 
-├➽ *.join <se une el bot a tu grupo>*
+├➽ *.join <se une el bot a tu grupo>* 
 ├➽ *.mediafire <link>*
 ├➽ *.ia2 <Regenerador de imágenes*
 ├➽ *.horario <de todos los países>*

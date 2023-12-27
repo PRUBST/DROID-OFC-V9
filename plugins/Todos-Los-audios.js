@@ -17,7 +17,7 @@ let vn = './Audios/boanoite3.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })} 
     
-if (!chat.isBanned && chat.audios && m.text.match(/(@50238174788)/gi)) {    
+if (!chat.isBanned && chat.audios && m.text.match(/(@50238174788|Bot)/gi)) {    
 let vn = './Audios/boatarde.mp3'
 this.sendPresenceUpdate('recording', m.chat)   
 this.sendMessage(m.chat, { audio: { url: vn }, fileName: 'error.mp3', mimetype: 'audio/mp4', ptt: true }, { quoted: m })} 

@@ -10,5 +10,4 @@ handler.help = ['itssostupid', 'iss', 'stupid'];
 handler.tags = ['maker'];
 handler.command = /^(itssostupid|iss|stupid|estúpido|estupido)$/i;
 handler.register = true
-handler.premium = true
 export default handler;

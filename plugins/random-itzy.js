@@ -8,5 +8,4 @@ handler.help = ['itzy','kpopitzy']
 handler.tags = ['internet']
 handler.command = /^(itzy|kpopitzy)$/i
 handler.register = true
-handler.premium = true
 export default handler

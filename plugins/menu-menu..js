@@ -97,6 +97,13 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.readvo*
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
+╭─「❥ *PREMIUM* 🏆 
+├➽ *.join <se une el bot a tu grupo>*
+├➽ *.mediafire <link>*
+├➽ *.ia2 <Regenerador de imágenes*
+├➽ *.horario <de todos los países>*
+︎╰────────────────╯
+✫᭢━━━━━━━━━᭥✫᭢
 ╭─「❥ *MAKER* ❥」
 ├➽ *.lolivid*
 ├➽ *.loli*

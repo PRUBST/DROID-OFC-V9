@@ -9,7 +9,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     throw stiker.toString()   
 }
 
-handler.customPrefix = /^(@50258487658|@50240289706|tony|TONY|Tony|puto bot|Bot|bot|Bot pendejo|bot pendejo|Hola|hola|HOLA|Ola|ola|OLA|HOLA)$/i
+handler.customPrefix = /^(@50258487658|@50240289706|tony|TONY|Tony)$/i
 handler.command = new RegExp
 
 export default handler

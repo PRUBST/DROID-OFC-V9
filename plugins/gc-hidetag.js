@@ -1,4 +1,4 @@
-import { generateWAMessageFromContent } from '@adiwajshing/baileys'
+import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
 import * as fs from 'fs'
 let handler = async (m, { conn, text, participants, isOwner, isAdmin }) => {
 try {  
@@ -37,4 +37,5 @@ handler.command = /^(hidetag|notificar|notify)$/i
 handler.group = true
 handler.admin = true
 handler.register = true
+handler.premium = true
 export default handler

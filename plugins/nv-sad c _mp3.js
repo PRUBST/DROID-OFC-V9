@@ -14,11 +14,11 @@ let expp = Math.floor(Math.random() * 1)
   global.db.data.users[m.sender].exp += expp
 
 let texto = `╭「➻❥𝐃𝐑𝐎𝐈𝐃-8-𝐌𝐃➻❥」
-│🛒 OBTIENES UN COFRE
+│🧑🏻‍💻 *Políticas* 
 │┈┈┈┈┈┈┈┈┈┈┈┈┈
-│➯🍁*${dia}➟DIAMANTES* 💎
-│➯🌱*${tok}➟dolares* 💵
-│➯✴️${hadesb}➟DROID-COINS
+│1: No llamar al bot 
+│2: No Proporcionar el bot
+│3: 
 │➯🌀*${expp}➟Exp* ⚡
 ╰───────────────╯`
 

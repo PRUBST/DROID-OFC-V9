@@ -1,23 +1,28 @@
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
-let optionsFull = `╭─────( 🦆 )─────╮
-├➽  /enable antilink 
-├➽ /enable antilink2 
-├➽ /enable detect 
-├➽ /enable detect2
-├➽ /enable audios 
+let optionsFull = `╭•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╮
+╽✪OPCIONES DROID✪
+╿⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆
+╽   🧑🏻‍💻 SOLO PARA ADMIN"S 😎
 ├──────────⋆
-├➽ /enable antitoxic
-├➽ /enable antitraba
-├➽ /enable modoadmin  
-│───── ⋆⋅☆⋅⋆ ───── 
-│/enable *[para activar]*
-│/disable *[para desactivar]*
-│─── ･ ｡ﾟ☆: *.☽ .* :☆ﾟ. ───
-│⬆️ *COMANDOS PARA GRUPOS*
-│           *SÓLO LOS ADMIN"S*
-│               *LO   PODRÁN* 
-│   *ACTIVAR/DESACTIVAR*
- ╰─────────────╯`.trim()
+╽👉🏻 welcome <mensaje de bienvenida>
+┃👉🏻 antilink <antilink de grupos>
+┃👉🏻 detect
+┃👉🏻 detect2
+┃👉🏻 audios 
+┃👉🏻 antitoxic 
+├──────────⋆
+╽  🧑🏻‍💻 OWNER 😎
+┃👉🏻 gconly 
+┃👉🏻 restrict 
+├──────────⋆
+┃  🧑🏻‍💻 Ejemplo 👇🏻
+├──────────⋆
+┃ .enable welcome
+┃ .disable welcome
+├──────────⋆  
+┃👉🏻 *.Enable* para activar
+┃👉🏻 *.Disable* para desactivar
+╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯`.trim()
 
 let isEnable = /true|enable|(turn)?on|1/i.test(command)
 let chat = global.db.data.chats[m.chat]
@@ -284,5 +289,8 @@ conn.sendMessage(m.chat, { text: `🧿 OPTION: ${type}\n️🔮 STATUS: ${isEnab
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^((en|dis)able|(tru|fals)e|(turn)?[01])$/i
+handler.admin = true 
+ handler.group = true 
+ handler.botAdmin = true 
 handler.register = true
 export default handler

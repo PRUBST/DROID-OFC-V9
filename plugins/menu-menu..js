@@ -40,14 +40,15 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
 ╭─「❥ *ACERCA DE:📝*
-├➽ *join *<se une el bot a tu grupo>*
+├➽ *.join <se une el bot a tu grupo>*
 ├➽ *.logos <menu de logos>*
-├➽ *.link <de tu grupo>*
-├➽ *.menu2 <AUDIOS>*
+├➽ *.link <de del grupo actual>*
+├➽ *.menu2 <audios del bot>*
 ├➽ *.animes [imagenes]*
 ├➽ *.grupos <grupos del creador>*
 ├➽ *.owner [creador]*
 ├➽ *.enable [Opciones para admin"s]*
+├➽ *.hidetag <texto>
 ├➽ *.tagall*
 ├➽ *.shop [tienda]*
 ├➽ *.leaderboard <tabla de calificación>*

@@ -3,6 +3,7 @@ let time = global.db.data.users[m.sender].lastcofre + 12 // 12 0 Horas //12 0 Ho
 if (new Date - global.db.data.users[m.sender].lastcofre < 12) throw `YA RECLAMASTE TU COFRE\𝚗VUELVE EN *${msToTime(time - new Date())}* PARA VOLVER A RECLAMAR`
 
 
+let img = 'https://images.app.goo.gl/zxhX3ygd35PyRUQp3V5z7'
 let dia = Math.floor(Math.random() * 1)
 let tok = Math.floor(Math.random() * 1)
 let hadesb = Math.floor(Math.random() * 1)

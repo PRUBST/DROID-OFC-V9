@@ -18,15 +18,17 @@ let texto = `╭「➻❥𝐃𝐑𝐎𝐈𝐃-8-𝐌𝐃➻❥」
 │🧑🏻‍💻 *Normas de uso*
 │┈┈┈┈┈┈┈┈┈┈┈┈┈
 │1: No llamar al bot 
-│2: No Proporcionar el bot en tiktok o en otras plataformas que no sea WhatsApp.
-│  
-╰───────────────
+│
+│2: No Proporcionar el bot en tiktok o en otras plataformas que no sea WhatsApp.  
+╰─────────────
 │🧑🏻‍💻 *Política de privacidad.*
 │┈┈┈┈┈┈┈┈┈┈┈┈┈      
 │• Al ser un bot, tus datos no se compartirán con nadie ni serán guardados. Lo único que se guardará será tu registro.
-│• Gracias por tu preferencia, esas son las políticas. Únete a mi canal de WhatsApp.
-https://whatsapp.com/channel/0029Va80EZC5fM5f8fXgsQ0F  
-╰───────────────
+│
+│• Gracias por tu preferencia, esas son las políticas. Únete a mi canal de WhatsApp. 👇
+│
+│https://whatsapp.com/channel/0029Va80EZC5fM5f8fXgsQ0F  
+╰─────────────
 
  `
 

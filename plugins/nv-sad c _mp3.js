@@ -50,7 +50,7 @@ global.db.data.users[m.sender].lastcofre = new Date * 1
 }
 handler.help = ['daily']
 handler.tags = ['xp']
-handler.command = ['políticas', 'información', 'abrircofre', 'cofreabrir'] 
+handler.command = ['políticas', 'información', 'política', 'info'] 
 handler.register = true
 export default handler
 

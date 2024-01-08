@@ -28,9 +28,7 @@ let texto = `╭「➻❥𝐃𝐑𝐎𝐈𝐃-8-𝐌𝐃➻❥」
 │• Gracias por tu preferencia, esas son las políticas. Únete a mi canal de WhatsApp. 👇
 │
 │https://whatsapp.com/channel/0029Va80EZC5fM5f8fXgsQ0F  
-╰─────────────
-
- `
+╰─────────────`
 
 const fkontak = {
         "key": {

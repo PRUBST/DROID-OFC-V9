@@ -20,8 +20,8 @@ let optionsFull = `╭•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•�
 ┃ .enable welcome
 ┃ .disable welcome
 ├──────────⋆  
-┃👉🏻 *.Enable* para activar
-┃👉🏻 *.Disable* para desactivar
+┃👉🏻 *.Enable* (para activar)
+┃👉🏻 *.Disable* (para desactivar)
 ╰•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╯`.trim()
 
 let isEnable = /true|enable|(turn)?on|1/i.test(command)

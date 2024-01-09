@@ -6,8 +6,11 @@ export async function all(m) {
         
   Hola 👋🏻 @${m.sender.split('@')[0]} 
   quieres rentar el bot para tú grupo? 
-  más info click en el botón
-`.trim(), igfg, null, [['Alquilar', '/buyprem']] , m, { mentions: [m.sender] })
+  Usa el comando: /join más el enlace de tu grupo.
+ejemplo: /join https://chat.whatsapp.com/GQnDkiNEyio2euVeq9FMkV
+
+
+ m, { mentions: [m.sender] })
   } 
 
    return !0

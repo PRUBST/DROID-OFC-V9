@@ -4,10 +4,10 @@ if (new Date - global.db.data.users[m.sender].lastcofre < 86400000) throw `YA RE
 
 
 let img = 'https://images.app.goo.gl/zxhX35PyRUQp3V5z7'
-let dia = Math.floor(Math.random() * 250)
+let dia = Math.floor(Math.random() * 45)
 let tok = Math.floor(Math.random() * 10)
-let hadesb = Math.floor(Math.random() * 8000)
-let expp = Math.floor(Math.random() * 1000)
+let hadesb = Math.floor(Math.random() * 2000)
+let expp = Math.floor(Math.random() * 1080)
 
   global.db.data.users[m.sender].limit += dia
   global.db.data.users[m.sender].money += hadesb

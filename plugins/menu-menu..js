@@ -51,7 +51,6 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.hidetag <texto>
 ├➽ *.tagall*
 ├➽ *.shop [tienda]*
-├➽ *.leaderboard <tabla de calificación>*
 ├➽ *.reporte [reportar cmd con errores]*
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
@@ -74,7 +73,6 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.ia *<Chatgpt>*
 ├➽ *.ia2 <Regenerador de imágenes>*
 ├➽ *.iavoz <respuesta con audio>*
-├➽ *.bot* <texto>*
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
 ╭──「❥ *REGISTRO* 🧑🏻‍💻

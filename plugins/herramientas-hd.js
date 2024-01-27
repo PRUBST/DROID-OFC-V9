@@ -17,8 +17,7 @@ const handler = async (m, {conn, usedPrefix, command}) => {
 handler.help = ["remini", "hd", "enhance"];
 handler.tags = ["ai", "tools"];
 handler.command = ["remini", "hd", "enhance"];
-handler.premium = true
-handler.register = true
+handler.owner = true
 export default handler;
 
 async function remini(imageData, operation) {

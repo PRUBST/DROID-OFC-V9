@@ -186,7 +186,7 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.covid*
 ├➽ *.horario*
 ︎╰────────────────╯
-> *`©2020`*
+> *`©2020`*\n
 > *`©𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂`*\n`.trim()
 if (m.isGroup) {
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})

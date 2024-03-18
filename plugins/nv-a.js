@@ -25,200 +25,175 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
 
 
 const document = doc[Math.floor(Math.random() * doc.length)];
- const str = `╔◊ •═════════════════• ◊╗
-║🌎 \`𝑵𝒂𝒖𝒇𝒓𝒂𝒁𝒂𝒑𝒑-𝑴𝑫\` 🌎
-║•┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•
-║𝘏𝘰𝘭𝘢 ${taguser}
-║ ${date}
-╚◊ •═════════════════• ◊╝
-
-╔◊ •═════════════════• ◊╗
-║✨ \`𝗧𝗨𝗦 𝗥𝗘𝗖𝗨𝗥𝗦𝗢𝗦\` ✨
-║•┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•
-║🚻 \`Nivel\` ➝ ${level}
-║•┄┄┄┄┄┄┄┄┄┄┄•
-║💎 \`Diamantes\` ➝ ${limit}
-║•┄┄┄┄┄┄┄┄┄┄┄•
-║💰 \`NZCoins\` ➝ ${money}
-║•┄┄┄┄┄┄┄┄┄┄┄•
-║🪙 \`Monedas\` ➝ ${joincount}
-║•┄┄┄┄┄┄┄┄┄┄┄•
-║⚔️ \`Rango\` ➝ ${role}
-║•┄┄┄┄┄┄┄┄┄┄┄•
-║⭐ \`Experiencia\` ➝ ${exp}
-╚◊ •═════════════════• ◊╝
-${readMore}
-
-╔◊ •═════════════════• ◊╗
-║        🗂️ \`INFORMACION\` 🗂️
-╠◊ •═════════════════• ◊╝
-> _#contactos_
-> _#cuentasnz_
-> _#creador_
-> _#donar_
-> _#tipobot_
-> _#mirecurso_
-> _#estado_
-> _#infobot_
-> _#gruponz_
-╰•─────────────────•╯
-
-╔◊ •═════════════════• ◊╗
-║            🟢 \`ON Y OFF\` 🔴
-╠◊ •═════════════════• ◊╝
-> _#on *antiprivado*_ 
-> _#on *restrict*_
-> _#on *autoread*_
-> _#on *antispam*_
-> _#on *anticall*_
-> _#on *welcome*_
-> _#on *antilink2*_
-> _#on *antilink*_
-> _#on *detect*_
-> _#on *autosticker*_
-> _#on *antiviewonce*_
-> _#on *antitoxic*_
-> _#on *antiarabes*_
-> _#on *modoadmin*_
-> _#on *antidelete*_
-> _#on *public*_
-> _#on *pconly*_
-> _#on *gconly*_
-> •┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄•
-> _#off *antiprivado*_ 
-> _#off *restrict*_
-> _#off *autoread*_
-> _#off *antispam*_
-> _#off *anticall*_
-> _#off *welcome*_
-> _#off *antilink2*_
-> _#off *antilink*_
-> _#off *detect*_
-> _#off *autosticker*_
-> _#off *antiviewonce*_
-> _#off *antitoxic*_
-> _#off *antiarabes*_
-> _#off *modoadmin*_
-> _#off *antidelete*_
-> _#off *public*_
-> _#off *pconly*_
-> _#off *gconly*_
-╰•─────────────────•╯
-
-╔◊ •═════════════════• ◊╗
-║        ⬇️ \`DESCARGADOR\` ⬇️
-╠◊ •═════════════════• ◊╝
-> _#instagram *url*_
-> _#mediafire *url*_
-> _#gitclone *url*_
-> _#tiktok *url*_
-> _#twitter *url*_
-> _#fb *url*_
-> _#ytshort *url*_
-> _#apk *texto*_
-> _#modapk *texto*_
-> _#google *texto*_
-> _#ytsearch *texto*_
-> _#playstore *texto*_
-> _#play *texto*_
-> _#youtube *texto*_
-> _#playlist *texto*_
-> _#imagen *texto*_
-╰•─────────────────•╯
-
-╔◊ •═════════════════• ◊╗
-║          ✨ \`NO COMMAND\` ✨
-╠◊ •═════════════════• ◊╝
-> _bot_
-> _admins_
-╰•─────────────────•╯
-
-╔◊ •═════════════════• ◊╗
-║       👥 \`CONFIG GROUP\` 👥
-╠◊ •═════════════════• ◊╝
-> _#add *numero*_
-> _#kick *responder*_
-> _#kick2 *responder*_
-> _#grupo *abrir*_
-> _#grupo *cerrar*_
-> _#promote *@tag*_
-> _#demote *@tag*_
-> _#link_
-> _#setname *texto*_
-> _#setdesc *texto*_
-> _#invocar *texto*_
-> _#setwelcome *texto*_
-> _#setbye *texto*_
-> _#hidetag *texto*_
-> _#hidetag *audio*_
-> _#hidetag *video*_
-> _#hidetag *imagen*_
-╰•─────────────────•╯
-
-╔◊ •═════════════════• ◊╗
-║     ♻️ \`MENU ALEATORIO\` ♻️
-╠◊ •═════════════════• ◊╝
-> _#inspect *url grupal*_
-> _#chatgpt *texto*_
-> _#delchatgpt_
-> _#dsowner_
-> _#join *url grupal*_
-> _#consejo_
-> _#piropo_
-> _#yoayudo *texto*_
-> _#reporte *texto*_
-> _#s *img*_
-> _#sticker *img*_
-> _#ocr *img*_
-> _#hd *img*_
-> _#acortar *url*_
-> _#calc_
-> _#del_
-> _#whatmusic *audio*_
-> _#traducir *texto*_
-╰•─────────────────•╯
-
-╔◊ •═════════════════• ◊╗
-║   👑 \`MENU PARA OWNERS\` 👑
-╠◊ •═════════════════• ◊╝
-> _#setprefix *prefix*_
-> _#resetprefix_
-> _#autoadmin_
-> _#addowner *@tag*_
-> _#delownr *@tag*_
-> _#block *@tag*_
-> _#unblock *@tag*_
-> _#banchat_
-> _#unbanchat_
-> _#resetuser *@tag*_
-> _#banuser *@tag*_
-> _#unbanuser *@tag*_
-> _#dardiamantes *@tag*_
-> _#añadirxp *@tag*_
-> _#banuser *@tag*_
-> _#restart_
-> _#update_
-╰•─────────────────•╯
-
-╔◊ •═════════════════• ◊╗
-║     🪙 \`RPG / ECONOMÍA\` 🪙
-╠◊ •═════════════════• ◊╝
-> _#cofre_
-> _#balance_
-> _#levelup_
-> _#myns_
-> _#perfil_
-> _#work_
-> _#minar_
-> _#buy_
-> _#buyall_
-> _#verificar_
-> _#robar *@tag*_
-> _#transfer *@tag*_
-> _#unreg_
-╰•─────────────────•╯
-
-> 𝙉𝙖𝙪𝙛𝙧𝙖𝙕𝙖𝙥𝙥-𝙈𝘿`.trim();     if (m.isGroup) { 
+ const str = `╭「➻❥DROID-8-MD➻❥」
+┃➯👋🏻 *HOLA: ${taguser}*
+┃➯📅 *FECHA ACTUAL: ${date}*
+︎├──────────⋆
+┃❮❮❮ *CANAL OFC* ❱❱❱
+┃❤ *SÍGUEME EN MI CANAL* ❤
+┃https://whatsapp.com/channel/0029Va80EZC5fM5f8fXgsQ0F
+┃PA RECIBIR INFO SOBRE EL BOT
+︎╰───────────────╯
+✫᭢━━━━━━━━━᭥✫᭢
+╭─「➻❥ *Estadísticas* ➻❥」
+├➽ *👑Nivel:* ${level}
+├➽ *📃Experiencia:* ${exp}
+├➽ *🛡Rango:* ${role}
+├➽ *💎Diamantes:* ${limit}
+├➽ *🧑🏻‍💻DROID-Coins:* ${money}
+├➽ *💵dolares:* ${joincount}
+├➽ *Premium:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
+╰───────────────╯
+✫᭢━━━━━━━━━᭥✫᭢
+╭─「❥ *ACERCA DE:📝*
+├➽ *.join <se une el bot a tu grupo>*
+├➽ *.logos <menu de logos>*
+├➽ *.link <de del grupo actual>*
+├➽ *.menu2 <audios del bot>*
+├➽ *.animes [imagenes]*
+├➽ *.grupos <grupos del creador>*
+├➽ *.owner [creador]*
+├➽ *.enable [Opciones para admin"s]*
+├➽ *.hidetag <texto>
+├➽ *.tagall*
+├➽ *.shop [tienda]*
+├➽ *.reporte [reportar cmd con errores]*
+╰───────────────╯
+✫᭢━━━━━━━━━᭥✫᭢
+╭─「❥ *JUEGOS* 🎮
+├➽ *tictactoe <nombre de la sala>*
+├➽ *.Mates <modo>*
+├➽ *.ppt <papel/piedra/tijera>*
+├➽ *.gay* <@tag> [perfil gay]*
+├➽ *.doxear <@tag>*
+├➽ *.Top <ejemplo: <.top pendejos>*
+├➽ *.love <@tag>*
+├➽ *.pvp <@tag>*
+├➽ *.juego [piedra/papel/tijera]*
+├➽ *.acertijo*
+├➽ *.formarpareja [parejas ramdon]*
+├➽ *.slot [ruleta]*
+︎╰───────────────
+✫᭢━━━━━━━━━᭥✫᭢
+╭──「❥ *CHATGPT* 📡
+├➽ *.ia *<Chatgpt>*
+├➽ *.ia2 <Regenerador de imágenes>*
+├➽ *.iavoz <respuesta con audio>*
+╰───────────────╯
+✫᭢━━━━━━━━━᭥✫᭢
+╭──「❥ *REGISTRO* 🧑🏻‍💻
+├➽ *.reg <nombre.edad>*
+├➽ *.unreg <número de serie>*
+├➽ *.mysn <Tú número de serie>*
+╰───────────────╯
+✫᭢━━━━━━━━━᭥✫᭢
+╭─「❥ *STICKERS* ❥」
+├➽ *.s*
+├➽ *.sticker*
+├➽ *.stickersearch <buscador de 📦 de stickers>
+├➽ *.sermoverbg [sticker sin fondo]*
+├➽ *.scircle [sticker circular]*
+├➽ *.emojimix ☺&😈*
+├➽ *.attp*
+├➽ *.dados*
+╰───────────────╯
+✫᭢━━━━━━━━━᭥✫᭢
+╭─「❥ *FUN* 🤖
+├➽ *.lolice @tag*
+├➽ *.simpcard @tag*
+├➽ *.hornycard <licencia virtual FUN>*
+├➽ *.estúpido @tag*
+├➽ *.meme*
+├➽ *.toimg*
+├➽ *.mp3 <vídeo a Audio>*
+├➽ *.readvo*
+╰───────────────╯
+✫᭢━━━━━━━━━᭥✫᭢
+╭─「❥ *PREMIUM* 🏆 
+├➽ *.join <se une el bot a tu grupo>* 
+├➽ *.mediafire <link>*
+├➽ *.ia2 <Regenerador de imágenes*
+├➽ *.horario <de todos los países>*
+︎╰────────────────╯
+✫᭢━━━━━━━━━᭥✫᭢
+╭─「❥ *MAKER* ❥」
+├➽ *.lolivid*
+├➽ *.loli*
+├➽ *.neko*
+├➽ *.waifu*
+├➽ *.messi*
+├➽ *.cr7*
+├➽ *.kpop*
+├➽ *.blackpink*
+├➽ *.cat*
+├➽ *.wallpaper*
+╰───────────────╯
+✫᭢━━━━━━━━━᭥✫᭢
+╭─「❥ *GRUPO*  ❥」
+├➽ *.promote @tag*
+├➽ *.demote @tag*
+├➽ *.infogp <info del grupo>*
+├➽ *.hidetag*
+├➽ *.afk <razón>
+├➽ *.delete*
+├➽ *.warn @tag*
+├➽ *.unwarn @tag*
+├➽ *.ban @tag*
+├➽ *.unban @tag*
+├➽ *.kick @tag*
+╰───────────────╯
+✫᭢━━━━━━━━━᭥✫᭢
+╭─「❥ *TRANSFERENCIA"S*
+├➽ *.transferjoincount <cantidad>* @tag
+├➽ *.transferlimit <cantidad>* @tag
+├➽ *.transferxp <cantidad>* @tag
+╰───────────────╯
+✫᭢━━━━━━━━━᭥✫᭢
+╭─「❥ *ECONOMÍA Y RECOMPENSAS* ❥」
+├➽ *.minar*
+├➽ *.minar2*
+├➽ *.minar3*
+├➽ *.claim*
+├➽ *.coffer*
+├➽ *.bal* 
+├➽ *.busyall*
+├➽ *.bus <cantidad>* 
+├➽ *.buyall*
+├➽ *.buy <cantidad>*
+├➽ *.dolares*
+╰───────────────╯
+✫᭢━━━━━━━━━᭥✫᭢
+╭─「❥ *REACCIONES* ❥」
+├➽ *.kiss <tag>*
+├➽ *.pat* <tag>*
+╰───────────────╯
+✫᭢━━━━━━━━━᭥✫᭢
+╭──「❥ *DESCARGAS ⎙*
+├➽ *.wikipedia <busqueda>*
+├➽ *.animeinfo <nombre>*
+├➽ *.audio* <nombre de la música>
+├➽ *.video* <nombre del video>
+├➽ *.ytmp3 <url>
+├➽ *.ytmp4 <url>*
+├➽ *.tiktok* <link>
+├➽ *.mediafire <link>*
+├➽ *.twitter*
+├➽ *.google*
+├➽ *.ytbuscar*
+├➽ *.gdrive*
+╰────────────────╯
+✫᭢━━━━━━━━━᭥✫᭢
+╭─「❥ *TOOLS* 🧑🏻‍💻
+├➽ *.hd <imagen>*
+├➽ *.calculadora*
+├➽ *.perfil*
+├➽ *.clima*
+├➽ *.styletext <texto>
+├➽ *.covid*
+├➽ *.horario*
+︎╰────────────────╯
+ *\`©2020\`*
+ *\`©𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂\`*`.trim();     if (m.isGroup) { 
  // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
             const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
       conn.sendMessage(m.chat, {text: str.trim(), mentions: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), contextInfo: {forwardingScore: 9999999, isForwarded: true, mentionedJid: [...str.matchAll(/@([0-9]{5,16}|0)/g)].map((v) => v[1] + '@s.whatsapp.net'), "externalAdReply": {"showAdAttribution": true, "containsAutoReply": true, "renderLargerThumbnail": true, "title": global.wm, "containsAutoReply": true, "mediaType": 1, "thumbnail": global.imagen1, "mediaUrl": `https://github.com/Bots-WhatsApp-OFC/NaufraZapp-MD`, "sourceUrl": `https://github.com/Bots-WhatsApp-OFC/NaufraZapp-MD`}}}, {quoted: m});

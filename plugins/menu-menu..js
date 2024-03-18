@@ -23,13 +23,13 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ┃➯👋🏻 *HOLA: ${taguser}*
 ┃➯📅 *FECHA ACTUAL: ${date}*
 ︎├──────────⋆
-┃❮❮❮ *`CANAL OFC`* ❱❱❱
-┃❤ *`SÍGUEME EN MI CANAL`* ❤
+┃❮❮❮ *CANAL OFC* ❱❱❱
+┃❤ *SÍGUEME EN MI CANAL* ❤
 ┃https://whatsapp.com/channel/0029Va80EZC5fM5f8fXgsQ0F
 ┃PA RECIBIR INFO SOBRE EL BOT
 ︎╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
-╭─「➻❥ *`Estadísticas`* ➻❥」
+╭─「➻❥ *Estadísticas* ➻❥」
 ├➽ *👑Nivel:* ${level}
 ├➽ *📃Experiencia:* ${exp}
 ├➽ *🛡Rango:* ${role}
@@ -39,7 +39,7 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *Premium:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
-╭─「❥ *`ACERCA DE:📝`*
+╭─「❥ *ACERCA DE:📝*
 ├➽ *.join <se une el bot a tu grupo>*
 ├➽ *.logos <menu de logos>*
 ├➽ *.link <de del grupo actual>*
@@ -54,7 +54,7 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.reporte [reportar cmd con errores]*
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
-╭─「❥ *`JUEGOS`* 🎮
+╭─「❥ *JUEGOS* 🎮
 ├➽ *tictactoe <nombre de la sala>*
 ├➽ *.Mates <modo>*
 ├➽ *.ppt <papel/piedra/tijera>*
@@ -69,19 +69,19 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.slot [ruleta]*
 ︎╰───────────────
 ✫᭢━━━━━━━━━᭥✫᭢
-╭──「❥ *`CHATGPT`* 📡
+╭──「❥ *CHATGPT* 📡
 ├➽ *.ia *<Chatgpt>*
 ├➽ *.ia2 <Regenerador de imágenes>*
 ├➽ *.iavoz <respuesta con audio>*
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
-╭──「❥ *`REGISTRO`* 🧑🏻‍💻
+╭──「❥ *REGISTRO* 🧑🏻‍💻
 ├➽ *.reg <nombre.edad>*
 ├➽ *.unreg <número de serie>*
 ├➽ *.mysn <Tú número de serie>*
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
-╭─「❥ *`STICKERS`* ❥」
+╭─「❥ *STICKERS* ❥」
 ├➽ *.s*
 ├➽ *.sticker*
 ├➽ *.stickersearch <buscador de 📦 de stickers>
@@ -92,7 +92,7 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.dados*
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
-╭─「❥ *`FUN`* 🤖
+╭─「❥ *FUN* 🤖
 ├➽ *.lolice @tag*
 ├➽ *.simpcard @tag*
 ├➽ *.hornycard <licencia virtual FUN>*
@@ -103,14 +103,14 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.readvo*
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
-╭─「❥ *`PREMIUM`* 🏆 
+╭─「❥ *PREMIUM* 🏆 
 ├➽ *.join <se une el bot a tu grupo>* 
 ├➽ *.mediafire <link>*
 ├➽ *.ia2 <Regenerador de imágenes*
 ├➽ *.horario <de todos los países>*
 ︎╰────────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
-╭─「❥ *`MAKER`* ❥」
+╭─「❥ *MAKER* ❥」
 ├➽ *.lolivid*
 ├➽ *.loli*
 ├➽ *.neko*
@@ -123,7 +123,7 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.wallpaper*
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
-╭─「❥ *`GRUPO`*  ❥」
+╭─「❥ *GRUPO*  ❥」
 ├➽ *.promote @tag*
 ├➽ *.demote @tag*
 ├➽ *.infogp <info del grupo>*
@@ -143,7 +143,7 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.transferxp <cantidad>* @tag
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
-╭─「❥ *`ECONOMÍA Y RECOMPENSAS`* ❥」
+╭─「❥ *ECONOMÍA Y RECOMPENSAS* ❥」
 ├➽ *.minar*
 ├➽ *.minar2*
 ├➽ *.minar3*
@@ -157,7 +157,7 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.dolares*
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
-╭─「❥ *`REACCIONES`* ❥」
+╭─「❥ *REACCIONES* ❥」
 ├➽ *.kiss <tag>*
 ├➽ *.pat* <tag>*
 ╰───────────────╯
@@ -177,7 +177,7 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.gdrive*
 ╰────────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
-╭─「❥ *`TOOLS`* 🧑🏻‍💻
+╭─「❥ *TOOLS* 🧑🏻‍💻
 ├➽ *.hd <imagen>*
 ├➽ *.calculadora*
 ├➽ *.perfil*
@@ -185,7 +185,9 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *.styletext <texto>
 ├➽ *.covid*
 ├➽ *.horario*
-︎╰────────────────╯`.trim()
+︎╰────────────────╯
+> *©2020*
+©𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂`.trim()
 if (m.isGroup) {
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
 let fkontak2 = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }  

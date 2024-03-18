@@ -17,6 +17,8 @@ let rtotalreg = Object.values(global.db.data.users).filter(user => user.register
 let more = String.fromCharCode(8206)
 let readMore = more.repeat(850)   
 let taguser = '@' + m.sender.split("@s.whatsapp.net")[0]
+    }
+    await conn.sendMessage(m.chat, { react: { text: '✅', key: m.key } })
 let str = `╭「➻❥𝐃𝐑𝐎𝐈𝐃-8-𝐌𝐃➻❥」
 │➯✨ *𝗛ᴏʟᴀ,➟${taguser}*
 │➯🎙️*menu2*

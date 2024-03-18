@@ -21,7 +21,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
 
- await conn.sendMessage(m.chat, { react: { text: '✅', key: m.key } })
+ await conn.sendMessage(m.chat, { react: { text: '👨🏻‍💻', key: m.key } })
 
 
 const document = doc[Math.floor(Math.random() * doc.length)];
@@ -30,10 +30,12 @@ const document = doc[Math.floor(Math.random() * doc.length)];
 ┃➯📅 *FECHA ACTUAL: ${date}*
 ︎├──────────⋆
 ┃❮❮❮ *CANAL OFC* ❱❱❱
-┃❤ *SÍGUEME EN MI CANAL* ❤
-┃https://whatsapp.com/channel/0029Va80EZC5fM5f8fXgsQ0F
+┃❤ *SÍGUEME EN MI CANAL* ❤️
+┃HAZ CLICK PARA VER MI CANAL
+┃        Y SÍGUEME 
 ┃PA RECIBIR INFO SOBRE EL BOT
 ︎╰───────────────╯
+      *\`DROID-MENU\`* 👇
 ✫᭢━━━━━━━━━᭥✫᭢
 ╭─「➻❥ *Estadísticas* ➻❥」
 ├➽ *👑Nivel:* ${level}

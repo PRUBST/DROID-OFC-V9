@@ -209,7 +209,7 @@ const document = doc[Math.floor(Math.random() * doc.length)];
     conn.reply(m.chat, '> ⓘ Ocurrio un error inesperado, intentelo de nuevo...', m);
   }
 };
-handler.command = /^(menu|menú|memu|comandos|help|comando)$/i;
+handler.command = /^(menu|menú|memu|memú|help|info|comandos|ayuda|commands|commandos|cmd)$/i;
 handler.register = true
 handler.exp = 50;
 handler.fail = null;

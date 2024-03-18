@@ -32,10 +32,11 @@ const document = doc[Math.floor(Math.random() * doc.length)];
 ┃❮❮❮ *CANAL OFC* ❱❱❱
 ┃❤ *SÍGUEME EN MI CANAL* ❤️
 ┃HAZ CLICK PARA VER MI CANAL
-┃        Y SÍGUEME 
+┃         Y SÍGUEME 
 ┃PA RECIBIR INFO SOBRE EL BOT
 ︎╰───────────────╯
-      *\`DROID-MENU\`* 👇
+        *\`DROID-MENU\`*
+         *\`COMANDOS\`* 👇 
 ✫᭢━━━━━━━━━᭥✫᭢
 ╭─「➻❥ *Estadísticas* ➻❥」
 ├➽ *👑Nivel:* ${level}

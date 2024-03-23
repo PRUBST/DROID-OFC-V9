@@ -1,5 +1,5 @@
 {
-  "name": "DROID-8-MD",
+  "name": "HADES-BOT-MD",
   "website": "https://tiktok.com/@tony.1p",
   "description": "subscribe to the channel HADES-BOT (≧▽≦)",
   "repository": "https://tiktok.com/@tony.1p",
@@ -14,15 +14,12 @@
     "spanish",
     "whatsapp",
     "termux",
-    "hades",
+    "shadow",
     "multi-device",
     "md",
     "whatsappbot",
     "oficial",
-    "whatsapp-md",
-    "thehadesbot",
-    "thehades-bot",
-    "thehades-bot-md"],
+    "whatsapp-md"],
   "image": "heroku/nodejs",
   "buildpacks": [
     {

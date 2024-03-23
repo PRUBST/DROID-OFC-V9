@@ -22,7 +22,7 @@ const handler = async function(m, {conn, text, usedPrefix, command}) {
   user.regTime = + new Date;
   user.registered = true;
   const sn = createHash('md5').update(m.sender).digest('hex');
-  const caption = `> ╭•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╮
+  const caption = `╭•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╮
 ╽ ❮❮❮ REGISTRO ❯❯❯
 ├⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆
 ┃Nombre: *\`${name}\`*
@@ -31,7 +31,7 @@ const handler = async function(m, {conn, text, usedPrefix, command}) {
 *\`${sn}\`*
 ╰•⋆҈͜͡.𝐃𝐑𝐎𝐈𝐃⋆𝐌𝐃⋆҈͜͡•╯
 
- .menu "para ver el Menu completo.
+ >  .menu "para ver el Menu completo.
 `;
   await conn.sendFile(m.chat, pp, 'hades.jpg', caption);
 

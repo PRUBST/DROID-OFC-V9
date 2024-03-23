@@ -22,10 +22,10 @@ const handler = async function(m, {conn, text, usedPrefix, command}) {
   user.regTime = + new Date;
   user.registered = true;
   const sn = createHash('md5').update(m.sender).digest('hex');
-  const caption = ` > INFORMACIÓN DE REGISTRO\n Nombre \`${name}\`
-Edad: \`${age}\`
+  const caption = `*INFORMACIÓN DEL REGISTRO*\nNombre *\`${name}\`*
+Edad: *\`${age}\`*
 Tú número de serie es:
- \`${sn}\`
+ *\`${sn}\`*
 
 /Menu (para ver mi menú)
 `;

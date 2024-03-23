@@ -22,12 +22,16 @@ const handler = async function(m, {conn, text, usedPrefix, command}) {
   user.regTime = + new Date;
   user.registered = true;
   const sn = createHash('md5').update(m.sender).digest('hex');
-  const caption = `*INFORMACIÓN DEL REGISTRO*\nNombre *\`${name}\`*
-Edad: *\`${age}\`*
-Tú número de serie es:
- *\`${sn}\`*
+  const caption = `╭•⋆҈͜͡.𝐓𝐎𝐍𝐘⋆𝐎𝐅𝐂⋆҈͜͡•╮
+╽ ❮❮❮ REGISTRO ❯❯❯
+├⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆⋆
+┃Nombre: *\`${name}\`*
+┃Edad: *\`${age}\`*
+┃Numero de serie:
+*\`${sn}\`*
+╰•⋆҈͜͡.𝐃𝐑𝐎𝐈𝐃⋆𝐌𝐃⋆҈͜͡•╯
 
-/Menu (para ver mi menú)
+ .menu "para ver el Menu completo.
 `;
   await conn.sendFile(m.chat, pp, 'hades.jpg', caption);
 

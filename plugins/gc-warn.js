@@ -23,7 +23,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   await m.reply(
     `${
       user.warn == 1 ? `*@${who.split`@`[0]}*` : `*@${who.split`@`[0]}*`
-    } Recibiste una advertencia por un admin.\nRazon: ${sdms}\n*ADVERTENCIAS ${
+    } Recibiste un warn por un admin.\nRazon: ${sdms}\n*WARNS ${
       user.warn
     }/3*`,
     null,
@@ -38,7 +38,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
     await m.reply(
       `I warned you several times!!\n*@${
         who.split`@`[0]
-      }* You exceeded the *3* warnings, now you will be eliminated 👽`,
+      }* Has excedido las 3 advertencias, ahora serás eliminado y bloqueado de mi base de datos.*`,
       null,
       { mentions: [who] },
     );

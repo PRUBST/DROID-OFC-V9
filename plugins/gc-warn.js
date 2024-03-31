@@ -23,7 +23,7 @@ let handler = async (m, { conn, text, command, usedPrefix }) => {
   await m.reply(
     `${
       user.warn == 1 ? `*@${who.split`@`[0]}*` : `*@${who.split`@`[0]}*`
-    } Received a warning in this group!\nReason: ${sdms}\n*WARRNINGS ${
+    } Recibiste una advertencia por un admin.\nRazon: ${sdms}\n*ADVERTENCIAS ${
       user.warn
     }/3*`,
     null,

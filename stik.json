@@ -1,4 +1,4 @@
-touch enlaces_imagenes.json
+touch stik.json
 
 echo '{
   "imagenes": [
@@ -7,9 +7,9 @@ echo '{
     "enlace_a_imagen_3",
     ...
   ]
-}' > enlaces_imagenes.json
+}' > stik.json
 
-git add enlaces_imagenes.json
+git add stik.json
 
 git commit -m "Agregando enlaces de imágenes"
 

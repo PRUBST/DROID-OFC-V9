@@ -1,0 +1,16 @@
+touch enlaces_imagenes.json
+
+echo '{
+  "imagenes": [
+    "enlace_a_imagen_1",
+    "enlace_a_imagen_2",
+    "enlace_a_imagen_3",
+    ...
+  ]
+}' > enlaces_imagenes.json
+
+git add enlaces_imagenes.json
+
+git commit -m "Agregando enlaces de imágenes"
+
+git push origin main

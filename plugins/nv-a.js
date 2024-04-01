@@ -39,6 +39,12 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ├➽ *Premium:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
 ╰───────────────╯
 ✫᭢━━━━━━━━━᭥✫᭢
+╭─「❥ *Comandos en arreglo* 🧑🏻‍💻
+├➽ *.serbot*
+├➽ *.perfil*
+├➽ *.hd*
+︎╰────────────────╯
+✫᭢━━━━━━━━━᭥✫᭢
 ╭─「❥ *ACERCA DE:📝*
 ├➽ *.join <se une el bot a tu grupo>*
 ├➽ *.logos <menu de logos>*

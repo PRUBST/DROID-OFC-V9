@@ -26,6 +26,14 @@ let str = `╭「➻❥𝐃𝐑𝐎𝐈𝐃-8-𝐌𝐃➻❥」
 │ *Stan*
 │ *Te amo*
 │ *la grasa*
+├─────────────⋆
+│ *STICKER"S-memes*
+│ Hola (3 stiks)
+│ Puto bot (en proceso)
+│ saquenlo del grupo (en proceso)
+│ denle ban (en proceso)
+│ cállate (en proceso)
+│ Pasen porno (en proceso)
 ︎╰───────────────╯`.trim()
 if (m.isGroup) {
 await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})

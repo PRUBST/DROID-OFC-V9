@@ -5,9 +5,9 @@ handler.all = async function (m, {conn}) {
 let chat = global.db.data.chats[m.chat]
 
 if (m.mentionedJid.includes(this.user.jid) && m.isGroup && !chat.isBanned) {
-let stiker = await sticker(imagen1, false, global.packname, global.author)  
+let stiker = await sticker(imagen7, false, global.packname, global.author)  
 this.sendFile(m.chat, stiker, 'sticker.webp', null, m, false, { 
-contextInfo: { externalAdReply: { title: 'TU PUTA MADRE', body: '🤓☝️', sourceUrl: `https://chat.whatsapp.com/L4cpzEr1wGOAEVdWeWBMn7`, thumbnail: imagen2}}})}
+contextInfo: { externalAdReply: { title: 'TU PUTA MADRE', body: '🤓☝️', sourceUrl: `https://chat.whatsapp.com/L4cpzEr1wGOAEVdWeWBMn7`, thumbnail: imagen7}}})}
 
 return !0 }
 handler.register = true

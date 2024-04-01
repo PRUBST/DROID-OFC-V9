@@ -3,13 +3,13 @@ import fetch from 'node-fetch'
 import axios from 'axios'
 
 let handler = async (m, { conn, text, usedPrefix, command }) => {
-        let img = (await axios.get(`https://postimg.cc/gallery/2Rmmqm2g`)).data
+        let img = (await axios.get(`https://github.com/DROIDITO1/TONY-OFC-V9/blob/main/stik.json`)).data
     let stiker = await sticker(null, global.API(`${pickRandom(img)}`), global.packname, global.author)
     if (stiker) return await conn.sendFile(m.chat, stiker, 'sticker.webp', { asSticker: true }, m)
     throw stiker.toString()   
 }
 
-handler.customPrefix = /^(@50258487658|@50240289706|tony|TONY|Tony|@527295008743)$/i
+handler.customPrefix = /^(@50258487658|@50240289706|tony|TONY|Tony|hola|Hola|HOLA|Ola|ola)$/i
 handler.command = new RegExp
 
 export default handler

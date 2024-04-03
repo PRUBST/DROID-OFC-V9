@@ -39,7 +39,7 @@ npm start
 ### `ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:`
 
 ```bash
-> cd HADES-BOT-OMEGA
+> cd TONY-OFC-V9 
 ```
 
 ```bash
@@ -52,7 +52,7 @@ npm start
 ### `ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:`
 
 ```bash
-> cd HADES-BOT-OMEGA
+> cd TONY-OFC-V9
 ```
 
 ```bash

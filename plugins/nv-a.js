@@ -41,7 +41,7 @@ let str = `╭「➻❥DROID-8-MD➻❥」
 ✫᭢━━━━━━━━━᭥✫᭢
 ╭─「❥ *Comandos en arreglo* 🧑🏻‍💻
 ├➽ *.serbot* (finalizado)
-├➽ *.perfil* 
+├➽ *.perfil* (finalizado)
 ├➽ *.hd*
 ├➽ *.hidetag*
 ├➽ *.antilinkV3*
